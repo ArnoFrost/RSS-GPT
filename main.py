@@ -8,62 +8,88 @@ from bs4 import BeautifulSoup
 from jinja2 import Template
 from openai import OpenAI
 
+GPT_MODEL_3_5 = "gpt-3.5-turbo-16k-0613"
+GPT_MODEL_4 = "gpt-4-0613"
+
 
 # from dateutil.parser import parse
 
+# Generate a fallback title for an entry if the regular title is not available
 def generate_untitled(entry):
+    """
+    Generate a fallback title for the RSS entry.
+    Tries to use the title, then the first 50 characters of the article,
+    and finally the link as the last resort.
+
+    Args:
+        entry: The entry object from the RSS feed.
+
+    Returns:
+        A string representing the title of the entry.
+    """
     try:
         return entry.title
-    except:
+    except AttributeError:
         try:
-            return entry.article[:50]
-        except:
-            return entry.link
+            return entry.article[:50]  # First 50 characters of the article
+        except AttributeError:
+            return entry.link  # URL if nothing else is available
 
 
+# Configuration helpers to get and set configurations
 def get_cfg(sec, name, default=None):
+    """
+    Get a configuration value for a given section and name.
+    Falls back to a default value if not found.
+
+    Args:
+        sec: The section in the configuration file.
+        name: The name of the configuration option.
+        default: The default value to return if the option is not found.
+
+    Returns:
+        The configuration value as a string, or the default value.
+    """
     value = config.get(sec, name, fallback=default)
     if value:
         return value.strip('"')
 
 
 def set_cfg(sec, name, value):
+    """
+    Set a configuration value for a given section and name.
+
+    Args:
+        sec: The section in the configuration file.
+        name: The name of the configuration option.
+        value: The value to set for the option.
+    """
     config.set(sec, name, '"%s"' % value)
 
 
+# Cleans the HTML content from the unnecessary tags
 def clean_html(html_content):
     """
-    This function is used to clean the HTML content.
-    It will remove all the <script>, <style>, <img>, <a>, <video>, <audio>, <iframe>, <input> tags.
+    Clean the HTML content from unnecessary tags.
+
+    Args:
+        html_content: The HTML content as a string.
+
     Returns:
-        Cleaned text for summarization
+        The cleaned text suitable for summarization.
     """
+    # Parse the HTML content with BeautifulSoup
     soup = BeautifulSoup(html_content, "html.parser")
 
-    for script in soup.find_all("script"):
-        script.decompose()
+    # Define tags to remove
+    tags_to_remove = ['script', 'style', 'img', 'a', 'video', 'audio', 'iframe', 'input']
 
-    for style in soup.find_all("style"):
-        style.decompose()
+    # Remove the tags from the soup object
+    for tag in tags_to_remove:
+        for element in soup.find_all(tag):
+            element.decompose()
 
-    for img in soup.find_all("img"):
-        img.decompose()
-
-    for a in soup.find_all("a"):
-        a.decompose()
-
-    for video in soup.find_all("video"):
-        video.decompose()
-
-    for audio in soup.find_all("audio"):
-        audio.decompose()
-
-    for iframe in soup.find_all("iframe"):
-        iframe.decompose()
-
-    for input in soup.find_all("input"):
-        input.decompose()
-
+    # Return the text part of the soup object
     return soup.get_text()
 
 
@@ -260,13 +286,13 @@ def output(sec, language):
             elif OPENAI_API_KEY:
                 token_length = len(cleaned_article)
                 try:
-                    entry.summary = gpt_summary(cleaned_article, model="gpt-3.5-turbo-1106", language=language)
+                    entry.summary = gpt_summary(cleaned_article, model=GPT_MODEL_3_5, language=language)
                     with open(log_file, 'a') as f:
                         f.write(f"Token length: {token_length}\n")
                         f.write(f"Summarized using GPT-3.5-turbo-1106\n")
                 except:
                     try:
-                        entry.summary = gpt_summary(cleaned_article, model="gpt-4-1106-preview", language=language)
+                        entry.summary = gpt_summary(cleaned_article, model=GPT_MODEL_4, language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using GPT-4-1106-preview\n")

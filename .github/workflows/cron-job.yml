@@ -1,63 +1,69 @@
 name: cron_job
 
-# Controls when the workflow will run
+# Defines when the actions will run.
 on:
-  # cron job every 2 hours
+  # Schedule for running the job every 2 hours
   schedule:
-   - cron: '0 */2 * * *'
-  # Allows you to run this workflow manually from the Actions tab
+   - cron: '0 */2 * * *'  # At minute 0 past every 2nd hour.
+  # Allows the workflow to be manually triggered from the GitHub Actions UI.
   workflow_dispatch:
-    push:
-      branches:
-        - arno  # 添加此行来指定 arno 分支
+  # This part seems misplaced and should be outside the workflow_dispatch block
+  push:
+    branches:
+      - arno  # This workflow will also trigger on a push to the 'arno' branch.
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# A workflow run is made up of one or more jobs.
 jobs:
-  # This workflow contains a single job called "build"
+  # This workflow contains a single job called "build".
   build:
-    # The type of runner that the job will run on
+    # Specifies that the job should run on an Ubuntu 20.04 environment.
     runs-on: ubuntu-20.04
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # A sequence of steps to execute as part of the job.
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks out the repository to the runner, allowing subsequent steps to access it.
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # This action checks out a copy of your repository.
         with:
-          token: ${{ secrets.WORK_TOKEN }}
-          ref: arno  # 确保签出 arno 分支
-    
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.8'
+          token: ${{ secrets.WORK_TOKEN }}  # The token to use for checkout, stored as a secret.
+          ref: arno  # The branch to check out.
 
+      # Sets up a specified version of Python.
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4  # This action sets up a python environment.
+        with:
+          python-version: '3.8'  # The version of Python to set up.
+
+      # Installs dependencies from the requirements.txt file.
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip  # Upgrades pip.
+          pip install -r requirements.txt  # Installs required packages.
+
+      # Executes a Python script and lists the contents of the docs directory.
       - name: ls_show
         run: |
-          python main.py
-          ls -al docs/
+          python main.py  # Runs a Python script.
+          ls -al docs/  # Lists all files in 'docs' directory in detailed format.
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Environment variable for the script.
           U_NAME: ${{ secrets.U_NAME }}
-             
+
+      # This step commits any changes in the docs directory or README files and pushes them to the repository.
       - name: PUSH
         env:
-          U_NAME: ${{ secrets.U_NAME }}
-          U_EMAIL: ${{ secrets.U_EMAIL }}
+          U_NAME: ${{ secrets.U_NAME }}  # User name for git config.
+          U_EMAIL: ${{ secrets.U_EMAIL }}  # User email for git config.
         run: |
-          pwd
-          git config --local user.name "${U_NAME}"  
-          git config --local user.email "${U_EMAIL}" 
+          pwd  # Prints the current working directory.
+          git config --local user.name "${U_NAME}"  # Sets the local git username.
+          git config --local user.email "${U_EMAIL}"  # Sets the local git email.
         
-          git status -s
-          git add docs/*
-          git add README*
-          export TZ='Europe/London'
-          git commit -m "Github Auto Build at `date +"%Y-%m-%d %H:%M"`"
+          git status -s  # Shows the status of changes as short output.
+          git add docs/*  # Stages changes in the 'docs' directory.
+          git add README*  # Stages changes in README files.
+          export TZ='Europe/London'  # Sets the timezone for the commit timestamp.
+          git commit -m "Github Auto Build at `date +"%Y-%m-%d %H:%M"`"  # Commits the changes with a timestamp.
         
-          echo "======git push===="
-          git push
+          echo "======git push===="  # Echoes a message for debugging.
+          git push  # Pushes the commit to the repository.
