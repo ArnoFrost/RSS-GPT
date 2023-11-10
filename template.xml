@@ -9,8 +9,13 @@
 <link>{{ entry.link.replace('&', '&amp;') }}</link>
 <guid>{{ entry.link.replace('&', '&amp;') }}</guid>
 <content:encoded><![CDATA[
-{% if entry.summary %}<div> {{ entry.summary}} <div>{% endif %}
-{{ entry.article }}
+{% if entry.summary %}
+<div style="padding: 10px; margin-top: 10px; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 5px; font-family: Arial, sans-serif;">
+    <h2 style="font-size: 16px; color: #333333; margin-bottom: 5px;">摘要:</h2>
+    <p style="font-size: 14px; color: #555555;">{{ entry.summary }}</p>
+</div>
+{% endif %}
+<div style="font-family: Arial, sans-serif; color: #555555;">{{ entry.article }}</div>
 ]]></content:encoded>
 {% if entry.published %}<pubDate>{{ entry.published }}</pubDate>{% endif %}
 {% if entry.updated %}<pubDate>{{ entry.updated }}</pubDate>{% endif %}
