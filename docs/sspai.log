@@ -33,3 +33,33 @@ error: 'str' object has no attribute 'choices'
 Append: [派早报：iQOO 12 系列发布、国行任天堂 Switch 延保计划将停售等](https://sspai.com/post/84243) 摘要: None
 append_entries: 1
 Finish: 2023-11-10 02:46:21.326437
+------------------------------------------------------
+Started: 2023-11-10 10:52:38.687536
+Existing_entries: 11
+Fetching from https://rsshub.app/sspai/index
+append_entries: 0
+Finish: 2023-11-10 10:52:40.419997
+------------------------------------------------------
+Started: 2023-11-10 10:53:59.789787
+Existing_entries: 11
+Fetching from https://rsshub.app/sspai/index
+append_entries: 0
+Finish: 2023-11-10 10:54:00.386596
+------------------------------------------------------
+Started: 2023-11-10 10:54:27.132195
+Existing_entries: 11
+Fetching from https://rsshub.app/sspai/index
+append_entries: 0
+Finish: 2023-11-10 10:54:27.799705
+------------------------------------------------------
+Started: 2023-11-10 10:55:41.245726
+Existing_entries: 11
+Fetching from https://rsshub.app/sspai/index
+append_entries: 0
+Finish: 2023-11-10 10:55:41.857453
+------------------------------------------------------
+Started: 2023-11-10 10:56:15.000071
+Existing_entries: 11
+Fetching from https://rsshub.app/sspai/index
+append_entries: 0
+Finish: 2023-11-10 10:56:15.654058

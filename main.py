@@ -1,11 +1,12 @@
-import feedparser
 import configparser
-import os
-from openai import OpenAI
-from jinja2 import Template
-from bs4 import BeautifulSoup
-import re
 import datetime
+import os
+import re
+
+import feedparser
+from bs4 import BeautifulSoup
+from jinja2 import Template
+from openai import OpenAI
 
 
 # from dateutil.parser import parse
@@ -143,7 +144,7 @@ def gpt_summary(query, model, language):
         ]
     client = OpenAI(
         api_key=OPENAI_API_KEY,
-        base_url="https://openkey.cloud"
+        base_url="https://openkey.cloud/v1"
     )
     completion = client.chat.completions.create(
         model=model,
