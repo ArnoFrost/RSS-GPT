@@ -324,7 +324,7 @@ def output(sec, language):
 
             append_entries.append(entry)
             with open(log_file, 'a') as f:
-                f.write(f"Append: [{entry.title}]({entry.link}) Summary: {entry.summary}\n")
+                f.write(f"Append: [{entry.title}]({entry.link}) Keywords: {entry.keywords} Summary: {entry.summary}\n")
 
     with open(log_file, 'a') as f:
         f.write(f'append_entries: {len(append_entries)}\n')
