@@ -245,6 +245,7 @@ def output(sec, language):
                 f.write(f"Feed error: {feed.bozo_exception}\n")
             continue
         for entry in feed.entries:
+
             if cnt > max_entries:
                 with open(log_file, 'a') as f:
                     f.write(f"Skip from: [{entry.title}]({entry.link})\n")
@@ -281,23 +282,27 @@ def output(sec, language):
             #                entry.updated = parse(entry.updated).strftime('%a, %d %b %Y %H:%M:%S %z')
             #            if 'published' in entry:
             #                entry.published = parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
+            cleaned_article = clean_html(entry.article)
 
-            cnt += 1
             if cnt > max_items:
                 entry.summary = None
             elif OPENAI_API_KEY:
                 token_length = len(cleaned_article)
+
                 try:
+                    cnt += 1
                     entry.summary = gpt_summary(cleaned_article, model=GPT_MODEL_3_5, language=language)
+                    cnt += 1  # 只有成功生成摘要后才增加计数
                     with open(log_file, 'a') as f:
                         f.write(f"Token length: {token_length}\n")
-                        f.write(f"Summarized using GPT-3.5-turbo-1106\n")
+                        f.write(f"Summarized using {GPT_MODEL_3_5}\n")
                 except:
                     try:
                         entry.summary = gpt_summary(cleaned_article, model=GPT_MODEL_4, language=language)
+                        cnt += 1  # 只有成功生成摘要后才增加计数
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
-                            f.write(f"Summarized using GPT-4-1106-preview\n")
+                            f.write(f"Summarized using {GPT_MODEL_4}\n")
                     except Exception as e:
                         entry.summary = None
                         with open(log_file, 'a') as f:
@@ -306,8 +311,7 @@ def output(sec, language):
 
             append_entries.append(entry)
             with open(log_file, 'a') as f:
-                # f.write(f"Append: [{entry.title}]({entry.link})\n")
-                f.write(f"Append: [{entry.title}]({entry.link}) 摘要: {entry.summary}\n")
+                f.write(f"Append: [{entry.title}]({entry.link}) Summary: {entry.summary}\n")
 
     with open(log_file, 'a') as f:
         f.write(f'append_entries: {len(append_entries)}\n')
