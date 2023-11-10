@@ -4,6 +4,7 @@
 <title>The JetBrains Blog</title>
 <link>https://blog.jetbrains.com</link>
 
+
 <item>
 <title>MPS 2022.3.1 Has Been Released</title>
 <link>https://blog.jetbrains.com/mps/2023/11/mps-2022-3-1-has-been-released/</link>
@@ -17,7 +18,7 @@ Parallel model checker, utilize parallel hardware
 Improved File-per-root persistence performance
 Improved support for Find text in project
 Skip dependency migration in Ant tasks
-总结：<br><br>MPS的用户可以更新，修复了许多问题，并从新版本中倒回一些功能。通过可视化实现了单元格当前值的展示，可以覆盖扩展语言的规则，新增了禁用启动时的make选项，优化了并发模型检查和文件持久性性能，改进了项目中的查找文本功能，并可以跳过依赖迁移的过程。 <div>
+总结：<br /><br />MPS的用户可以更新，修复了许多问题，并从新版本中倒回一些功能。通过可视化实现了单元格当前值的展示，可以覆盖扩展语言的规则，新增了禁用启动时的make选项，优化了并发模型检查和文件持久性性能，改进了项目中的查找文本功能，并可以跳过依赖迁移的过程。 <div>
 <p>For MPS users that are using last year’s version (2022.3), we’re releasing an update with numerous fixes. Many of them have been back-ported from the new MPS 2023.2, so you may have heard of some of them already.</p>
 <p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/mps/download/previous.html" rel="noopener" target="_blank">DOWNLOAD MPS 2022.3.1</a></p>
 <p>See a full list of issues fixed in 2022.3.1 <a href="https://youtrack.jetbrains.com/issues/MPS?q=state:Resolved%20version:%202022.3.1%20order%20by:%20Priority%20%20&#038;_ga=2.231099997.350008667.1687951340-393819702.1681896790&#038;_gl=1*183w1l3*_ga*MzkzODE5NzAyLjE2ODE4OTY3OTA.*_ga_9J976DJZ68*MTY4Nzk2NjcyOS4zMC4xLjE2ODc5Njc0MzYuNy4wLjA." rel="noopener" target="_blank">here</a>.</p>
@@ -47,7 +48,6 @@ To use this flag, add <i>haltOnDependencyError=&#8221;false&#8221;</i> to your <
 <p>Your JetBrains MPS team</p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 20:23:40 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 20:23:40 +0000</pubDate>
 </item>
 <item>
 <title>IntelliJ IDEA 2023.3 Goes Beta!</title>
@@ -55,7 +55,7 @@ To use this flag, add <i>haltOnDependencyError=&#8221;false&#8221;</i> to your <
 <guid>https://blog.jetbrains.com/idea/2023/11/intellij-idea-2023-3-beta/</guid>
 <content:encoded><![CDATA[
 <div> IntelliJ IDEA, 2023.3 Beta版本, 支持Java 21特性, 调试器中的Run to Cursor选项, 代码编辑操作的浮动工具栏, GitLab片段支持, 全功能差异视图等改进和增加. Kotlin的最新版本支持也通过IDE更新推出. Kotlin文件可以自动配置到Java Gradle项目中, IntelliJ IDEA还对插件分发进行了更新, Android, Ant和GlassFish插件现在可以通过JetBrains Marketplace获取. 获取EAP和提供反馈的机会还存在
-<br><br>
+<br /><br />
 总结: IntelliJ IDEA推出了2023.3 Beta版本，包含了众多改进和新增功能，如Java 21特性的全面支持、调试器中的Run to Cursor选项、代码编辑操作的浮动工具栏等。同时，Kotlin也得到了支持，最新版本将与IDE更新一同推出。此外，IntelliJ IDEA还对插件分发进行了调整，部分插件现在可以通过JetBrains Marketplace获取。用户可以通过EAP获取并提供反馈。 <div>
 <p>The 2023.3 Beta version of IntelliJ IDEA is here!</p>
 
@@ -220,14 +220,13 @@ To use this flag, add <i>haltOnDependencyError=&#8221;false&#8221;</i> to your <
 <p>Happy developing!</p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 17:29:25 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 17:29:25 +0000</pubDate>
 </item>
 <item>
 <title>CLion Nova Explodes onto the C and C++ Development Scene</title>
 <link>https://blog.jetbrains.com/clion/2023/11/clion-nova/</link>
 <guid>https://blog.jetbrains.com/clion/2023/11/clion-nova/</guid>
 <content:encoded><![CDATA[
-<div> CLion, free preview, ReSharper C++/Rider C++ language engine, CLion Nova, performance enhancements。<br><br>总结: 今天， JetBrains 宣布了 CLion 的免费预览版，其中使用了 ReSharper C++/Rider C++ 语言引擎。CLion Nova 旨在提升 IDE 的性能和质量，并将统一用户体验。Nova 版本相较于经典版本有更快的高亮速度、更快的代码分析和查找引用功能以及更好的用户界面响应性能。但是，Nova 版本也有一些缺点，如部分功能的缺失和一些用户习惯的改变。JetBrains 鼓励用户使用 CLion Nova 并提供反馈。 <div>
+<div> CLion, free preview, ReSharper C++/Rider C++ language engine, CLion Nova, performance enhancements。<br /><br />总结: 今天， JetBrains 宣布了 CLion 的免费预览版，其中使用了 ReSharper C++/Rider C++ 语言引擎。CLion Nova 旨在提升 IDE 的性能和质量，并将统一用户体验。Nova 版本相较于经典版本有更快的高亮速度、更快的代码分析和查找引用功能以及更好的用户界面响应性能。但是，Nova 版本也有一些缺点，如部分功能的缺失和一些用户习惯的改变。JetBrains 鼓励用户使用 CLion Nova 并提供反馈。 <div>
 <p>TL;DR</p>
 <p>Today, we’re announcing a free early preview of CLion, which uses the ReSharper C++/Rider C++ language engine instead of the CLion &quot;legacy&quot; engine. The Preview build is available via our dedicated Toolbox App feed. At some point in 2024, depending on the results of the feedback collected, CLion Nova will be merged into CLion. Until then, the Preview build will be free to use and can be installed in parallel with your usual CLion (Classic) installation.</p>
 <p><a href="https://www.jetbrains.com/toolbox-app/" rel="noopener" target="_blank"><img alt="CLion Nova" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Featured_Blog_1280x720_CLionNova.png" width="640" /></a></p>
@@ -301,7 +300,6 @@ JetBrains<br />
 <em>The Drive to Develop</em></p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 15:02:52 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 15:02:52 +0000</pubDate>
 </item>
 <item>
 <title>Toolbox App 2.1 Is Now Available</title>
@@ -309,7 +307,7 @@ JetBrains<br />
 <guid>https://blog.jetbrains.com/toolbox-app/2023/11/toolbox-app-2-1-is-now-available/</guid>
 <content:encoded><![CDATA[
 <div> 安装目录、更新、清理备份、缓存和临时文件存储、语言本地化、Toolbox Enterprise
-总结：<br><br>安装目录可以自定义，更新和清理备份更加方便，缓存和临时文件存储问题解决，增加了乌克兰语言本地化，Toolbox Enterprise获得了一些改进。 <div>
+总结：<br /><br />安装目录可以自定义，更新和清理备份更加方便，缓存和临时文件存储问题解决，增加了乌克兰语言本地化，Toolbox Enterprise获得了一些改进。 <div>
 <p>In the previous release, we reworked the installation and update processes from the ground up, allowing for update downloads in the background to be performed first and introducing permanent installation paths that conform to operating system guidelines.</p>
 
 
@@ -393,7 +391,6 @@ JetBrains<br />
 <p>The Toolbox App team</p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 14:53:53 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 14:53:53 +0000</pubDate>
 </item>
 <item>
 <title>IntelliJ IDEA 2023.2.5 Is Out!</title>
@@ -401,7 +398,7 @@ JetBrains<br />
 <guid>https://blog.jetbrains.com/idea/2023/11/intellij-idea-2023-2-5/</guid>
 <content:encoded><![CDATA[
 <div> IntelliJ IDEA, 2023.2.5, bug-fix update, update, IDE, snaps, Ubuntu user, download, fix, startup failures.
-总结:<br><br>IntelliJ IDEA 2023.2.5发布了一个bug修复更新，可以通过IDE内部更新、插件或在Ubuntu上使用snaps进行更新。这个更新修复了启动失败的问题，并消除了以前由于前一个会话的异常终止而引发的“无法连接到已经运行的IDE实例”的错误。开发者可以在官网上找到完整的更新列表。 <div>
+总结:<br /><br />IntelliJ IDEA 2023.2.5发布了一个bug修复更新，可以通过IDE内部更新、插件或在Ubuntu上使用snaps进行更新。这个更新修复了启动失败的问题，并消除了以前由于前一个会话的异常终止而引发的“无法连接到已经运行的IDE实例”的错误。开发者可以在官网上找到完整的更新列表。 <div>
 <p>The IntelliJ IDEA 2023.2.5 bug-fix update is now available. </p>
 
 
@@ -431,14 +428,12 @@ JetBrains<br />
 <p>Happy developing!</p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 14:35:58 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 14:35:58 +0000</pubDate>
 </item>
 <item>
 <title>.NET Annotated Monthly | November 2023</title>
 <link>https://blog.jetbrains.com/dotnet/2023/11/09/net-annotated-monthly-november-2023/</link>
 <guid>https://blog.jetbrains.com/dotnet/2023/11/09/net-annotated-monthly-november-2023/</guid>
 <content:encoded><![CDATA[
-
 <p>Did you know? Just like you can keep your JetBrains products up-to-date with their <a href="https://www.jetbrains.com/toolbox-app/" rel="noopener" target="_blank">Toolbox App</a>, the open-source project <a href="https://www.marticliment.com/wingetui/" rel="noopener" target="_blank">WingetUI</a> can do the same for all your other Windows tools.</p>
 
 
@@ -674,14 +669,12 @@ JetBrains<br />
 <p align="center"><a class="jb-download-button" href="https://info.jetbrains.com/Dotnet-Annotated-Subscription.html" rel="noopener" target="_blank">Subscribe to .NET Annotated</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 12:45:41 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 12:45:41 +0000</pubDate>
 </item>
 <item>
 <title>Amper – Improving the Build Tooling User Experience</title>
 <link>https://blog.jetbrains.com/blog/2023/11/09/amper-improving-the-build-tooling-user-experience/</link>
 <guid>https://blog.jetbrains.com/blog/2023/11/09/amper-improving-the-build-tooling-user-experience/</guid>
 <content:encoded><![CDATA[
-
 <p>Time and time again people adopting Kotlin have told us that they find dealing with build systems challenging. While many projects use wizards to configure environments so they’re ready for developers to get started, these also need to be maintained. New modules, platforms, dependencies, and other changes happen, which often leads to developers spending more time fighting the build system and the IDE than actually focusing on the work they need to do. With Kotlin becoming a truly multiplatform language, this is emphasized even further with folks who are new to the JVM ecosystem.</p>
 
 
@@ -921,14 +914,12 @@ settings:
 <p>We hope other questions you may have are addressed in the <a href="https://github.com/JetBrains/amper/tree/main/docs/FAQ.md" rel="noopener" target="_blank">FAQ</a>. If not, please feel free to ask us in the comments, and we’ll do our best to answer them.</p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 10:07:24 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 10:07:24 +0000</pubDate>
 </item>
 <item>
 <title>ReSharper 2023.3 EAP 6: Code Analysis Performance Improvements, Support for C# 12 Interceptors, and Much More.</title>
 <link>https://blog.jetbrains.com/dotnet/2023/11/08/resharper-2023-3-eap-6/</link>
 <guid>https://blog.jetbrains.com/dotnet/2023/11/08/resharper-2023-3-eap-6/</guid>
 <content:encoded><![CDATA[
-
 <p>The latest installment in the ReSharper 2023.3 Early Access Program has just been released, and it’s packed with updates.&nbsp;</p>
 
 
@@ -1064,14 +1055,12 @@ settings:
 <p>As always, we’d be happy to hear from you. Tell us what you think about the latest changes in the comments section below or<a href="https://twitter.com/resharper" rel="noopener" target="_blank"> on X</a> (formerly Twitter).&nbsp;</p>
 ]]></content:encoded>
 <pubDate>Wed, 08 Nov 2023 18:13:51 +0000</pubDate>
-<pubDate>Wed, 08 Nov 2023 18:13:51 +0000</pubDate>
 </item>
 <item>
 <title>ReSharper C++ 2023.3 EAP: HLSL Updates and Completion in Inactive Code</title>
 <link>https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/</link>
 <guid>https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/</guid>
 <content:encoded><![CDATA[
-
 <p>The new Early Access Program build is here with updates for HLSL support, code completion inside inactive preprocessor branches, a new inlay hint for forwarding references, and other updates. Read on for more details and check out the <a href="https://youtrack.jetbrains.com/issues/RSCPP?q=Available%20in:%20%7B2023.3%20EAP%206%7D%20" rel="noopener" target="_blank">full list of issues</a> we’ve fixed in this update.</p>
 <p>You can download the free EAP builds from our website or via the <a href="https://www.jetbrains.com/toolbox-app" rel="noopener" target="_blank">Toolbox App</a>.</p>
 <p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/resharper/nextversion/" rel="noopener" target="_blank"><i class="download-icon"></i>DOWNLOAD RESHARPER C++ EAP</a></p>
@@ -1099,14 +1088,12 @@ JetBrains<br />
 The Drive to Develop</p>
 ]]></content:encoded>
 <pubDate>Wed, 08 Nov 2023 18:13:43 +0000</pubDate>
-<pubDate>Wed, 08 Nov 2023 18:13:43 +0000</pubDate>
 </item>
 <item>
 <title>OSS Power-Ups: MassTransit – Webinar Recording</title>
 <link>https://blog.jetbrains.com/dotnet/2023/11/08/oss-power-ups-masstransit-webinar-recording/</link>
 <guid>https://blog.jetbrains.com/dotnet/2023/11/08/oss-power-ups-masstransit-webinar-recording/</guid>
 <content:encoded><![CDATA[
-
 <p>The recording of our webinar, <strong>OSS Power-Ups: MassTransit</strong>, with <a href="https://twitter.com/PhatBoyG" rel="noopener" target="_blank">Chris Patterson</a>, is available. This was the <strong>thirteenth episode</strong> of our <a href="https://lp.jetbrains.com/oss-powerups/" rel="noreferrer noopener" target="_blank">OSS Power-Ups</a> series, where we put a spotlight on open-source .NET projects. <a href="https://www.jetbrains.com/community/newsletters/" rel="noreferrer noopener" target="_blank">Subscribe to our community newsletter</a>&nbsp;to receive notifications about future webinars.</p>
 
 
@@ -1340,14 +1327,12 @@ The Drive to Develop</p>
     </div>
 ]]></content:encoded>
 <pubDate>Wed, 08 Nov 2023 10:11:38 +0000</pubDate>
-<pubDate>Wed, 08 Nov 2023 10:11:38 +0000</pubDate>
 </item>
 <item>
 <title>Welcome Fleet with Kotlin Multiplatform Tooling</title>
 <link>https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-tooling-in-fleet/</link>
 <guid>https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-tooling-in-fleet/</guid>
 <content:encoded><![CDATA[
-
 <p><a href="https://www.jetbrains.com/kotlin-multiplatform/" rel="noreferrer noopener" target="_blank">Kotlin Multiplatform</a> (KMP) is an open-source technology built by JetBrains that allows you to share code across multiple platforms while retaining the benefits of native programming. Supported platforms include iOS, Android, desktop, web, and others.</p>
 
 
@@ -1479,14 +1464,12 @@ The Drive to Develop</p>
 <p>Thank you!</p>
 ]]></content:encoded>
 <pubDate>Tue, 07 Nov 2023 14:24:34 +0000</pubDate>
-<pubDate>Tue, 07 Nov 2023 14:24:34 +0000</pubDate>
 </item>
 <item>
 <title>How JetBrains Rider Implemented .NET WebAssembly Debugging</title>
 <link>https://blog.jetbrains.com/dotnet/2023/11/07/how-jetbrains-rider-implemented-net-webassembly-debugging/</link>
 <guid>https://blog.jetbrains.com/dotnet/2023/11/07/how-jetbrains-rider-implemented-net-webassembly-debugging/</guid>
 <content:encoded><![CDATA[
-
 <p><a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" rel="noopener" target="_blank">Blazor</a> is part of a .NET technology that lets you build full-stack web applications using C# without the need to write JavaScript code. There’s server-side Blazor, client-side Blazor (which uses WebAssembly (WASM) to run in the browser and interact with the DOM), and <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-8.0" rel="noopener" target="_blank">other hosting models</a>.</p>
 
 
@@ -2027,8 +2010,6 @@ private async Task FireInternalAsync(int id, string methodName, ICommand command
 <p><em>Photo by <a href="https://unsplash.com/@clayton_cardinalli?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" rel="noopener" target="_blank">Clayton Cardinalli</a> on <a href="https://unsplash.com/photos/man-in-blue-jacket-standing-beside-brown-wooden-post-hkJNx0EDbjE?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" rel="noopener" target="_blank">Unsplash</a></em></p>
 ]]></content:encoded>
 <pubDate>Tue, 07 Nov 2023 12:38:00 +0000</pubDate>
-<pubDate>Tue, 07 Nov 2023 12:38:00 +0000</pubDate>
 </item>
-
 </channel>
 </rss>

@@ -4,12 +4,12 @@
 <title>BrettTerpstra.com - The Mad Science of Brett Terpstra</title>
 <link>https://brettterpstra.com/</link>
 
+
 <item>
 <title>Halp: Universal help for Fish</title>
 <link>https://brett.trpstra.net/link/535/16436713/halp-universal-help-for-fish</link>
 <guid>https://brett.trpstra.net/link/535/16436713/halp-universal-help-for-fish</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -33,14 +33,12 @@
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16436713.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-08T11:46:00-06:00</pubDate>
-<pubDate>2023-11-08T11:46:00-06:00</pubDate>
 </item>
 <item>
 <title>Hazel giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16431556/hazel-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16431556/hazel-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -87,14 +85,12 @@
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16431556.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-06T08:00:00-06:00</pubDate>
-<pubDate>2023-11-06T08:00:00-06:00</pubDate>
 </item>
 <item>
 <title>SearchLink gets Google Search back</title>
 <link>https://brett.trpstra.net/link/535/16429946/searchlink-gets-google-search-back</link>
 <guid>https://brett.trpstra.net/link/535/16429946/searchlink-gets-google-search-back</guid>
 <content:encoded><![CDATA[
-
 <p>So it turns out Google now offers <a href="https://developers.google.com/custom-search/v1/introduction">an API</a> (once again). It’s limited to 100 searches per day for the free version, so I don’t want to put my API key into the public distribution of SearchLink, but if you want to tap into Google’s power for your searches, you can now add your own API key to the config and get 100 searches per day for free. If you should, for whatever reason, run out of searches in a day, it should gracefully switch out to the previous DuckDuckGo configuration.</p>
 
 <p>The <code class="language-plaintext highlighter-rouge">!g</code> search will now test for the presence of a Google API key, and if it exists, use Google for the search. You can also use <code class="language-plaintext highlighter-rouge">!gg</code> to force a Google search. If there’s not a key set up, it will continue operating as it has using DuckDuckGo. As far as privacy concerns go, these searches don’t include any tracking data, so using Google in this manner shouldn’t present any new issues. For anyone creating plugins, the <code class="language-plaintext highlighter-rouge">SL.ddg()</code> method will also test for an API key and use Google if available.</p>
@@ -112,14 +108,12 @@
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16429946.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-05T16:27:00-06:00</pubDate>
-<pubDate>2023-11-05T16:27:00-06:00</pubDate>
 </item>
 <item>
 <title>The WordCounter giveaway winners!</title>
 <link>https://brett.trpstra.net/link/535/16428225/the-wordcounter-giveaway-winners</link>
 <guid>https://brett.trpstra.net/link/535/16428225/the-wordcounter-giveaway-winners</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -168,14 +162,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16428225.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-03T13:00:00-05:00</pubDate>
-<pubDate>2023-11-03T13:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Tower - making Git easy (and enjoyable!) to use [Sponsor]</title>
 <link>https://brett.trpstra.net/link/535/16422495/tower-making-git-easy-and-enjoyable-to-use-sponsor</link>
 <guid>https://brett.trpstra.net/link/535/16422495/tower-making-git-easy-and-enjoyable-to-use-sponsor</guid>
 <content:encoded><![CDATA[
-
 <p>Thanks to Tower for sponsoring BrettTerpstra.com this week! I swear by this app, and anyone who uses Git for any part of their work or play should check it out.</p>
 
 <p><a href="https://www.git-tower.com/?utm_source=brettterpstra&amp;utm_medium=sponsored&amp;utm_campaign=november-2023" rel="nofollow">
@@ -210,14 +202,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16422495.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-02T08:00:00-05:00</pubDate>
-<pubDate>2023-11-02T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Web Excursions for November 01, 2023</title>
 <link>https://brett.trpstra.net/link/535/16420745/web-excursions-for-november-01-2023</link>
 <guid>https://brett.trpstra.net/link/535/16420745/web-excursions-for-november-01-2023</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -248,14 +238,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16420745.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-01T14:00:00-05:00</pubDate>
-<pubDate>2023-11-01T14:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Searchlink, not just for searching</title>
 <link>https://brett.trpstra.net/link/535/16420225/searchlink-not-just-for-searching</link>
 <guid>https://brett.trpstra.net/link/535/16420225/searchlink-not-just-for-searching</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -339,14 +327,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16420225.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-11-01T10:01:00-05:00</pubDate>
-<pubDate>2023-11-01T10:01:00-05:00</pubDate>
 </item>
 <item>
 <title>SearchLink Fixes</title>
 <link>https://brett.trpstra.net/link/535/16416050/searchlink-fixes</link>
 <guid>https://brett.trpstra.net/link/535/16416050/searchlink-fixes</guid>
 <content:encoded><![CDATA[
-
 <p><a href="https://brettterpstra.com/projects/searchlink/" title="SearchLink">SearchLink</a> 2.3.50 is out and contains fixes for some recent changes in DuckDuckGo’s responses. It currently passes all tests except for one (TMDB is returning a movie for the search result “Brad Pitt”, rather than the actor page, and when I add “actor” to the search it dumps out to IMDB, which I don’t fully understand).</p>
 
 <p>Don’t forget that the source code is all neatly organized on GitHub and you can compile the whole thing as a gem for command line usage, if you like. Every search is <a href="https://github.com/ttscoff/searchlink/tree/main/lib/searchlink/searches">a plugin</a> and you can add new search types pretty easily. If you <em>do</em> extend SearchLink at all, be sure to make a Pull Request and be part of the development!</p>
@@ -364,14 +350,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16416050.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-30T09:19:00-05:00</pubDate>
-<pubDate>2023-10-30T09:19:00-05:00</pubDate>
 </item>
 <item>
 <title>WordCounter giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16415970/wordcounter-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16415970/wordcounter-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -414,14 +398,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16415970.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-30T08:00:00-05:00</pubDate>
-<pubDate>2023-10-30T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>The Scrivener giveaway winners!</title>
 <link>https://brett.trpstra.net/link/535/16413505/the-scrivener-giveaway-winners</link>
 <guid>https://brett.trpstra.net/link/535/16413505/the-scrivener-giveaway-winners</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -470,14 +452,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16413505.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-27T13:00:00-05:00</pubDate>
-<pubDate>2023-10-27T13:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Sanebox and implementing the Eisenhower Matrix [Sponsor]</title>
 <link>https://brett.trpstra.net/link/535/16411504/sanebox-and-implementing-the-eisenhower-matrix-sponsor</link>
 <guid>https://brett.trpstra.net/link/535/16411504/sanebox-and-implementing-the-eisenhower-matrix-sponsor</guid>
 <content:encoded><![CDATA[
-
 <p>Thanks to Sanebox for sponsoring BrettTerpstra.com again this week! I don’t know what I’d do without it!</p>
 
 <p><a href="https://try.sanebox.com/be2h3q" rel="nofollow">
@@ -515,14 +495,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16411504.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-26T08:00:00-05:00</pubDate>
-<pubDate>2023-10-26T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Introducing the BrettTerpstra.com Forum</title>
 <link>https://brett.trpstra.net/link/535/16408585/introducing-the-brettterpstra-dot-com-forum</link>
 <guid>https://brett.trpstra.net/link/535/16408585/introducing-the-brettterpstra-dot-com-forum</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -552,14 +530,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16408585.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-24T12:14:00-05:00</pubDate>
-<pubDate>2023-10-24T12:14:00-05:00</pubDate>
 </item>
 <item>
 <title>Scrivener giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16406637/scrivener-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16406637/scrivener-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -602,14 +578,12 @@ The next giveaways include:</p>
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16406637.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-23T08:00:00-05:00</pubDate>
-<pubDate>2023-10-23T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>iTunesIcon updated</title>
 <link>https://brett.trpstra.net/link/535/16405699/itunesicon-updated</link>
 <guid>https://brett.trpstra.net/link/535/16405699/itunesicon-updated</guid>
 <content:encoded><![CDATA[
-
 <p>A long time ago I published a tool called <a href="https://brettterpstra.com/projects/itunesicon/">iTunesIcon</a> that would grab an app icon from iTunes. It worked well in its time, but has been mostly broken in recent years. It was designed mostly for writers who were reviewing apps and needed to get an app’s icon for artwork, but could be used by anyone with a need for such things.</p>
 
 <p>As part of automating the giveaways I’m running, I’ve had a need to start grabbing app icons again, so I’ve revived the project. This script requires installing ImageMagick for rounding the corners of iOS icons (<code class="language-plaintext highlighter-rouge">brew install imagemagick</code>).</p>
@@ -668,14 +642,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16405699.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-22T15:27:00-05:00</pubDate>
-<pubDate>2023-10-22T15:27:00-05:00</pubDate>
 </item>
 <item>
 <title>Automating the giveaways</title>
 <link>https://brett.trpstra.net/link/535/16394621/automating-the-giveaways</link>
 <guid>https://brett.trpstra.net/link/535/16394621/automating-the-giveaways</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -783,14 +755,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16394621.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-14T08:00:00-05:00</pubDate>
-<pubDate>2023-10-14T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>The Hookmark giveaway winner!</title>
 <link>https://brett.trpstra.net/link/535/16394031/the-hookmark-giveaway-winner</link>
 <guid>https://brett.trpstra.net/link/535/16394031/the-hookmark-giveaway-winner</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -870,14 +840,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16394031.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-13T12:35:00-05:00</pubDate>
-<pubDate>2023-10-13T12:35:00-05:00</pubDate>
 </item>
 <item>
 <title>Hookmark giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16386371/hookmark-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16386371/hookmark-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -920,14 +888,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16386371.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-09T08:00:00-05:00</pubDate>
-<pubDate>2023-10-09T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Marked and Bear</title>
 <link>https://brett.trpstra.net/link/535/16385532/marked-and-bear</link>
 <guid>https://brett.trpstra.net/link/535/16385532/marked-and-bear</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1042,14 +1008,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16385532.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-08T17:31:00-05:00</pubDate>
-<pubDate>2023-10-08T17:31:00-05:00</pubDate>
 </item>
 <item>
 <title>The Timing giveaway winner!</title>
 <link>https://brett.trpstra.net/link/535/16383214/the-timing-giveaway-winner</link>
 <guid>https://brett.trpstra.net/link/535/16383214/the-timing-giveaway-winner</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1120,14 +1084,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16383214.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-06T13:00:00-05:00</pubDate>
-<pubDate>2023-10-06T13:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Marked and Bunch updates for Sonoma</title>
 <link>https://brett.trpstra.net/link/535/16381661/marked-and-bunch-updates-for-sonoma</link>
 <guid>https://brett.trpstra.net/link/535/16381661/marked-and-bunch-updates-for-sonoma</guid>
 <content:encoded><![CDATA[
-
 <p>Just a quick note to let you know that there are new versions of Marked and Bunch Beta with some fixes for Sonoma.</p>
 
 <p>The Marked update is live for direct customers, and in review for Setapp and Mac App Store customers. Watch for updates on your channel. It fixes an issue that prevented Marked from opening <em>any</em> files on Sonoma, and also crashes when using with Drafts’ or Bear’s “Preview in Marked” features. It should solve the issue for all versions of macOS.</p>
@@ -1143,14 +1105,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16381661.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-05T12:11:00-05:00</pubDate>
-<pubDate>2023-10-05T12:11:00-05:00</pubDate>
 </item>
 <item>
 <title>Dropzone 4, the essential drag &amp; drop productivity enhancer [Sponsor]</title>
 <link>https://brett.trpstra.net/link/535/16381391/dropzone-4-the-essential-drag-and-drop-productivity-enhancer-sponsor</link>
 <guid>https://brett.trpstra.net/link/535/16381391/dropzone-4-the-essential-drag-and-drop-productivity-enhancer-sponsor</guid>
 <content:encoded><![CDATA[
-
 <p>Thanks to Dropzone for sponsoring BrettTerpstra.com this week! I’ve been a Dropzone fan for many years now, and use it daily for everything from processing images to sharing files via my S3 account.</p>
 
 <p><a href="https://aptonic.com?utm_source=brettterpstra" rel="nofollow">
@@ -1188,14 +1148,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16381391.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-05T08:00:00-05:00</pubDate>
-<pubDate>2023-10-05T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Timing giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16374917/timing-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16374917/timing-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1238,14 +1196,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16374917.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-10-02T08:00:00-05:00</pubDate>
-<pubDate>2023-10-02T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Historical weather for Journal CLI</title>
 <link>https://brett.trpstra.net/link/535/16373194/historical-weather-for-journal-cli</link>
 <guid>https://brett.trpstra.net/link/535/16373194/historical-weather-for-journal-cli</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1271,14 +1227,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16373194.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-30T11:11:00-05:00</pubDate>
-<pubDate>2023-09-30T11:11:00-05:00</pubDate>
 </item>
 <item>
 <title>The CleanShot X giveaway winners!</title>
 <link>https://brett.trpstra.net/link/535/16372125/the-cleanshot-x-giveaway-winners</link>
 <guid>https://brett.trpstra.net/link/535/16372125/the-cleanshot-x-giveaway-winners</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1344,14 +1298,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16372125.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-29T12:00:00-05:00</pubDate>
-<pubDate>2023-09-29T12:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Automatically sort emails to custom folders with Sanebox [Sponsor]</title>
 <link>https://brett.trpstra.net/link/535/16369625/automatically-sort-emails-to-custom-folders-with-sanebox-sponsor</link>
 <guid>https://brett.trpstra.net/link/535/16369625/automatically-sort-emails-to-custom-folders-with-sanebox-sponsor</guid>
 <content:encoded><![CDATA[
-
 <p>Thanks to Sanebox for sponsoring BrettTerpstra.com again this week! I just trained 3 new senders into custom Sanebox folders today (just by moving an email from them once) and will never have to see them in my Inbox again, and will be able to easily locate them when I <em>do</em> want to see them. It’s so easy!</p>
 
 <p><a href="https://try.sanebox.com/be2h3q" rel="nofollow">
@@ -1384,14 +1336,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16369625.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-28T08:00:00-05:00</pubDate>
-<pubDate>2023-09-28T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Web Excursions for September 26, 2023</title>
 <link>https://brett.trpstra.net/link/535/16366906/web-excursions-for-september-26-2023</link>
 <guid>https://brett.trpstra.net/link/535/16366906/web-excursions-for-september-26-2023</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1422,14 +1372,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16366906.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-26T13:44:00-05:00</pubDate>
-<pubDate>2023-09-26T13:44:00-05:00</pubDate>
 </item>
 <item>
 <title>CleanShot X giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16364871/cleanshot-x-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16364871/cleanshot-x-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1466,14 +1414,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16364871.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-25T08:00:00-05:00</pubDate>
-<pubDate>2023-09-25T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>The Tap Forms giveaway winners!</title>
 <link>https://brett.trpstra.net/link/535/16361586/the-tap-forms-giveaway-winners</link>
 <guid>https://brett.trpstra.net/link/535/16361586/the-tap-forms-giveaway-winners</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1531,14 +1477,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16361586.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-22T13:00:00-05:00</pubDate>
-<pubDate>2023-09-22T13:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Journal updates with weather types and conditional questions</title>
 <link>https://brett.trpstra.net/link/535/16357253/journal-updates-with-weather-types-and-conditional-questions</link>
 <guid>https://brett.trpstra.net/link/535/16357253/journal-updates-with-weather-types-and-conditional-questions</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1566,14 +1510,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16357253.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-20T09:46:00-05:00</pubDate>
-<pubDate>2023-09-20T09:46:00-05:00</pubDate>
 </item>
 <item>
 <title>Tap Forms for Mac giveaway!</title>
 <link>https://brett.trpstra.net/link/535/16354183/tap-forms-for-mac-giveaway</link>
 <guid>https://brett.trpstra.net/link/535/16354183/tap-forms-for-mac-giveaway</guid>
 <content:encoded><![CDATA[
-
 <noscript class="loading-lazy">
                 <source media="(max-width: 640px)" />
                 <source type="image/webp" />
@@ -1614,14 +1556,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16354183.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-18T08:00:00-05:00</pubDate>
-<pubDate>2023-09-18T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>A silly Jekyll plugin and a big Marked sale</title>
 <link>https://brett.trpstra.net/link/535/16349238/a-silly-jekyll-plugin-and-a-big-marked-sale</link>
 <guid>https://brett.trpstra.net/link/535/16349238/a-silly-jekyll-plugin-and-a-big-marked-sale</guid>
 <content:encoded><![CDATA[
-
 <p>So, a long time ago I wrote this Jekyll plugin that does countdowns and I don’t think I ever really used it. You just give it an end date and it inserts a countdown into the post. But I needed something to count down to, so I’m running a 40% off <a href="https://marked2app.com">Marked</a> sale using the coupon <code class="language-plaintext highlighter-rouge">COOLPLUGINBRO</code> until Saturday, September 16th. Here’s your countdown:</p>
 
 <p class="sorry"><em>Time&#8217;s up.</em></p>
@@ -1635,14 +1575,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16349238.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-14T13:14:00-05:00</pubDate>
-<pubDate>2023-09-14T13:14:00-05:00</pubDate>
 </item>
 <item>
 <title>So you think you know productivity? [Sponsor]</title>
 <link>https://brett.trpstra.net/link/535/16348948/so-you-think-you-know-productivity</link>
 <guid>https://brett.trpstra.net/link/535/16348948/so-you-think-you-know-productivity</guid>
 <content:encoded><![CDATA[
-
 <p>Thanks to TextExpander for sponsoring BrettTerpstra.com this week! I can’t count the number of hours I save using TextExpander. Oh wait, I can, because they email you a report every week to let you know…</p>
 
 <p><a href="https://brettterpstra.comtextexpander.com/terpstra" rel="nofollow">
@@ -1681,14 +1619,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16348948.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-14T08:00:00-05:00</pubDate>
-<pubDate>2023-09-14T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Journal and integrations</title>
 <link>https://brett.trpstra.net/link/535/16342944/journal-and-integrations</link>
 <guid>https://brett.trpstra.net/link/535/16342944/journal-and-integrations</guid>
 <content:encoded><![CDATA[
-
 <p>I’ve made some changes to <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">Journal</a> (I didn’t mess with the data format this time) that add some functionality and will maybe help with integrating with some apps like Obisidian.</p>
 
 <p>First, you can now define a <code class="language-plaintext highlighter-rouge">date</code> type. Date entries will be parsed from natural language into date objects, so on the command line you can enter something like “yesterday 5pm” or “july 20 12pm” and get a proper date object added to your JSON and Markdown entries. Great for things like logging book review dates, workout days, etc.</p>
@@ -1740,14 +1676,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16342944.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-11T11:10:00-05:00</pubDate>
-<pubDate>2023-09-11T11:10:00-05:00</pubDate>
 </item>
 <item>
 <title>More na updates</title>
 <link>https://brett.trpstra.net/link/535/16340947/more-na-updates</link>
 <guid>https://brett.trpstra.net/link/535/16340947/more-na-updates</guid>
 <content:encoded><![CDATA[
-
 <p>I’ve put some more time into both <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">Journal</a> and <code class="language-plaintext highlighter-rouge">na</code>. The latest version of <code class="language-plaintext highlighter-rouge">na</code> represents quite a few hours of tinkering. See the <a href="https://brettterpstra.com/projects/na/" title="na - BrettTerpstra.com">na project page</a> for full details. In case you’ve missed in previously, <code class="language-plaintext highlighter-rouge">na</code> is my command line tool for reading and modifying TaskPaper files in your projects.</p>
 
 <p>I think the biggest thing I’ve added is theming. You can now control the colorized output of your actions using a file at <code class="language-plaintext highlighter-rouge">~/.local/share/na/theme.yaml</code>. That file is automatically written by na if it runs and it doesn’t exist, and once it’s there, it should be pretty self explanatory. You can use <code class="language-plaintext highlighter-rouge">{y}</code> type placeholders (that would make the following text yellow, a full list of color abbreviations is at the top of the file), and you can also use <code class="language-plaintext highlighter-rouge">{#RGB}</code> and <code class="language-plaintext highlighter-rouge">{#RRGGBB}</code> codes to get specific colors outside of the usual ANSI coloring.</p>
@@ -1819,14 +1753,12 @@ OPTIONS:
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16340947.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-09T09:00:00-05:00</pubDate>
-<pubDate>2023-09-09T09:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Timing -- automatic time tracking for Mac AND iOS [Sponsor]</title>
 <link>https://brett.trpstra.net/link/535/16338321/timing-automatic-time-tracking-for-mac-and-ios-sponsor</link>
 <guid>https://brett.trpstra.net/link/535/16338321/timing-automatic-time-tracking-for-mac-and-ios-sponsor</guid>
 <content:encoded><![CDATA[
-
 <p>Thanks to Timing for sponsoring BrettTerpstra.com this week! I’ve loved Timing for years, and the new vertical timeline view is an awesome upgrade to one of my most-used apps.</p>
 
 <p><a href="https://timingapp.com/brett2023" rel="nofollow">
@@ -1869,14 +1801,12 @@ Or <a href="https://timingapp.com/brett2023" rel="nofollow"><strong>download the
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16338321.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-07T08:00:00-05:00</pubDate>
-<pubDate>2023-09-07T08:00:00-05:00</pubDate>
 </item>
 <item>
 <title>Important Journal CLI updates</title>
 <link>https://brett.trpstra.net/link/535/16338322/important-journal-cli-updates</link>
 <guid>https://brett.trpstra.net/link/535/16338322/important-journal-cli-updates</guid>
 <content:encoded><![CDATA[
-
 <p>Just a couple quick updates to the <a href="https://brettterpstra.com/projects/journal-cli/">Journal CLI</a> I <a href="https://brettterpstra.com/2023/09/06/journal-a-cli-for-journaling/">published yesterday</a> that I wanted everyone who was trying it out to know about before they have too much data in it.</p>
 
 <p>First, if keys were nested using dot syntax, e.g. <code class="language-plaintext highlighter-rouge">health.rating</code> and <code class="language-plaintext highlighter-rouge">health.sleep</code>, it would create a hash like:</p>
@@ -1903,8 +1833,6 @@ Or <a href="https://timingapp.com/brett2023" rel="nofollow"><strong>download the
 <p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16338322.gif" width="1" />
 ]]></content:encoded>
 <pubDate>2023-09-07T08:00:00-05:00</pubDate>
-<pubDate>2023-09-07T08:00:00-05:00</pubDate>
 </item>
-
 </channel>
 </rss>

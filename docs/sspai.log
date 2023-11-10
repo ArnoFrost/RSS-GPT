@@ -35,3 +35,14 @@ Append: [31 岁在一线城市被裁，我用一个小程序总结走过的路](
 Append: [派早报：iQOO 12 系列发布、国行任天堂 Switch 延保计划将停售等](https://sspai.com/post/84243) 摘要: None
 append_entries: 10
 Finish: 2023-11-10 03:16:12.896092
+------------------------------------------------------
+Started: 2023-11-10 04:01:26.578750
+Existing_entries: 10
+Fetching from https://rsshub.app/sspai/index
+Token length: 2383
+Summarized using GPT-3.5-turbo-1106
+Append: [派早报：Valve 发布 OLED 款 Steam Deck 游戏主机](https://sspai.com/post/84312) 摘要: Valve, OLED款 Steam Deck, GitHub Copilot Chat, Humane, 三星Galaxy AI.
+<br>
+Valve发布了OLED款Steam Deck游戏主机，将屏幕升级为7.4英寸的OLED屏幕，提供更沉浸的游戏体验。GitHub宣布将推出GitHub Copilot Chat服务，协助开发者编写代码。Humane发布无屏幕可穿戴智能手机AI Pin，具备语音交互和磁性夹子设计。AMD将逐步终止对Polaris和Vega GPU显卡系列的驱动支持。三星计划在其智能手机中推出名为Galaxy AI的新功能，提供实时翻译通话功能。微软的Windows 11将在接下来的更新中引入文件压缩功能和Microsoft Copilot。总结: Valve发布OLED款Steam Deck游戏主机和其他改进；GitHub将推出GitHub Copilot Chat服务；Humane发布无屏幕可穿戴智能手机AI Pin；AMD将停止对Polaris和Vega GPU的驱动支持；三星计划推出Galaxy AI实时翻译通话功能；微软计划将Copilot引入Windows 10系统。
+append_entries: 1
+Finish: 2023-11-10 04:01:35.274349

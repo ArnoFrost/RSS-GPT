@@ -4,12 +4,12 @@
 <title>小众软件官方论坛 - 使用macos标记的话题</title>
 <link>https://meta.appinn.net/tag/macos</link>
 
+
 <item>
 <title>【🔍搜索酱】 - 又一个多功能搜索引擎切换与聚合搜索脚本，效率工具，搜索引擎辅助增强 | 支持任意页面划词/批量/拖拽/右键搜索图片、文字、页面等</title>
 <link>https://meta.appinn.net/t/topic/32970</link>
 <guid>https://meta.appinn.net/t/topic/32970</guid>
 <content:encoded><![CDATA[
-
 <p>平时工作中搜索引擎跳转功能用得很频繁，之前一直用文科的 searchEngineJumpe 搜索跳转，但早已年久失修，于是去Chrome商店尝试了相关的新扩展，发现大多夹有私货。特别是国内公司做的插件，基本都有购物返链和隐私数据收集。</p>
 <p>而这只是一个简单功能，所以不如自己写一个啦。</p>
 <div class="spoiler"><a href="https://meta.appinn.net/t/topic/32970/1">剧透</a></div>
@@ -402,14 +402,12 @@
             <p><a href="https://meta.appinn.net/t/topic/32970">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 21 May 2022 09:10:26 +0000</pubDate>
-<pubDate>Sat, 21 May 2022 09:10:26 +0000</pubDate>
 </item>
 <item>
 <title>【免费素材管理工具】一键/批量采集图片/视频/音频/Midjourney关键词等,素材云同步,Photoshop等设计软件联动！</title>
 <link>https://meta.appinn.net/t/topic/39445</link>
 <guid>https://meta.appinn.net/t/topic/39445</guid>
 <content:encoded><![CDATA[
-
 <div class="d-wrap">
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 </div>
@@ -550,14 +548,12 @@
             <p><a href="https://meta.appinn.net/t/topic/39445">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 06 Jan 2023 12:40:16 +0000</pubDate>
-<pubDate>Fri, 06 Jan 2023 12:40:16 +0000</pubDate>
 </item>
 <item>
 <title>TabAutoClose | 根据规则自动关闭标签 #浏览器插件</title>
 <link>https://meta.appinn.net/t/topic/45761</link>
 <guid>https://meta.appinn.net/t/topic/45761</guid>
 <content:encoded><![CDATA[
-
 <p><img alt="image" height="200" src="https://meta-cdn1.appinn.com/uploads/default/original/3X/d/7/d70eddf837d98360fbcebd09e1c182ca825f7826.png" width="200" /><br />
 <strong>chrome插件-清理用户指定可清理的标签</strong></p>
 <p><strong>功能：</strong><br />
@@ -570,20 +566,17 @@
             <p><a href="https://meta.appinn.net/t/topic/45761">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 21 Jul 2023 02:00:41 +0000</pubDate>
-<pubDate>Fri, 21 Jul 2023 02:00:41 +0000</pubDate>
 </item>
 <item>
 <title>谁能推荐一个试卷翻新工具</title>
 <link>https://meta.appinn.net/t/topic/47460</link>
 <guid>https://meta.appinn.net/t/topic/47460</guid>
 <content:encoded><![CDATA[
-
 <p>就是学校考试那种试卷，做完以后有没有什么自动化方案可以把笔迹给清除掉<br />
 网上没找到合适的，但GPT推荐用Photoshop进行处理，大家有没有什么给推荐的，谢谢</p>
             <p><small>14 个帖子 - 6 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/47460">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Fri, 15 Sep 2023 11:29:50 +0000</pubDate>
 <pubDate>Fri, 15 Sep 2023 11:29:50 +0000</pubDate>
 </item>
 <item>
@@ -591,7 +584,6 @@
 <link>https://meta.appinn.net/t/topic/48463</link>
 <guid>https://meta.appinn.net/t/topic/48463</guid>
 <content:encoded><![CDATA[
-
 <p>之前的版本用的 docker 部署，但大多数都是普通用户，所以经过半年时间开发了这个桌面应用。</p>
 <p>一句话介绍：<strong>基于 Eagle 素材管理软件，帮助你跨设备查看素材、图片、视频</strong></p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>特色</h2>
@@ -673,14 +665,12 @@
             <p><a href="https://meta.appinn.net/t/topic/48463">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 23 Oct 2023 08:41:49 +0000</pubDate>
-<pubDate>Mon, 23 Oct 2023 08:41:49 +0000</pubDate>
 </item>
 <item>
 <title>经常使用 Chrome 阅读长文，想选中文本后背景变色，用来标记阅读进度</title>
 <link>https://meta.appinn.net/t/topic/48633</link>
 <guid>https://meta.appinn.net/t/topic/48633</guid>
 <content:encoded><![CDATA[
-
 <p>就是鼠标选中文字 文字自动改变背景颜色 并且在网页关闭前一直保持着<br />
 这样的操作有个好处 就是可以标记阅读进度 因为阅读长文经常会分心跑去别的tab<br />
 或者鼠标悬浮自动在某一行上面添加一个颜色条 并且保持不变也行<br />
@@ -690,14 +680,12 @@
             <p><a href="https://meta.appinn.net/t/topic/48633">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sun, 29 Oct 2023 00:59:44 +0000</pubDate>
-<pubDate>Sun, 29 Oct 2023 00:59:44 +0000</pubDate>
 </item>
 <item>
 <title>【设计工具】免费的AI抠图神器</title>
 <link>https://meta.appinn.net/t/topic/48673</link>
 <guid>https://meta.appinn.net/t/topic/48673</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>未道帮 | AI抠图</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -720,14 +708,12 @@
             <p><a href="https://meta.appinn.net/t/topic/48673">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sun, 29 Oct 2023 14:29:30 +0000</pubDate>
-<pubDate>Sun, 29 Oct 2023 14:29:30 +0000</pubDate>
 </item>
 <item>
 <title>如何帮助Chomium系浏览器导入历史记录？</title>
 <link>https://meta.appinn.net/t/topic/48546</link>
 <guid>https://meta.appinn.net/t/topic/48546</guid>
 <content:encoded><![CDATA[
-
 <p>发现最近版本的Chromium系不会加载浏览器迁移（例如将文件复制到另一台设备）之前的浏览记录，但使用<a href="https://www.nirsoft.net/web_browser_tools.html" rel="noopener nofollow ugc">Nirsoft</a>的 <a href="https://www.nirsoft.net/utils/browsing_history_view.html" rel="noopener nofollow ugc">BrowsingHistoryView</a> 仍可读取。目前已经测试过的版本有：</p>
 <ul>
 <li>基于chromium 111.0.5563.41的 Slimjet 39.0.5.0便携版，数据在安装目录</li>
@@ -747,14 +733,12 @@
             <p><a href="https://meta.appinn.net/t/topic/48546">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 26 Oct 2023 03:52:07 +0000</pubDate>
-<pubDate>Thu, 26 Oct 2023 03:52:07 +0000</pubDate>
 </item>
 <item>
 <title>【开发者自荐】ChatShelf，一键保存ChatGPT对话到Notion</title>
 <link>https://meta.appinn.net/t/topic/48507</link>
 <guid>https://meta.appinn.net/t/topic/48507</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>ChatShelf - 保存ChatGPT到Notion</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -793,20 +777,17 @@
             <p><a href="https://meta.appinn.net/t/topic/48507">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 24 Oct 2023 15:06:55 +0000</pubDate>
-<pubDate>Tue, 24 Oct 2023 15:06:55 +0000</pubDate>
 </item>
 <item>
 <title>关于手机浏览器，Kiwi浏览器始终是王道</title>
 <link>https://meta.appinn.net/t/topic/34847</link>
 <guid>https://meta.appinn.net/t/topic/34847</guid>
 <content:encoded><![CDATA[
-
 <p>一开始用Yandex，界面很漂亮操作起来也挺顺手的。就是始终是添加一些不需要的功能。Kiwi出来立马换了。国产出了个狐猴浏览器一开始预告被惊艳了，然后立马就换上了。用了一段时间始终感觉不顺手，流畅性实在是太差了。综合体验来看流畅性，操作性，功能性始终还是Kiwi最有优势。<br />
 Kiwi浏览器yyds。</p>
             <p><small>56 个帖子 - 27 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/34847">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Tue, 02 Aug 2022 01:30:24 +0000</pubDate>
 <pubDate>Tue, 02 Aug 2022 01:30:24 +0000</pubDate>
 </item>
 <item>
@@ -814,7 +795,6 @@ Kiwi浏览器yyds。</p>
 <link>https://meta.appinn.net/t/topic/48381</link>
 <guid>https://meta.appinn.net/t/topic/48381</guid>
 <content:encoded><![CDATA[
-
 <p>我的主力浏览器 ungoogled chromium 最新版无法访问小众论坛，访问其他 discourse 论坛却没有问题，比如 freemdict 。</p>
 <p>问题复现：<br />
 1.windows 11 家庭版，安装便携版 ungoogled chromium，安装地址<a href="https://github.com/macchrome/winchrome/releases/tag/v118.5993.106-M118.0.5993.106-r1192594-Win64" rel="noopener nofollow ugc">在此</a><br />
@@ -823,19 +803,16 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/48381">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 19 Oct 2023 16:02:02 +0000</pubDate>
-<pubDate>Thu, 19 Oct 2023 16:02:02 +0000</pubDate>
 </item>
 <item>
 <title>有没有目标退休金计算器？</title>
 <link>https://meta.appinn.net/t/topic/48372</link>
 <guid>https://meta.appinn.net/t/topic/48372</guid>
 <content:encoded><![CDATA[
-
 <p>现有的退休金计算器都是根据现在的工资来推算出未来退休金，有没有给定未来退休金目标，然后计算现在工资应该是多少的退休金计算器</p>
             <p><small>6 个帖子 - 3 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/48372">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Thu, 19 Oct 2023 09:07:08 +0000</pubDate>
 <pubDate>Thu, 19 Oct 2023 09:07:08 +0000</pubDate>
 </item>
 <item>
@@ -843,7 +820,6 @@ Kiwi浏览器yyds。</p>
 <link>https://meta.appinn.net/t/topic/46360</link>
 <guid>https://meta.appinn.net/t/topic/46360</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>PDDON画图</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -913,14 +889,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46360">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 09 Aug 2023 15:05:29 +0000</pubDate>
-<pubDate>Wed, 09 Aug 2023 15:05:29 +0000</pubDate>
 </item>
 <item>
 <title>有大佬试过navidrome吗？请教一个标签乱码的问题</title>
 <link>https://meta.appinn.net/t/topic/47777</link>
 <guid>https://meta.appinn.net/t/topic/47777</guid>
 <content:encoded><![CDATA[
-
 <p>如题，最近终于用上了navidrome，但是发现一张CD的标签都是乱码，不知道有没有其他人遇到过？应该如何解决？<br />
 乱码的原因一开始推测是繁体字的原因，但是也有其他带繁体字的CD不受影响，所以我就迷茫了，望大佬指点。<br />
 如图：<br />
@@ -930,14 +904,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/47777">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 27 Sep 2023 01:50:36 +0000</pubDate>
-<pubDate>Wed, 27 Sep 2023 01:50:36 +0000</pubDate>
 </item>
 <item>
 <title>有没有一种可能，让Chromium内核的应用精简一下，调用系统中已经存在的内核？</title>
 <link>https://meta.appinn.net/t/topic/43753</link>
 <guid>https://meta.appinn.net/t/topic/43753</guid>
 <content:encoded><![CDATA[
-
 <p><a href="https://www.appinn.com/cef-detector/">CEF Detector - 你的电脑上共有几个 Chromium 内核的应用？ - 小众软件 (appinn.com)</a><br />
 本讨论基于以上文章，我在想，java的应用，其实是可以精简掉JRE，然后使用系统中已经存在的JRE来运行的。那么像electron之类的Chromium 内核应用，能不能也把内核删掉，然后调用系统中已经有的内核呢？</p>
 <p>补充一下：我看回复大家好像误解了，我的意思不是从开发角度，而是从用户角度，比如我下载了一个electron应用，100+M，但是核心只有2M，其他都是chrome核心占的空间，那我删除掉该应用的chrome核心，用什么方式让它去调用系统中已经存在的chrome核心，同样可以跑起来呢。。</p>
@@ -945,14 +917,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/43753">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 18 May 2023 03:25:32 +0000</pubDate>
-<pubDate>Thu, 18 May 2023 03:25:32 +0000</pubDate>
 </item>
 <item>
 <title>【浏览器扩展】哔哩哔哩字幕列表，高效获取视频文本信息</title>
 <link>https://meta.appinn.net/t/topic/39462</link>
 <guid>https://meta.appinn.net/t/topic/39462</guid>
 <content:encoded><![CDATA[
-
 <h2>
 <a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>开源地址</h2>
 <p><a href="https://github.com/IndieKKY/bilibili-subtitle" rel="noopener nofollow ugc">github 开源地址</a></p>
@@ -992,14 +962,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/39462">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 07 Jan 2023 14:30:28 +0000</pubDate>
-<pubDate>Sat, 07 Jan 2023 14:30:28 +0000</pubDate>
 </item>
 <item>
 <title>关闭标签页时，激活当前窗口中最后一个使用的标签页（而不是左边或右边的）</title>
 <link>https://meta.appinn.net/t/topic/47145</link>
 <guid>https://meta.appinn.net/t/topic/47145</guid>
 <content:encoded><![CDATA[
-
 <p>自动记录标签页的打开历史，在关闭标签的时候，激活上一个被使用过的标签页，而不是旁边的标签页。</p>
 <p>大概效果是这样：</p>          <div class="onebox video-onebox">
             <video controls="" height="100%" width="100%">
@@ -1061,14 +1029,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/47145">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 05 Sep 2023 10:00:09 +0000</pubDate>
-<pubDate>Tue, 05 Sep 2023 10:00:09 +0000</pubDate>
 </item>
 <item>
 <title>求根据浏览器窗口宽度自动缩放整个页面的浏览器扩展</title>
 <link>https://meta.appinn.net/t/topic/47099</link>
 <guid>https://meta.appinn.net/t/topic/47099</guid>
 <content:encoded><![CDATA[
-
 <p>笔记本的屏幕分辨率是 3072 x 1920，外接显示器的分辨率是 1920 x 1080，浏览器拖来拖去的话，得手动缩放页面，很麻烦。</p>
 <p>请问有没有相关的插件？（搜索结果大部分被 Zoom 相关占掉了，没找到多少有效内容）</p>
 <p>PS. 试了下 Zoom Page WE，好像没这个功能。</p>
@@ -1076,14 +1042,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/47099">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 04 Sep 2023 04:25:53 +0000</pubDate>
-<pubDate>Mon, 04 Sep 2023 04:25:53 +0000</pubDate>
 </item>
 <item>
 <title>【插件工具】解决浏览器高内存释放流畅，与Tab页窗口集中管理</title>
 <link>https://meta.appinn.net/t/topic/46029</link>
 <guid>https://meta.appinn.net/t/topic/46029</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>插件名称</h2>
 <p>Tabs-Fast-Easy</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>插件平台地址</h2>
@@ -1141,14 +1105,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46029">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 29 Jul 2023 11:30:04 +0000</pubDate>
-<pubDate>Sat, 29 Jul 2023 11:30:04 +0000</pubDate>
 </item>
 <item>
 <title>[0.8 深色模式优化] [Firefox / Chrome 附加元件] 烟·红 | 在新标签页看你的 RSS 订阅</title>
 <link>https://meta.appinn.net/t/topic/39632</link>
 <guid>https://meta.appinn.net/t/topic/39632</guid>
 <content:encoded><![CDATA[
-
 <div class="md-table">
 <table>
 <thead>
@@ -1187,14 +1149,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/39632">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 13 Jan 2023 13:45:58 +0000</pubDate>
-<pubDate>Fri, 13 Jan 2023 13:45:58 +0000</pubDate>
 </item>
 <item>
 <title>请教 uBlock Origin 怎么屏蔽泛用于 淘宝所有店铺 用手机逛本店</title>
 <link>https://meta.appinn.net/t/topic/47185</link>
 <guid>https://meta.appinn.net/t/topic/47185</guid>
 <content:encoded><![CDATA[
-
 <p>Edge beta最新版，windows10，uBlock Origin 1.51.0</p>
 <p>所有淘宝天猫店铺的页面，打开都会强制弹出二维码，汇总于 用手机逛本店 这个链接中。</p>
 <p>尝试手动屏蔽，但只能针对当前店铺这个二级域名下的针对部分产生作用。</p>
@@ -1205,14 +1165,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/47185">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 06 Sep 2023 15:22:27 +0000</pubDate>
-<pubDate>Wed, 06 Sep 2023 15:22:27 +0000</pubDate>
 </item>
 <item>
 <title>【油猴】浏览器内分屏/双栏显示，适用于平板、折叠屏、双屏等移动设备</title>
 <link>https://meta.appinn.net/t/topic/47040</link>
 <guid>https://meta.appinn.net/t/topic/47040</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>简介</h2>
 <p>这是一个不需要浏览器特性支持的分屏脚本，理论上支持移动和桌面端浏览器，最初是用于在surfaceduo上实现浏览器分屏。<br />
 推荐使用firefox beta。</p>
@@ -1260,14 +1218,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/47040">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sun, 03 Sep 2023 01:08:56 +0000</pubDate>
-<pubDate>Sun, 03 Sep 2023 01:08:56 +0000</pubDate>
 </item>
 <item>
 <title>【零泉-素材管理工具】0.5.7 版本更新，遥遥领先同行</title>
 <link>https://meta.appinn.net/t/topic/47016</link>
 <guid>https://meta.appinn.net/t/topic/47016</guid>
 <content:encoded><![CDATA[
-
 <div class="d-wrap">
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 </div>
@@ -1381,14 +1337,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/47016">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 01 Sep 2023 12:21:48 +0000</pubDate>
-<pubDate>Fri, 01 Sep 2023 12:21:48 +0000</pubDate>
 </item>
 <item>
 <title>【开源工具推荐】自部署的飞书妙记/通义听悟——pickpod</title>
 <link>https://meta.appinn.net/t/topic/46958</link>
 <guid>https://meta.appinn.net/t/topic/46958</guid>
 <content:encoded><![CDATA[
-
 <h1><a class="anchor" href="https://meta.appinn.net#pickpod-1" name="pickpod-1"></a>【开源工具推荐】自部署的飞书妙记/通义听悟——pickpod</h1>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>软件名称</h2>
 <p>Pickpod</p>
@@ -1419,14 +1373,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46958">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 31 Aug 2023 01:24:43 +0000</pubDate>
-<pubDate>Thu, 31 Aug 2023 01:24:43 +0000</pubDate>
 </item>
 <item>
 <title>Chrome/Edge 新标签页扩展 CaretTab v4 的中文翻译已修复</title>
 <link>https://meta.appinn.net/t/topic/46948</link>
 <guid>https://meta.appinn.net/t/topic/46948</guid>
 <content:encoded><![CDATA[
-
 <p>CaretTab 是一款老牌 Chromium 系浏览器上的开源新标签页扩展，以其丰富的功能组件与高度自由的客制化能力而广受欢迎。前段时间它更新了 v4 版，引入了全新的框架并彻底重写了代码，并因此获得了更上层楼的功能与自定义能力、更流畅的使用体验与更低的系统占用。</p>
 <p>不幸的是，由于大量文本重写、且缺乏专职翻译人员，原本在 v3 版本中已日臻完善的中文翻译惨遭放弃，在 v4 版本再次被只能拿来逗乐的辣鸡机翻所取代。幸而经过数次小迭代后，在一段时间前的 v4.1 版本更新中，相对完善的人工翻译再次上线，正如我在标题中所言，“<strong>中文翻译已修复</strong>”。</p>
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/e/e/ee185e79f50270d4a276695ba119c044c30cb354.jpeg" title="image"><img alt="image" height="323" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/e/e/ee185e79f50270d4a276695ba119c044c30cb354_2_690x323.jpeg" width="690" /></a></div><br />
@@ -1442,14 +1394,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46948">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 30 Aug 2023 12:15:36 +0000</pubDate>
-<pubDate>Wed, 30 Aug 2023 12:15:36 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】一款高效的AI文档阅读工具，读报告/合同/论文…</title>
 <link>https://meta.appinn.net/t/topic/46783</link>
 <guid>https://meta.appinn.net/t/topic/46783</guid>
 <content:encoded><![CDATA[
-
 <p>为大家推荐我们自己研发的AI文档阅读工具，欢迎大家免费来使用<br />
 司马阅，<a href="https://smartread.cc/" rel="noopener nofollow ugc">https://smartread.cc/</a></p>
 <p>司马阅(SmartRead)，是一款AI文档阅读分析工具，基于AI人工智能技术、智能文档技术，快速从复杂文档提取信息。 通过聊天互动形式，精准、灵活地获取关键信息及灵感，极大节省文档阅读和信息检索时间，高效应用于工作、学习场景，如读行业市场报告、产品手册、法律文档、论文文献、电子书等。<br />
@@ -1463,20 +1413,17 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46783">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 25 Aug 2023 03:10:22 +0000</pubDate>
-<pubDate>Fri, 25 Aug 2023 03:10:22 +0000</pubDate>
 </item>
 <item>
 <title>无痕模式能打开的链接 正常模式禁用所有扩展就是打不开</title>
 <link>https://meta.appinn.net/t/topic/46822</link>
 <guid>https://meta.appinn.net/t/topic/46822</guid>
 <content:encoded><![CDATA[
-
 <p>无痕模式能打开的链接 正常模式就是打不开<br />
 <img alt="bandicam 2023-08-26 13-57-03-273" class="animated" height="363" src="https://meta-cdn1.appinn.com/uploads/default/original/3X/1/9/193ba1cad11f2af89b3ac4fca5c660644a4ef885.gif" width="690" /></p>
             <p><small>9 个帖子 - 6 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/46822">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Sat, 26 Aug 2023 06:13:38 +0000</pubDate>
 <pubDate>Sat, 26 Aug 2023 06:13:38 +0000</pubDate>
 </item>
 <item>
@@ -1484,7 +1431,6 @@ Kiwi浏览器yyds。</p>
 <link>https://meta.appinn.net/t/topic/46426</link>
 <guid>https://meta.appinn.net/t/topic/46426</guid>
 <content:encoded><![CDATA[
-
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/3/f/3f4f53813615c06f00f25a5c0cdb98b37840a2b0.png" title="image"><img alt="image" height="481" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/3/f/3f4f53813615c06f00f25a5c0cdb98b37840a2b0_2_690x481.png" width="690" /></a></div><br />
 以前没有这个东西 最近 发现浏览器跳转 扩展不好使了<br />
 打开 扩展页面发现这 不活动  只能重新加载 扩展之后 才能正常工作<br />
@@ -1498,20 +1444,17 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46426">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 12 Aug 2023 05:50:20 +0000</pubDate>
-<pubDate>Sat, 12 Aug 2023 05:50:20 +0000</pubDate>
 </item>
 <item>
 <title>禁用Edge自带鼠标手势控制后，第三方鼠标手势软件失效</title>
 <link>https://meta.appinn.net/t/topic/46745</link>
 <guid>https://meta.appinn.net/t/topic/46745</guid>
 <content:encoded><![CDATA[
-
 <p>之前发现Edge更新加入自带手势操作之后，MouseInc的手势设置在edge上就处于失效状态。在edge设置中将浏览器自带的手势操作禁用后，又出现一个问题，那就是第三方鼠标手势只有在刚启动浏览器时可正常使用，过一段时间后MouseInc鼠标手势又处于被禁用失效的状态。<br />
 不知道各位有没有遇到相似的问题以及解决方法？</p>
             <p><small>2 个帖子 - 2 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/46745">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Thu, 24 Aug 2023 03:19:00 +0000</pubDate>
 <pubDate>Thu, 24 Aug 2023 03:19:00 +0000</pubDate>
 </item>
 <item>
@@ -1519,7 +1462,6 @@ Kiwi浏览器yyds。</p>
 <link>https://meta.appinn.net/t/topic/46450</link>
 <guid>https://meta.appinn.net/t/topic/46450</guid>
 <content:encoded><![CDATA[
-
 <p>咪咕鱼是一个简洁清新的主页、新标签页、网址导航，在这里你可以自定义网址、选择最适合你的背景和布局，帮助你快速的上网冲浪，找到想要的网站和网址。</p>
 <div class="d-wrap">
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/0/4/0439487bd4a46bed09213d3a4e74fb2fb7f446fc.jpeg" title="2---图标布局页"><img alt="2---图标布局页" height="323" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/0/4/0439487bd4a46bed09213d3a4e74fb2fb7f446fc_2_517x323.jpeg" width="517" /></a></div><p></p>
@@ -1550,14 +1492,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/46450">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sun, 13 Aug 2023 03:34:14 +0000</pubDate>
-<pubDate>Sun, 13 Aug 2023 03:34:14 +0000</pubDate>
 </item>
 <item>
 <title>[自荐]:NAS文件传输:一个将手机电脑变成内网NAS存储空间的4端跨平台的应用。</title>
 <link>https://meta.appinn.net/t/topic/48988</link>
 <guid>https://meta.appinn.net/t/topic/48988</guid>
 <content:encoded><![CDATA[
-
 <p>此软件可以将手机电脑变成NAS存储空间，通过wifi或者手机开热点进行连接，不需要流量和外网，非常适合个人多设备文件传输和文件共享。文件传输只经过内网，无速度限制，安全无需担心隐私的泄漏。<br />
 官网: <a href="https://zhiyakeji.com/ft/" rel="noopener nofollow ugc">https://zhiyakeji.com/ft/</a>    支持安卓,windows,mac,ios下载。</p>
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/6/3/63b78523e7e8f5bfb57f1041f185d04a0b4dc488.jpeg" title="ft_preview_win"><img alt="ft_preview_win" height="489" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/6/3/63b78523e7e8f5bfb57f1041f185d04a0b4dc488_2_690x489.jpeg" width="690" /></a></div><p></p>
@@ -1566,14 +1506,12 @@ Kiwi浏览器yyds。</p>
             <p><a href="https://meta.appinn.net/t/topic/48988">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 09 Nov 2023 08:01:31 +0000</pubDate>
-<pubDate>Thu, 09 Nov 2023 08:01:31 +0000</pubDate>
 </item>
 <item>
 <title>【开发者自荐】唯静：宁静的力量，一触即发</title>
 <link>https://meta.appinn.net/t/topic/48282</link>
 <guid>https://meta.appinn.net/t/topic/48282</guid>
 <content:encoded><![CDATA[
-
 <p><strong>软件名称</strong><br />
 唯静-一款白噪音，助眠，专注多场景生活助理</p>
 <p>应用平台<br />
@@ -1649,14 +1587,12 @@ KXNM9AJPYMNX<br />
             <p><a href="https://meta.appinn.net/t/topic/48282">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 16 Oct 2023 05:28:45 +0000</pubDate>
-<pubDate>Mon, 16 Oct 2023 05:28:45 +0000</pubDate>
 </item>
 <item>
 <title>求推荐支持累积粘贴的剪贴板管理软件</title>
 <link>https://meta.appinn.net/t/topic/48815</link>
 <guid>https://meta.appinn.net/t/topic/48815</guid>
 <content:encoded><![CDATA[
-
 <ul>
 <li>刚需项
 <ul>
@@ -1673,14 +1609,12 @@ KXNM9AJPYMNX<br />
             <p><a href="https://meta.appinn.net/t/topic/48815">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 03 Nov 2023 04:25:36 +0000</pubDate>
-<pubDate>Fri, 03 Nov 2023 04:25:36 +0000</pubDate>
 </item>
 <item>
 <title>装不下的图标</title>
 <link>https://meta.appinn.net/t/topic/48964</link>
 <guid>https://meta.appinn.net/t/topic/48964</guid>
 <content:encoded><![CDATA[
-
 <p>本帖是纯写字素材，吃完晚饭摸一会儿鱼，想到什么就想什么，没有方向和结构</p>
 <h3><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>从托盘出发</h3>
 <p>Windows 的系统托盘<br />
@@ -1733,14 +1667,12 @@ macOS 的目录栏<br />
             <p><a href="https://meta.appinn.net/t/topic/48964">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 08 Nov 2023 10:31:08 +0000</pubDate>
-<pubDate>Wed, 08 Nov 2023 10:31:08 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】Gear 浏览器 - 完整支持油猴脚本，为极客打造的浏览器</title>
 <link>https://meta.appinn.net/t/topic/48595</link>
 <guid>https://meta.appinn.net/t/topic/48595</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>Gear 浏览器</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -1810,14 +1742,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48595">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 28 Oct 2023 00:14:51 +0000</pubDate>
-<pubDate>Sat, 28 Oct 2023 00:14:51 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】轻阅🚀一个同时支持本地小说和在线小说阅读的APP</title>
 <link>https://meta.appinn.net/t/topic/48841</link>
 <guid>https://meta.appinn.net/t/topic/48841</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>轻阅</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -1846,14 +1776,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48841">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 04 Nov 2023 02:55:48 +0000</pubDate>
-<pubDate>Sat, 04 Nov 2023 02:55:48 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】只读：简洁易用的稍后阅读，高亮笔记功能上线</title>
 <link>https://meta.appinn.net/t/topic/48239</link>
 <guid>https://meta.appinn.net/t/topic/48239</guid>
 <content:encoded><![CDATA[
-
 <p>最近「只读」迎来了一次大的更新，增加了许多用户期待的高亮笔记功能。你现在不仅可以使用不同颜色高亮重要文本，还可以为高亮的内容添加笔记，记录自己阅读时的想法。iOS和macOS应用都支持高亮笔记功能。</p>
 <p>对「只读」基本功能的介绍见之前发的帖子 <a href="https://meta.appinn.net/t/topic/46882">https://meta.appinn.net/t/topic/46882</a>。</p>
 <p>下载链接请访问 <a href="https://apps.apple.com/cn/app/%E5%8F%AA%E8%AF%BB-%E7%A8%8D%E5%90%8E%E9%98%85%E8%AF%BB/id6452241434" rel="noopener nofollow ugc">App Store</a>。</p>
@@ -1866,14 +1794,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48239">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 14 Oct 2023 11:36:11 +0000</pubDate>
-<pubDate>Sat, 14 Oct 2023 11:36:11 +0000</pubDate>
 </item>
 <item>
 <title>求个iOS相册海量传输方案</title>
 <link>https://meta.appinn.net/t/topic/48565</link>
 <guid>https://meta.appinn.net/t/topic/48565</guid>
 <content:encoded><![CDATA[
-
 <p>目前有上万张照片和视频从旧手机导出到了电脑，未作任何转码。现在需要从电脑再导入给新的手机，目前遇到了麻烦，需要保证照片和视频的拍摄时间不能被修改。</p>
 <p>另外，我没有mac设备。</p>
 <p><strong>已经放弃的方案：</strong></p>
@@ -1898,14 +1824,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48565">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 27 Oct 2023 04:27:09 +0000</pubDate>
-<pubDate>Fri, 27 Oct 2023 04:27:09 +0000</pubDate>
 </item>
 <item>
 <title>图卡壁纸·终身会员双十一降价活动</title>
 <link>https://meta.appinn.net/t/topic/48803</link>
 <guid>https://meta.appinn.net/t/topic/48803</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称：</h2>
 <p>图卡壁纸</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>软件简介：</h2>
@@ -1927,20 +1851,17 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48803">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 02 Nov 2023 11:06:31 +0000</pubDate>
-<pubDate>Thu, 02 Nov 2023 11:06:31 +0000</pubDate>
 </item>
 <item>
 <title>求推荐一个iOS端的读书app，主要是想看本地书。</title>
 <link>https://meta.appinn.net/t/topic/48631</link>
 <guid>https://meta.appinn.net/t/topic/48631</guid>
 <content:encoded><![CDATA[
-
 <p>攒了好多mobi和epub的电子书，想找一个能在iPhone上阅读的app，试了几个主流的，都不能打开手机里的电子书，求推荐一个能读手机里电子书的app。<br />
 有电子书基本功能就行：更换字体，调整字体大小、行距、颜色，设置背景颜色，等等。</p>
             <p><small>13 个帖子 - 10 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/48631">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Sun, 29 Oct 2023 00:20:06 +0000</pubDate>
 <pubDate>Sun, 29 Oct 2023 00:20:06 +0000</pubDate>
 </item>
 <item>
@@ -1948,7 +1869,6 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
 <link>https://meta.appinn.net/t/topic/39974</link>
 <guid>https://meta.appinn.net/t/topic/39974</guid>
 <content:encoded><![CDATA[
-
 本帖主要收集各个平台的阅读软件 <a href="https://meta.appinn.net/t/topic/39974/1">（点击了解更多详细信息）</a>
 <p>本帖的意义不在于收录全面，毕竟不可能超越 <a class="inline-onebox" href="https://wiki.mobileread.com/wiki/E-book_software">MobileRead Wiki - E-book software</a> ；主要是期待大家积极投票/评论感受</p>
 <p><strong>期待</strong>提及的：</p>
@@ -1966,14 +1886,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/39974">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 24 Jan 2023 15:20:25 +0000</pubDate>
-<pubDate>Tue, 24 Jan 2023 15:20:25 +0000</pubDate>
 </item>
 <item>
 <title>iOS原生背单词App【嗯背单词】更新 1.3.3 版本，轻松构建你的自定义词书!</title>
 <link>https://meta.appinn.net/t/topic/48694</link>
 <guid>https://meta.appinn.net/t/topic/48694</guid>
 <content:encoded><![CDATA[
-
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/f/0/f03de4263e7298a6ad0878331d780488ba95f322.jpeg" title="V2EX Main"><img alt="V2EX Main" height="388" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/f/0/f03de4263e7298a6ad0878331d780488ba95f322_2_690x388.jpeg" width="690" /></a></div><p></p>
 <p>大家好，iOS 原生背单词APP【嗯背单词】最近更新了 1.3.3 版本，带来了全新的自定义词书管理方案，相比如同类产品</p>
 <ul>
@@ -2000,14 +1918,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48694">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 30 Oct 2023 05:10:44 +0000</pubDate>
-<pubDate>Mon, 30 Oct 2023 05:10:44 +0000</pubDate>
 </item>
 <item>
 <title>七巧板大师 -- 传统七巧板和现代智力七巧板自由拼图App</title>
 <link>https://meta.appinn.net/t/topic/44851</link>
 <guid>https://meta.appinn.net/t/topic/44851</guid>
 <content:encoded><![CDATA[
-
 <p>安装方式1:<br />
 苹果/安卓版本下载页面：<a href="https://www.zsyd.tech/services.html#tangram" rel="noopener nofollow ugc">七巧板大师</a></p>
 <p>安装方式2:<br />
@@ -2039,14 +1955,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/44851">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 22 Jun 2023 14:05:53 +0000</pubDate>
-<pubDate>Thu, 22 Jun 2023 14:05:53 +0000</pubDate>
 </item>
 <item>
 <title>iOS上好用的扫码软件？</title>
 <link>https://meta.appinn.net/t/topic/48492</link>
 <guid>https://meta.appinn.net/t/topic/48492</guid>
 <content:encoded><![CDATA[
-
 <p><s>相机扫码只能只能跳转app或safari，不方便。</s></p>
 <p><s>有没有QR软件扫完可以显示、复制和记录网址的？</s><br />
 <s>次要功能是可以从safari分享菜单里调用出来，把网页网址转成二维码。</s></p>
@@ -2058,14 +1972,12 @@ App Store：<a href="https://apps.apple.com/app/apple-store/id1458962238" rel="n
             <p><a href="https://meta.appinn.net/t/topic/48492">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 24 Oct 2023 08:50:14 +0000</pubDate>
-<pubDate>Tue, 24 Oct 2023 08:50:14 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】Avatarly - 基于一张自拍，生成多张AI数字头像，一键解锁多种风格，无需等待。</title>
 <link>https://meta.appinn.net/t/topic/48571</link>
 <guid>https://meta.appinn.net/t/topic/48571</guid>
 <content:encoded><![CDATA[
-
 <p>软件名称<br />
 Avatarly</p>
 <p>应用平台<br />
@@ -2113,14 +2025,12 @@ iOS</p>
             <p><a href="https://meta.appinn.net/t/topic/48571">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 27 Oct 2023 06:38:16 +0000</pubDate>
-<pubDate>Fri, 27 Oct 2023 06:38:16 +0000</pubDate>
 </item>
 <item>
 <title>《随便扫》更新，支持用户自定义跳转规则，打造专属扫码跳转工具</title>
 <link>https://meta.appinn.net/t/topic/47405</link>
 <guid>https://meta.appinn.net/t/topic/47405</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>《随便扫》简介</h2>
 <p>随便扫，一个智能二维码扫描跳转工具，根据扫描的二维码结果，跳转打开匹配的应用。</p>
 <p>[极速扫描] 二维码一扫就开，无需等待。</p>
@@ -2160,19 +2070,16 @@ iOS</p>
             <p><a href="https://meta.appinn.net/t/topic/47405">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 14 Sep 2023 03:35:56 +0000</pubDate>
-<pubDate>Thu, 14 Sep 2023 03:35:56 +0000</pubDate>
 </item>
 <item>
 <title>iPhone 15Pro 换了英文语言和美国地区之后，左上角的中国联通还是中文，请问下有什么办法更新为 China Unicom 吗？</title>
 <link>https://meta.appinn.net/t/topic/48538</link>
 <guid>https://meta.appinn.net/t/topic/48538</guid>
 <content:encoded><![CDATA[
-
 <p>如题所问，是需要额外的操作插件吗</p>
             <p><small>1 个帖子 - 1 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/48538">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Thu, 26 Oct 2023 01:05:55 +0000</pubDate>
 <pubDate>Thu, 26 Oct 2023 01:05:55 +0000</pubDate>
 </item>
 <item>
@@ -2180,7 +2087,6 @@ iOS</p>
 <link>https://meta.appinn.net/t/topic/41199</link>
 <guid>https://meta.appinn.net/t/topic/41199</guid>
 <content:encoded><![CDATA[
-
 <p><a href="https://apps.apple.com/cn/app/id1673801073" rel="noopener nofollow ugc">色彩反应游戏App Store链接</a></p>
 <p>测试和训练反应速度/专注力的小游戏, 有排行榜, 免费无内购.</p>
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/b/6/b61fd5cdd9eeb2acf488c27ac35f6f5c3244cae1.jpeg" title="IMG_6826.PNG"><img alt="IMG_6826.PNG" height="500" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/b/6/b61fd5cdd9eeb2acf488c27ac35f6f5c3244cae1_2_231x500.jpeg" width="231" /></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/7/e/7e1b6c0b163c5c729f9a0190063a29a8cc4e7092.jpeg" title="IMG_6828.PNG"><img alt="IMG_6828.PNG" height="500" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/7/e/7e1b6c0b163c5c729f9a0190063a29a8cc4e7092_2_231x500.jpeg" width="231" /></a></div><p></p>
@@ -2188,14 +2094,12 @@ iOS</p>
             <p><a href="https://meta.appinn.net/t/topic/41199">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 02 Mar 2023 06:48:03 +0000</pubDate>
-<pubDate>Thu, 02 Mar 2023 06:48:03 +0000</pubDate>
 </item>
 <item>
 <title>双持，ios和android手机如何实时同步粘贴板</title>
 <link>https://meta.appinn.net/t/topic/42794</link>
 <guid>https://meta.appinn.net/t/topic/42794</guid>
 <content:encoded><![CDATA[
-
 <p>rt<br />
 同一WIFI，希望能自动化同步粘贴板</p>
 <p>或者更简单一点，我只需要一个功能 能够通过 iPhone 发送内容（通过快捷指令最好），然后使安卓的剪贴板变为指定内容</p>
@@ -2203,14 +2107,12 @@ iOS</p>
             <p><a href="https://meta.appinn.net/t/topic/42794">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 15 Apr 2023 22:33:27 +0000</pubDate>
-<pubDate>Sat, 15 Apr 2023 22:33:27 +0000</pubDate>
 </item>
 <item>
 <title>【RealRadio】一个主打真实的收音机</title>
 <link>https://meta.appinn.net/t/topic/44328</link>
 <guid>https://meta.appinn.net/t/topic/44328</guid>
 <content:encoded><![CDATA[
-
 <h2>
 <a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>RealRadio</p>
@@ -2280,14 +2182,12 @@ RealRadio永远不会放置任何广告。
             <p><a href="https://meta.appinn.net/t/topic/44328">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 05 Jun 2023 08:33:52 +0000</pubDate>
-<pubDate>Mon, 05 Jun 2023 08:33:52 +0000</pubDate>
 </item>
 <item>
 <title>【独立开发者自荐】小巧工具箱 - 高效实用全能的小工具合集（iOS）</title>
 <link>https://meta.appinn.net/t/topic/47323</link>
 <guid>https://meta.appinn.net/t/topic/47323</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>小巧工具箱</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -2331,14 +2231,12 @@ RealRadio永远不会放置任何广告。
             <p><a href="https://meta.appinn.net/t/topic/47323">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 12 Sep 2023 02:49:54 +0000</pubDate>
-<pubDate>Tue, 12 Sep 2023 02:49:54 +0000</pubDate>
 </item>
 <item>
 <title>七巧板拼图谜题大全</title>
 <link>https://meta.appinn.net/t/topic/47946</link>
 <guid>https://meta.appinn.net/t/topic/47946</guid>
 <content:encoded><![CDATA[
-
 <p>App Store 链接: <a href="https://apps.apple.com/app/tangram-adventure/id6462839154" rel="noopener nofollow ugc">https://apps.apple.com/app/tangram-adventure/id6462839154</a><br />
 Google Play 链接: <a href="https://play.google.com/store/apps/details?id=com.fairelephant.tangrampuzzle" rel="noopener nofollow ugc">Tangram Puzzles</a></p>
 <p>介绍:</p>
@@ -2354,14 +2252,12 @@ Google Play 链接: <a href="https://play.google.com/store/apps/details?id=com.f
             <p><a href="https://meta.appinn.net/t/topic/47946">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 05 Oct 2023 23:26:11 +0000</pubDate>
-<pubDate>Thu, 05 Oct 2023 23:26:11 +0000</pubDate>
 </item>
 <item>
 <title>Iphone关于视频导出压缩的问题</title>
 <link>https://meta.appinn.net/t/topic/47816</link>
 <guid>https://meta.appinn.net/t/topic/47816</guid>
 <content:encoded><![CDATA[
-
 <p>windows电脑，iphone直接用数据线或者无线导出视频，两种方法都有弊端，众友友们怎么解决？</p>
 <p>usb链接经常会提示“连接到系统上的设备没有发挥作用”或者数据线稍微松一点就会提示错误，苦恼我很久。</p>
 <p>然后就是第三方软件，包括局域网无线webdav传输，或者网盘或者爱思助手等传输，都会有画质压缩，导致画面颜色有偏差</p>
@@ -2372,14 +2268,12 @@ Google Play 链接: <a href="https://play.google.com/store/apps/details?id=com.f
             <p><a href="https://meta.appinn.net/t/topic/47816">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 28 Sep 2023 08:24:41 +0000</pubDate>
-<pubDate>Thu, 28 Sep 2023 08:24:41 +0000</pubDate>
 </item>
 <item>
 <title>限免！NiceShots发布！带壳截屏、截图美化、多种设备模型、添加背景、高清导出</title>
 <link>https://meta.appinn.net/t/topic/47161</link>
 <guid>https://meta.appinn.net/t/topic/47161</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称:</h2>
 <ul>
 <li>NiceShots</li>
@@ -2408,14 +2302,12 @@ Google Play 链接: <a href="https://play.google.com/store/apps/details?id=com.f
             <p><a href="https://meta.appinn.net/t/topic/47161">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 06 Sep 2023 04:19:57 +0000</pubDate>
-<pubDate>Wed, 06 Sep 2023 04:19:57 +0000</pubDate>
 </item>
 <item>
 <title>寻求iPad可用Apple Pencil添加空白标注PDF的app</title>
 <link>https://meta.appinn.net/t/topic/47747</link>
 <guid>https://meta.appinn.net/t/topic/47747</guid>
 <content:encoded><![CDATA[
-
 <p>目前在用Goodnotes，但由于很多PDF留出的空白很少，想要写些内容很困难<br />
 </p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/0/9/094ea7497254870b131071525186a8e0479c4941.jpeg" title="IMG_2396"><img alt="IMG_2396" height="479" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/0/9/094ea7497254870b131071525186a8e0479c4941_2_690x479.jpeg" width="690" /></a></div><br />
 所以，是否有能左右扩展空白的app？<p></p>
@@ -2423,14 +2315,12 @@ Google Play 链接: <a href="https://play.google.com/store/apps/details?id=com.f
             <p><a href="https://meta.appinn.net/t/topic/47747">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 25 Sep 2023 06:30:08 +0000</pubDate>
-<pubDate>Mon, 25 Sep 2023 06:30:08 +0000</pubDate>
 </item>
 <item>
 <title>文本编辑器提名</title>
 <link>https://meta.appinn.net/t/topic/40421</link>
 <guid>https://meta.appinn.net/t/topic/40421</guid>
 <content:encoded><![CDATA[
-
 <p>又双叒叕一次圣战即将来临，请抓紧手上的键盘！</p>
 <p>在 Emacs 仍然为自己硬核的核心用户自豪时，Vi-Mode 已经悄无声息地潜入到每一个 IDE 中输出信仰，而跟随浮躁华丽新时代一起到来的 VS Code 正吭声高歌，炫耀着自己的成就。</p>
 <p>Atom 尸骨未寒徒留 Electron 一片骂名，Notepad++ 聒躁依旧妄图蚍蜉撼树，UltraEdit 救亡图存，Sublime Text、EmEditor 辉煌不再，你将如何选择？</p>
@@ -2451,14 +2341,12 @@ Google Play 链接: <a href="https://play.google.com/store/apps/details?id=com.f
             <p><a href="https://meta.appinn.net/t/topic/40421">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 08 Feb 2023 02:52:27 +0000</pubDate>
-<pubDate>Wed, 08 Feb 2023 02:52:27 +0000</pubDate>
 </item>
 <item>
 <title>SVP登录iOS</title>
 <link>https://meta.appinn.net/t/topic/47636</link>
 <guid>https://meta.appinn.net/t/topic/47636</guid>
 <content:encoded><![CDATA[
-
 <p>好像火星了4个月，但是看论坛也没人推荐过，我来推一下<br />
 目前的版本支持Webdav、ftp，可选变帧率到最高144fps。<br />
 在我的A12Z ipad上可以无压力的将主流1080P视频插帧到60fps，CPU占用约40%。<br />
@@ -2469,14 +2357,12 @@ iOS商店下载可免费试用，时限后38元内购</p>
             <p><a href="https://meta.appinn.net/t/topic/47636">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 21 Sep 2023 03:21:33 +0000</pubDate>
-<pubDate>Thu, 21 Sep 2023 03:21:33 +0000</pubDate>
 </item>
 <item>
 <title>【自荐&amp;送码】路口 - 帮你做选择，贯彻“选择”即“行动”打断顾虑</title>
 <link>https://meta.appinn.net/t/topic/47427</link>
 <guid>https://meta.appinn.net/t/topic/47427</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>路口</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -2570,14 +2456,12 @@ RFJ4PNAXYA3P</p>
             <p><a href="https://meta.appinn.net/t/topic/47427">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 14 Sep 2023 10:09:05 +0000</pubDate>
-<pubDate>Thu, 14 Sep 2023 10:09:05 +0000</pubDate>
 </item>
 <item>
 <title>Vimlike - Safari 扩展:用 Vim 类似的快捷键浏览网页，界面美观，功能完备。</title>
 <link>https://meta.appinn.net/t/topic/37081</link>
 <guid>https://meta.appinn.net/t/topic/37081</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>Vimlike</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -2603,14 +2487,12 @@ Vamari 从 Mac App Store 下架了。</p>
             <p><a href="https://meta.appinn.net/t/topic/37081">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 15 Oct 2022 02:52:52 +0000</pubDate>
-<pubDate>Sat, 15 Oct 2022 02:52:52 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】All in one、本地化存储、高颜值、全平台、云同步...Buff 叠满的知识管理软件</title>
 <link>https://meta.appinn.net/t/topic/46149</link>
 <guid>https://meta.appinn.net/t/topic/46149</guid>
 <content:encoded><![CDATA[
-
 <p>**软件名称：**Mindbox</p>
 <p>**应用平台：**Windows/Mac/Android/iOS，是原生非套壳的哟~</p>
 <p>**官网链接：**<a href="http://amindbox.com/" rel="noopener nofollow ugc">http://amindbox.com/</a></p>
@@ -2629,14 +2511,12 @@ Vamari 从 Mac App Store 下架了。</p>
             <p><a href="https://meta.appinn.net/t/topic/46149">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 02 Aug 2023 11:10:11 +0000</pubDate>
-<pubDate>Wed, 02 Aug 2023 11:10:11 +0000</pubDate>
 </item>
 <item>
 <title>【开发者自荐】Mac录屏软件，4K60帧录制，支持系统声音，实时涂鸦</title>
 <link>https://meta.appinn.net/t/topic/48918</link>
 <guid>https://meta.appinn.net/t/topic/48918</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>雨燕录屏</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -2711,19 +2591,16 @@ EJ6K6PFTRL6L</p>
             <p><a href="https://meta.appinn.net/t/topic/48918">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 07 Nov 2023 06:16:32 +0000</pubDate>
-<pubDate>Tue, 07 Nov 2023 06:16:32 +0000</pubDate>
 </item>
 <item>
 <title>求问，mac下的启动工具是否能在已经打开的状态下，再次打开同一应用？</title>
 <link>https://meta.appinn.net/t/topic/48879</link>
 <guid>https://meta.appinn.net/t/topic/48879</guid>
 <content:encoded><![CDATA[
-
 <p>如题，假设我在一个桌面打开了firefox,那么我在另一个桌面如何通过启动工具再打开firefox，而不是切到原来打开的firefox。</p>
             <p><small>10 个帖子 - 3 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/48879">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Sun, 05 Nov 2023 11:28:06 +0000</pubDate>
 <pubDate>Sun, 05 Nov 2023 11:28:06 +0000</pubDate>
 </item>
 <item>
@@ -2731,7 +2608,6 @@ EJ6K6PFTRL6L</p>
 <link>https://meta.appinn.net/t/topic/47125</link>
 <guid>https://meta.appinn.net/t/topic/47125</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>基本信息</h2>
 <ul>
 <li>软件名称：Memo AI：</li>
@@ -2776,14 +2652,12 @@ Ez59-XyQj-5Smq-gHgk</p>
             <p><a href="https://meta.appinn.net/t/topic/47125">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 05 Sep 2023 02:59:24 +0000</pubDate>
-<pubDate>Tue, 05 Sep 2023 02:59:24 +0000</pubDate>
 </item>
 <item>
 <title>CudaText - 开源多功能的文本编辑器（Sublime Text 开源平替）</title>
 <link>https://meta.appinn.net/t/topic/48829</link>
 <guid>https://meta.appinn.net/t/topic/48829</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>CudaText</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -2821,14 +2695,12 @@ Ez59-XyQj-5Smq-gHgk</p>
             <p><a href="https://meta.appinn.net/t/topic/48829">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 03 Nov 2023 15:13:08 +0000</pubDate>
-<pubDate>Fri, 03 Nov 2023 15:13:08 +0000</pubDate>
 </item>
 <item>
 <title>【自推】柠檬 Push，高效推送文本至电脑剪切板</title>
 <link>https://meta.appinn.net/t/topic/46285</link>
 <guid>https://meta.appinn.net/t/topic/46285</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>介绍</h2>
 <p>同一WiFi环境下Android手机高效推送文本到电脑剪切板的工具，电脑端支持Windows、Mac、Linux平台</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>功能特性</h2>
@@ -2897,14 +2769,12 @@ Ez59-XyQj-5Smq-gHgk</p>
             <p><a href="https://meta.appinn.net/t/topic/46285">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 07 Aug 2023 16:52:55 +0000</pubDate>
-<pubDate>Mon, 07 Aug 2023 16:52:55 +0000</pubDate>
 </item>
 <item>
 <title>【开发者自荐】Jane Reader - 简洁、清爽的 epub 阅读器</title>
 <link>https://meta.appinn.net/t/topic/48520</link>
 <guid>https://meta.appinn.net/t/topic/48520</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>Jane Reader</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -2954,20 +2824,17 @@ Ez59-XyQj-5Smq-gHgk</p>
             <p><a href="https://meta.appinn.net/t/topic/48520">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Wed, 25 Oct 2023 04:16:07 +0000</pubDate>
-<pubDate>Wed, 25 Oct 2023 04:16:07 +0000</pubDate>
 </item>
 <item>
 <title>Video DownloadHelper 合作应用重大更新</title>
 <link>https://meta.appinn.net/t/topic/48377</link>
 <guid>https://meta.appinn.net/t/topic/48377</guid>
 <content:encoded><![CDATA[
-
 <p>著名视频下载插件 Video DownloadHelper 的开发者重写了合作应用，从 2.0.0 版开始更新了 ffmpeg，并对 macOS 和 Linux 增加了 ARM64 的支持。</p>
 <p><img alt=":house:" class="emoji" height="20" src="https://meta-cdn1.appinn.com/images/emoji/twitter/house.png?v=12" title=":house:" width="20" /> <a class="inline-onebox" href="https://www.downloadhelper.net/install-coapp-v2">DownloadHelper - Video download browser extension</a></p>
             <p><small>5 个帖子 - 3 位参与者</small></p>
             <p><a href="https://meta.appinn.net/t/topic/48377">阅读完整话题</a></p>
 ]]></content:encoded>
-<pubDate>Thu, 19 Oct 2023 13:20:54 +0000</pubDate>
 <pubDate>Thu, 19 Oct 2023 13:20:54 +0000</pubDate>
 </item>
 <item>
@@ -2975,7 +2842,6 @@ Ez59-XyQj-5Smq-gHgk</p>
 <link>https://meta.appinn.net/t/topic/41717</link>
 <guid>https://meta.appinn.net/t/topic/41717</guid>
 <content:encoded><![CDATA[
-
 <p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://meta-cdn1.appinn.com/uploads/default/original/3X/1/2/127314cc4f93c1f5b0c1d13af74f94298510fc83.jpeg" title="Screen Shot 2023-03-16 at 12.24.21 PM"><img alt="Screen Shot 2023-03-16 at 12.24.21 PM" height="448" src="https://meta-cdn1.appinn.com/uploads/default/optimized/3X/1/2/127314cc4f93c1f5b0c1d13af74f94298510fc83_2_690x448.jpeg" width="690" /></a></div><p></p>
 <p>软件地址<a class="inline-onebox" href="https://github.com/go-musicfox/go-musicfox" rel="noopener nofollow ugc">GitHub - go-musicfox/go-musicfox: go-musicfox是用Go写的又一款网易云音乐命令行客户端，支持UnblockNeteaseMusic、各种音质级别、lastfm、MPRIS、MacOS交互响应（睡眠暂停、蓝牙耳机连接断开响应、菜单栏控制等）...</a></p>
 <p>使用iterm安装思源字体配置hotkey tab用起来非常优雅,还支持lastfm.</p>
@@ -2983,14 +2849,12 @@ Ez59-XyQj-5Smq-gHgk</p>
             <p><a href="https://meta.appinn.net/t/topic/41717">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 16 Mar 2023 04:27:45 +0000</pubDate>
-<pubDate>Thu, 16 Mar 2023 04:27:45 +0000</pubDate>
 </item>
 <item>
 <title>老胡的周刊（第110期）</title>
 <link>https://meta.appinn.net/t/topic/48286</link>
 <guid>https://meta.appinn.net/t/topic/48286</guid>
 <content:encoded><![CDATA[
-
 <blockquote>
 <p><a href="https://weekly.howie6879.com/" rel="noopener nofollow ugc">老胡的信息周刊</a>，记录这周我看到的有价值的信息，主要针对计算机领域，内容主题极大程度被我个人喜好主导。这个项目核心目的在于记录让自己有印象的信息做一个<strong>留存</strong>以及<strong>共享</strong>。</p>
 </blockquote>
@@ -3047,14 +2911,12 @@ Ez59-XyQj-5Smq-gHgk</p>
             <p><a href="https://meta.appinn.net/t/topic/48286">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Mon, 16 Oct 2023 06:31:57 +0000</pubDate>
-<pubDate>Mon, 16 Oct 2023 06:31:57 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】Barbee - Mac下菜单栏图标管理软件</title>
 <link>https://meta.appinn.net/t/topic/34480</link>
 <guid>https://meta.appinn.net/t/topic/34480</guid>
 <content:encoded><![CDATA[
-
 <h2>
 <a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>Barbee</p>
@@ -3122,14 +2984,12 @@ Barbee有以下特点：
             <p><a href="https://meta.appinn.net/t/topic/34480">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 23 Jul 2022 16:48:53 +0000</pubDate>
-<pubDate>Sat, 23 Jul 2022 16:48:53 +0000</pubDate>
 </item>
 <item>
 <title>Macos下好用的pdf软件求推荐</title>
 <link>https://meta.appinn.net/t/topic/48162</link>
 <guid>https://meta.appinn.net/t/topic/48162</guid>
 <content:encoded><![CDATA[
-
 <p>个人使用场景，一般也是看文献或者审稿，习惯桌面端操作，涉及功能主要为批注<br />
 要求批注兼容性好一点（不要换个软件就面目全非）、页面加载不卡顿（特别是在多批注和高清图件情况下）、能额外有win平台更好</p>
 <p>针对少量软件欠佳的个人体验，介绍如下</p>
@@ -3142,14 +3002,12 @@ pdfexpert：在矢量图件特别是图件要素较多的时候很卡，需要�
             <p><a href="https://meta.appinn.net/t/topic/48162">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 12 Oct 2023 06:54:13 +0000</pubDate>
-<pubDate>Thu, 12 Oct 2023 06:54:13 +0000</pubDate>
 </item>
 <item>
 <title>[自荐] 碎片化信息的收集管理工具</title>
 <link>https://meta.appinn.net/t/topic/48010</link>
 <guid>https://meta.appinn.net/t/topic/48010</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>Mind Depot</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -3195,14 +3053,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/48010">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sun, 08 Oct 2023 04:36:40 +0000</pubDate>
-<pubDate>Sun, 08 Oct 2023 04:36:40 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】一款树状管理计划和清单的软件：一树清单</title>
 <link>https://meta.appinn.net/t/topic/42966</link>
 <guid>https://meta.appinn.net/t/topic/42966</guid>
 <content:encoded><![CDATA[
-
 <h2>
 <a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>一树清单</p>
@@ -3238,14 +3094,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/42966">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 20 Apr 2023 16:28:24 +0000</pubDate>
-<pubDate>Thu, 20 Apr 2023 16:28:24 +0000</pubDate>
 </item>
 <item>
 <title>【开源工具推荐】Heroic Games Launcher：开源第三方Epic、GOG和Amazon 游戏启动器，支持 Linux、Windows和 macOS 平台</title>
 <link>https://meta.appinn.net/t/topic/47648</link>
 <guid>https://meta.appinn.net/t/topic/47648</guid>
 <content:encoded><![CDATA[
-
 <h1><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h1>
 <p>Heroic Games Launcher</p>
 <h1><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h1>
@@ -3285,14 +3139,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/47648">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 21 Sep 2023 08:09:05 +0000</pubDate>
-<pubDate>Thu, 21 Sep 2023 08:09:05 +0000</pubDate>
 </item>
 <item>
 <title>Buzz：离线语音转文字（字幕），实时语音识别，基于 OpenAI Whisper</title>
 <link>https://meta.appinn.net/t/topic/38263</link>
 <guid>https://meta.appinn.net/t/topic/38263</guid>
 <content:encoded><![CDATA[
-
 <h2>
 <a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>Buzz</p>
@@ -3341,14 +3193,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/38263">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 22 Nov 2022 02:04:07 +0000</pubDate>
-<pubDate>Tue, 22 Nov 2022 02:04:07 +0000</pubDate>
 </item>
 <item>
 <title>图片浏览管理软件</title>
 <link>https://meta.appinn.net/t/topic/40737</link>
 <guid>https://meta.appinn.net/t/topic/40737</guid>
 <content:encoded><![CDATA[
-
 <p>图书影音，后三者都已经提过了，那么你在用什么软件看图？用什么管理过去的回忆、眼下的激情？</p>
 <h3>
 <a class="anchor" href="https://meta.appinn.net#attention-1" name="attention-1"></a>ATTENTION</h3>
@@ -3369,14 +3219,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/40737">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Thu, 16 Feb 2023 12:06:13 +0000</pubDate>
-<pubDate>Thu, 16 Feb 2023 12:06:13 +0000</pubDate>
 </item>
 <item>
 <title>P2P 下载软件</title>
 <link>https://meta.appinn.net/t/topic/41076</link>
 <guid>https://meta.appinn.net/t/topic/41076</guid>
 <content:encoded><![CDATA[
-
 <p>我从真正接触 P2P 下载几乎只用过 <a href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/">qBittorrent-EE</a> 和 <a href="https://f-droid.org/packages/org.proninyaroslav.libretorrent/">libretorrent</a> 两款BT软件，大家在什么设备上使用什么软件呢？</p>
 <p>推荐模板：</p>
 <h1>
@@ -3392,14 +3240,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/41076">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sun, 26 Feb 2023 15:09:49 +0000</pubDate>
-<pubDate>Sun, 26 Feb 2023 15:09:49 +0000</pubDate>
 </item>
 <item>
 <title>「只读 - 稍后阅读」macOS应用已上架App Store，欢迎下载试用</title>
 <link>https://meta.appinn.net/t/topic/47483</link>
 <guid>https://meta.appinn.net/t/topic/47483</guid>
 <content:encoded><![CDATA[
-
 <h2><a class="anchor" href="https://meta.appinn.net#h-1" name="h-1"></a>软件名称</h2>
 <p>只读-稍后阅读</p>
 <h2><a class="anchor" href="https://meta.appinn.net#h-2" name="h-2"></a>应用平台</h2>
@@ -3431,14 +3277,12 @@ App Store 链接：<a href="https://apps.apple.com/app/apple-store/id6452800893?
             <p><a href="https://meta.appinn.net/t/topic/47483">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Sat, 16 Sep 2023 11:28:51 +0000</pubDate>
-<pubDate>Sat, 16 Sep 2023 11:28:51 +0000</pubDate>
 </item>
 <item>
 <title>【自荐】即时工具-独立开发的全能型工具箱客户端上线（送兑换码）</title>
 <link>https://meta.appinn.net/t/topic/46304</link>
 <guid>https://meta.appinn.net/t/topic/46304</guid>
 <content:encoded><![CDATA[
-
 <p>去年年底在小众上发布了自己独立开发的在线工具箱被首推了，非常感谢小众的编辑让我已持续更新下去的动力。<br />
 这次上线了客户端回馈小伙伴们，客户端拥有更好的性能并且做了原生适配，不管是稳定性还是处理速度都得到了大大的提升<br />
 客户端的减轻了服务器的支出，支持批量化不限大小处理各种文件<br />
@@ -3478,8 +3322,6 @@ oqwxyk1sxf<br />
             <p><a href="https://meta.appinn.net/t/topic/46304">阅读完整话题</a></p>
 ]]></content:encoded>
 <pubDate>Tue, 08 Aug 2023 08:36:01 +0000</pubDate>
-<pubDate>Tue, 08 Aug 2023 08:36:01 +0000</pubDate>
 </item>
-
 </channel>
 </rss>
