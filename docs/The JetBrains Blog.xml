@@ -1,0 +1,2040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The JetBrains Blog</title>
+<link>https://blog.jetbrains.com</link>
+
+<item>
+<title>ReSharper 2023.3 EAP 6: Code Analysis Performance Improvements, Support for C# 12 Interceptors, and Much More.</title>
+<link>https://blog.jetbrains.com/dotnet/2023/11/08/resharper-2023-3-eap-6/</link>
+<guid>https://blog.jetbrains.com/dotnet/2023/11/08/resharper-2023-3-eap-6/</guid>
+<content:encoded><![CDATA[
+<div> ReSharper 2023.3, 更新, 分析, C#, 安全性
+<br>
+ReSharper 2023.3 最新版本带来了性能改进，改进了代码分析服务在用户输入时可进行增量操作，提高了大型文件的处理速度。另外，重构了提取本地函数重构的用户体验，改进了用户界面并提供了具体的预览。同时，该版本支持了C# 12的拦截器功能，提供了导航和配置功能。此外，还引入了针对API漏洞的新的安全检查功能，以及对Razor的新格式引擎和对StyleCop.Analyzers的支持。 <div>
+<p>The latest installment in the ReSharper 2023.3 Early Access Program has just been released, and it’s packed with updates.&nbsp;</p>
+
+
+
+<p>Before you download it, let’s take a look at the changes.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-390855" height="1440" src="https://blog.jetbrains.com/wp-content/uploads/2023/09/Blog_Featured_image_1280x720_ReSharper-2x.png" width="2560" /></figure>
+
+
+
+<h2 class="wp-block-heading">Code analysis performance improvements</h2>
+
+
+
+<p>ReSharper 2023.3 can now recognize and facilitate more scenarios where code analysis services can operate incrementally when interrupted by typing. This improvement is particularly beneficial for handling large files. The incremental approach ensures that only the necessary portions of the code are re-inspected when developers are still editing a file while the code analysis is ongoing. This speeds up continuous code analysis and conserves battery life on laptops.</p>
+
+
+
+<h2 class="wp-block-heading">Reworked UX for the <em>Extract local functions</em> refactoring</h2>
+
+
+
+<p>We&#8217;ve revamped the user experience for the <em>Extract local function</em> refactoring. In the past, selecting a location for the new function from the list of available options was challenging, and it wasn&#8217;t clear what would be affected by that choice.</p>
+
+
+
+<p>With the updated UX, you&#8217;ll now see a preview of the new function&#8217;s signature directly in the code editor. This makes it easy to understand precisely where it will be inserted and how your choice will impact the introduced function. You can also see which variables will be transformed into parameters rather than closures, and which other functions will be relocated to allow calls at the new location.</p>
+
+
+
+<figure class="wp-block-image"><img alt="" src="https://lh7-us.googleusercontent.com/Nnwwnlxp0D6rJ20GhszjXh7Mxkm9r0ihbjC8jIuSiqB9eOHgcM0FJcRq_DfiNn64WjdPK7VkLggjQ_zmw93VFinSAWM1mfDSIjaQy3hQA3CWNy9EU2JE0qk1b_EJSe3BZc2FglnsJTuNugKl9xYVDE4" /></figure>
+
+
+
+<h2 class="wp-block-heading">Support for C# 12 interceptors</h2>
+
+
+
+<p>The latest version of C# has introduced an experimental feature called <a href="https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md" rel="noopener" target="_blank">interceptors</a>. This feature leverages the new [InterceptsLocation] attribute, which enables you to intercept and redirect specific method calls within your application to an interceptor instead of the original method. This can be used for optimization, as you’ll be able to fine-tune the interceptor method along with its exact arguments for a particular call site at compile time.&nbsp;</p>
+
+
+
+<p>However, some source generators may override certain calls in your program and replace them with their own code.</p>
+
+
+
+<p>ReSharper 2023.3 will alert you to an intercepted call with an inlay hint icon, which can take you to the interceptor with a single <kbd>Ctrl</kbd>+<kbd>Click</kbd>. It&#8217;s also now possible to navigate back from the <code>[InterceptsLocation]</code> attribute to the exact code position it intercepts. The same navigation actions are also available from the <kbd>Alt</kbd>+<kbd>Enter</kbd> menu.</p>
+
+
+
+<p>You might want to exclude certain generators from adding visual noise to the editor. For instance, you may not be interested in the latest ASP.NET Core <a href="https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/#native-aot" rel="noopener" target="_blank">being able to generate interceptors to optimize your .MapGet calls</a>. To prevent calls intercepted by a particular framework from being displayed, you can add the fully qualified name of the generator responsible for producing interceptor methods to the exclusion list in ReSharper’s settings. Alternatively, you can also do so with <kbd>Alt</kbd>+<kbd>Enter</kbd> and context menus available directly from the inlay hint indicating the intercepted call. This means you don&#8217;t need to type the full name of the generator, or even know it beforehand to configure this behavior.</p>
+
+
+
+<h2 class="wp-block-heading">Reworked integration of ReSharper and Visual Studio Quick Actions</h2>
+
+
+
+<p>Visual Studio and ReSharper’s quick actions can complement each-other well when used discerningly. With ReSharper 2023.3 you can easily leverage the power of both systems. You can now tweak the settings to either use ReSharper’s quick actions exclusively, display suggestion icons for both, or invoke all quick actions from a single access point – the ReSharper bulb menu. </p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-404205" height="1189" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/image-9.png" width="1538" /></figure>
+
+
+
+<p>We’ve also optimized Visual Studio’s Quick Actions retrieval, improving the performance.</p>
+
+
+
+<h2 class="wp-block-heading">New code formatting engine for Razor</h2>
+
+
+
+<p>ReSharper 2023.3 introduces a new formatting engine for Razor. It’s compatible with the current ReSharper&#8217;s C# formatter, thus supporting C# language constructs introduced in recent years and most of ReSharper&#8217;s new formatting options for C#. The new formatter also operates faster and is expected to have fewer issues. However, it does modify the default formatting for some code. Therefore, we have introduced an option to revert to the old formatting engine for Razor. You can find it in ReSharper’s Options under <em>Code Editing | C# | Formatting style | Other</em>. </p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-404194" height="600" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/image-8.png" width="1200" /></figure>
+
+
+
+<h2 class="wp-block-heading">Improved support for projects that use StyleCop.Analyzers code style inspections</h2>
+
+
+
+<p><code>StyleCop.Analyzers</code> configuration files are now detected automatically in the projects where they are enabled, and StyleCop-related defaults are now provided even when no config files are present.</p>
+
+
+
+<h2 class="wp-block-heading">File header templating overhaul</h2>
+
+
+
+<p>Arbitrary file header variables can now be configured in the <a href="https://www.jetbrains.com/help/resharper/File_Header_Style.html#configure-file-header-in-settings" rel="noopener" target="_blank">file header settings page</a>. Also, there is now support for the StyleCop.Analyzers external file header templating. The <em>Update file header</em> <a href="https://www.jetbrains.com/help/resharper/File_Header_Style.html#insert-file-header-into-existing-files-with-code-cleanup" rel="noopener" target="_blank">cleanup stage</a> should now correctly use it when the StyleCop.Analyzers are configured for the project that the cleaned up file belongs to.</p>
+
+
+
+<h2 class="wp-block-heading">С++ updates</h2>
+
+
+
+<p>The EAP 6 build brings updates for HLSL support, code completion inside inactive preprocessor branches, a new inlay hint for forwarding references, and other updates.&nbsp;</p>
+
+
+
+<p>For more information, please check out<a href="https://blog.jetbrains.com/rscpp/2023/11/06/resharper-cpp-2023-3-eap-hlsl-updates/"> this </a><a href="https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/">dedicated</a><a href="https://blog.jetbrains.com/rscpp/2023/11/06/resharper-cpp-2023-3-eap-hlsl-updates/"> blog post</a>. </p>
+
+
+
+<h2 class="wp-block-heading">New inspections for identifying vulnerable API usages</h2>
+
+
+
+<p>ReSharper 2023.3 brings a new security inspection feature designed to make published vulnerabilities more apparent and easier to understand.</p>
+
+
+
+<p>The new inspections identify vulnerable NuGet packages in your project and highlight instances where vulnerable methods from these libraries are used in your code. If a vulnerability is detected, the system highlights the problematic code and offers quick actions to remedy it. These actions include recommending an update to a newer version of the package and offering in-depth information about the detected vulnerabilities.</p>
+
+
+
+<figure class="wp-block-image"><img alt="" src="https://lh7-us.googleusercontent.com/nIJzoxcXbnZpii5rE0wSNdQL_E4X_atGOKdQJzbcEANQrv9fKcyFiKhtwGx-HLNMfS4BQPioqq8qCC1S_K90AI-YS3Ma84TtGS4N_snTwFq6-lpCduDf826F5U6iwrFI6oASNS5xOQJ5MDA2dIMIobU" /></figure>
+
+
+
+<p>That’s it for now! For the full list of changes included in this build, please go to <a href="https://youtrack.jetbrains.com/issues/RSRP?q=Available%20in:%20%7B2023.3%20EAP%206%7D%20" rel="noopener" target="_blank">our issue tracker</a>.&nbsp;</p>
+
+
+
+<p>As always, we’d be happy to hear from you. Tell us what you think about the latest changes in the comments section below or<a href="https://twitter.com/resharper" rel="noopener" target="_blank"> on X</a> (formerly Twitter).&nbsp;</p>
+]]></content:encoded>
+<pubDate>Wed, 08 Nov 2023 18:13:51 +0000</pubDate>
+<pubDate>Wed, 08 Nov 2023 18:13:51 +0000</pubDate>
+</item>
+<item>
+<title>ReSharper C++ 2023.3 EAP: HLSL Updates and Completion in Inactive Code</title>
+<link>https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/</link>
+<guid>https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/</guid>
+<content:encoded><![CDATA[
+<div> HLSL, code completion, inactive preprocessor branches, inlay hint, updates<br>
+ReSharper C++的最新Early Access Program版本已经发布，更新内容包括对HLSL的支持，支持条件预处理器分支内的代码补全，引入新的内联提示和其他更新。HLSL支持现在包括对模板的完整支持，以及对RayQuery的支持。在不活跃的代码块内，代码补全现在可以包括全局作用域内的符号，并且查找用法功能已经更新，可以找到潜在的用法。内联提示现在有一个单独的标记，用来快速识别转发引用。除此之外，对C99的restrict类型限定符提供了支持，同时对于宏替换所产生的符号进行了隐藏，以提高代码导航体验。此外，对于大括号布局的格式设置添加了一项新的选项。总的来说，这次更新为ReSharper C++带来了多项重要的改进和新功能。 <div>
+<p>The new Early Access Program build is here with updates for HLSL support, code completion inside inactive preprocessor branches, a new inlay hint for forwarding references, and other updates. Read on for more details and check out the <a href="https://youtrack.jetbrains.com/issues/RSCPP?q=Available%20in:%20%7B2023.3%20EAP%206%7D%20" rel="noopener" target="_blank">full list of issues</a> we’ve fixed in this update.</p>
+<p>You can download the free EAP builds from our website or via the <a href="https://www.jetbrains.com/toolbox-app" rel="noopener" target="_blank">Toolbox App</a>.</p>
+<p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/resharper/nextversion/" rel="noopener" target="_blank"><i class="download-icon"></i>DOWNLOAD RESHARPER C++ EAP</a></p>
+<h2 id="hlsl_updates">HLSL updates</h2>
+<p>It’s been a while since we last introduced improvements for HLSL support. Meanwhile, the HLSL standard brought a few new language features, so it’s time to catch up. HLSL 2021 introduced C++-like templates for structs and functions with full specializations and template parameter inference where possible. With the latest ReSharper C++ update, you get full support for HLSL templates:<br />
+<img alt="HLSL template" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/hlsl_template.png" width="600" /><br />
+This EAP build also introduces support for <code>RayQuery</code> and brings all of the corresponding flags to the code completion list:<br />
+<img alt="HLSL RayQuery" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/hlsl_rayquery.png" width="600" /></p>
+<h2 id="working_with_inactive_code">Working with inactive code</h2>
+<p>With platform or configuration-specific code, you can often find yourself editing currently inactive code blocks inside conditional preprocessor branches. Previously, code completion in inactive code only offered macros. In this EAP build, we&#8217;ve improved code completion in these scenarios to include symbols from the global scope:<br />
+<img alt="Completion in inactive code" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/completion_inside_inactive_if.png" width="600" /></p>
+<p>We’ve also updated <em>Find Usages</em> to find possible usages in inactive code and macro bodies. Previously, if you wanted to find these usages you had to use <em>Find Usages Advanced</em> and investigate textual occurrences. Now <em>Find Usages</em> results include potential usages in macro bodies and inactive code by default. These usages are grouped into separate sections to distinguish them from usages in normal code:<br />
+<img alt="Find possible usages" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/find_possible_usages.png" width="600" /></p>
+<h2 id="other_improvements">Other improvements</h2>
+<p>Reference inlay hints now have a separate <code>[&gt;&gt;]</code> text to spot forwarding references at a glance:<br />
+<img alt="Forwarding reference" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/reference_hint.png" width="600" /><br />
+Another update is for C support: ReSharper C++ now supports the C99 <code>restrict</code> type qualifier that can be used in pointer declarations.<br />
+<img alt="C99 restrict" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/c_restrict.png" width="600" /></p>
+<p>To improve the code navigation experience, symbols that came from macro substitutions are now hidden from <em>Go to</em> and the <em>File Structure</em> window. This is helpful when working with unit tests, for example, since macros defined by unit testing frameworks often introduce many auxiliary symbols during their expansion.</p>
+<p>We’ve also added a new formatting setting for the braces layout to allow comments after <code>{</code>.</p>
+<p>Those are all the highlights of this EAP build! If you encounter any issues, don’t hesitate to report them to our <a href="https://youtrack.jetbrains.com/issues/RSCPP" rel="noopener" target="_blank">issue tracker</a>.</p>
+<p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/resharper/nextversion/" rel="noopener" target="_blank"><i class="download-icon"></i>DOWNLOAD RESHARPER C++ EAP</a></p>
+<p><em>Your ReSharper C++ team</em><br />
+JetBrains<br />
+The Drive to Develop</p>
+]]></content:encoded>
+<pubDate>Wed, 08 Nov 2023 18:13:43 +0000</pubDate>
+<pubDate>Wed, 08 Nov 2023 18:13:43 +0000</pubDate>
+</item>
+<item>
+<title>OSS Power-Ups: MassTransit – Webinar Recording</title>
+<link>https://blog.jetbrains.com/dotnet/2023/11/08/oss-power-ups-masstransit-webinar-recording/</link>
+<guid>https://blog.jetbrains.com/dotnet/2023/11/08/oss-power-ups-masstransit-webinar-recording/</guid>
+<content:encoded><![CDATA[
+<div> MassTransit, webinar, Chris Patterson, messaging patterns, open-source.NET projects
+<br><br>
+总结:
+这篇文章介绍了有关MassTransit的网络研讨会。讲座的主题包括MassTransit所支持的消息模式，Chris Patterson的介绍和关于MassTransit的相关内容。Chris Patterson还演示了如何使用MassTransit发布消息，监视消息并消费消息，以及配置重试模式和处理失败。讲座还涉及了与RabbitMQ的集成，请求/响应与发布之间的区别，以及如何在响应中演变API契约。除此之外，还介绍了Sagas的概念以及MassTransit的状态机示例。讲座最后提供了有关讲者Chris Patterson的相关资源和信息。Chris Patterson是一位资深的企业软件架构师，同时也是Loosely Coupled, LLC的创始人，他还是MassTransit开源分布式应用框架的作者。 <div>
+<p>The recording of our webinar, <strong>OSS Power-Ups: MassTransit</strong>, with <a href="https://twitter.com/PhatBoyG" rel="noopener" target="_blank">Chris Patterson</a>, is available. This was the <strong>thirteenth episode</strong> of our <a href="https://lp.jetbrains.com/oss-powerups/" rel="noreferrer noopener" target="_blank">OSS Power-Ups</a> series, where we put a spotlight on open-source .NET projects. <a href="https://www.jetbrains.com/community/newsletters/" rel="noreferrer noopener" target="_blank">Subscribe to our community newsletter</a>&nbsp;to receive notifications about future webinars.</p>
+
+
+
+<hr class="wp-block-separator has-css-opacity" />
+
+
+
+<p><em>Join Chris Patterson, the author of <a href="https://masstransit.io/" rel="noopener" target="_blank">MassTransit</a>, for an insightful webinar as we delve into the messaging patterns supported by MassTransit. In today&#8217;s rapidly evolving tech landscape, efficient communication between software components is more crucial than ever. MassTransit, an open-source distributed application framework for .NET, provides tools and techniques to help you navigate the complexities of distributed systems.</em></p>
+
+
+
+<p><em>In this webinar, Chris Patterson will guide you through the complexities of messaging patterns, illustrating how MassTransit can streamline communication, enhance scalability, and boost resilience in your applications. Whether you&#8217;re a seasoned developer looking to refine your messaging skills or a newcomer eager to explore the world of distributed systems, this webinar will provide valuable insights and practical knowledge that will empower you to build more robust and efficient software solutions.</em></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<span id="more-390140"></span>
+
+
+
+<p><strong>Webinar agenda:</strong></p>
+
+
+
+<ul>
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=0s" rel="noopener" target="_blank">00:00</a> &#8211; Intro</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=77s" rel="noopener" target="_blank">01:17</a> &#8211; About OSS PowerUps</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=190s" rel="noopener" target="_blank">03:10</a> &#8211; Hello, Chris!</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=385s" rel="noopener" target="_blank">06:25</a> &#8211; About Chris and MassTransit</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=480s" rel="noopener" target="_blank">08:00</a> &#8211; When to use MassTransit</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=702s" rel="noopener" target="_blank">11:42</a> &#8211; MassTransit in Action: “DropBox” Pattern</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=920s" rel="noopener" target="_blank">15:20</a> &#8211; Publishing a Message</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=949s" rel="noopener" target="_blank">15:49</a> &#8211; Watching Messages in RabbitMQ</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1026s" rel="noopener" target="_blank">17:06</a> &#8211; Consuming Messages</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1160s" rel="noopener" target="_blank">19:20</a> &#8211; Configuring MassTransit</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1285s" rel="noopener" target="_blank">21:25</a> &#8211; Message Idempotency and Deduplication</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1490s" rel="noopener" target="_blank">24:50</a> &#8211; Q: Who generates IDs?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1625s" rel="noopener" target="_blank">27:05</a> &#8211; Advantages of MassTransit over bare Message Queues</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1839s" rel="noopener" target="_blank">30:39</a> &#8211; Q: Can communicate synchronously between MassTransit and RabbitMQ?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=1985s" rel="noopener" target="_blank">33:05</a> &#8211; Retry Patterns and Failure Handling</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2310s" rel="noopener" target="_blank">38:30</a> &#8211; Logging in MassTransit</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2362s" rel="noopener" target="_blank">39:22</a> &#8211; Request/Response vs. Publish</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2494s" rel="noopener" target="_blank">41:34</a> &#8211; Telemetry in MassTransit</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2594s" rel="noopener" target="_blank">43:14</a> &#8211; Configuring Retries I</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2734s" rel="noopener" target="_blank">45:34</a> &#8211; Q: Where are failing Messages going?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2829s" rel="noopener" target="_blank">47:09</a> &#8211; Configuring Retries II</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=2940s" rel="noopener" target="_blank">49:00</a> &#8211; Does MassTransit retry on RabbitMQ?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=3088s" rel="noopener" target="_blank">51:28</a> &#8211; How to unlearn the Request/Response approach?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=3304s" rel="noopener" target="_blank">55:04</a> &#8211; Evolving API Contracts in Responses (Avoiding Monoliths)</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=3638s" rel="noopener" target="_blank">1:00:38</a> &#8211; Q: How does MassTransit compare to EasyNetQ and NServiceBus?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=3755s" rel="noopener" target="_blank">1:02:35</a> &#8211; Q: How to version Events?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4035s" rel="noopener" target="_blank">1:07:15</a> &#8211; Q: Can I control the Message Serialization to the Queue?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4060s" rel="noopener" target="_blank">1:07:40</a> &#8211; Q: Are Sagas always correlated by a GUID?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4114s" rel="noopener" target="_blank">1:08:34</a> &#8211; Q: Are there Tutorials on Sagas?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4228s" rel="noopener" target="_blank">1:10:28</a> &#8211; Q: Is that a Choreographer instead of an Orchestrator?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4310s" rel="noopener" target="_blank">1:11:50</a> &#8211; Q: Can a Content-Type be used for Versioning?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4376s" rel="noopener" target="_blank">1:12:56</a> &#8211; Q: What is GreenPipes?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4560s" rel="noopener" target="_blank">1:16:00</a> &#8211; Q: How are Riders different from Transports?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4710s" rel="noopener" target="_blank">1:18:30</a> &#8211; Q: Where can I see good examples of MassTransit’s State Machine?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4788s" rel="noopener" target="_blank">1:19:48</a> &#8211; Q: Can you explain Lifts in the old State-Machine Implementation?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4826s" rel="noopener" target="_blank">1:20:26</a> &#8211; Q: Is it worth using Real Broker Services for Integration Tests?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=4998s" rel="noopener" target="_blank">1:23:18</a> &#8211; Q: How to share Contracts between Projects?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=5127s" rel="noopener" target="_blank">1:25:27</a> &#8211; Q: Can you perform Request Validation?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=5160s" rel="noopener" target="_blank">1:26:00</a> &#8211; Q: Are Sagas conceptually compatible with Azure Service Bus Sessions?</li>
+
+
+
+<li><a href="https://youtube.com/watch?v=sbt9p7jqe74&amp;t=5234s" rel="noopener" target="_blank">1:27:14</a> &#8211; Outro</li>
+</ul>
+
+
+
+<p><strong>Resources:</strong></p>
+
+
+
+<ul>
+<li><a href="https://masstransit.io/" rel="noopener" target="_blank">MassTransit Website</a></li>
+
+
+
+<li><a href="https://github.com/MassTransit/MassTransit" rel="noopener" target="_blank">MassTransit GitHub Repository</a></li>
+
+
+
+<li><a href="https://github.com/sponsors/phatboyg" rel="noreferrer noopener nofollow" target="_blank">Sponsor Chris</a></li>
+
+
+
+<li><a href="https://github.com/phatboyg/Demo-PowerUps" rel="noopener" target="_blank">Demo Project</a></li>
+</ul>
+
+
+
+<p><strong>About the presenter:</strong></p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img alt="" src="https://blog.jetbrains.com/wp-content/uploads/2023/09/Patterson-Chris-2874-copy.jpg" />
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chris Patterson</h4>
+                                                <p>Chris Patterson is an Enterprise Software Architect, the founder of Loosely Coupled, LLC, and the author of MassTransit, an open-source distributed application framework for building message-based applications. Before starting his own company, Chris spent 24 years leading the architecture and development of multiple platforms and services in a Fortune 10 company leveraging a broad range of technologies. Chris is a multi-year Microsoft MVP award recipient and regularly produces software development-related content on <a href="https://www.youtube.com/channel/UCjC-E0zi1ZokFmshlcq691Q" rel="noopener" target="_blank">YouTube</a>.</p>
+<p>Follow Chris on <a href="https://twitter.com/PhatBoyG" rel="noopener" target="_blank">Twitter</a> and <a href="https://www.linkedin.com/in/chrispatterson/" rel="noopener" target="_blank">LinkedIn</a>.</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+]]></content:encoded>
+<pubDate>Wed, 08 Nov 2023 10:11:38 +0000</pubDate>
+<pubDate>Wed, 08 Nov 2023 10:11:38 +0000</pubDate>
+</item>
+<item>
+<title>Welcome Fleet with Kotlin Multiplatform Tooling</title>
+<link>https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-tooling-in-fleet/</link>
+<guid>https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-tooling-in-fleet/</guid>
+<content:encoded><![CDATA[
+<div> Kotlin Multiplatform, Fleet, JetBrains, 开发, 跨平台
+<br><br>总结:
+JetBrains推出的Kotlin Multiplatform（KMP）技术允许开发人员在多个平台共享代码，包括iOS、Android、桌面、web等。Fleet是一个多语言IDE，支持Kotlin Multiplatform开发，提供了简单性、多语言编程、代码导航、重构和调试等特性。在Fleet中开发Kotlin Multiplatform应用无需切换工具，而且在预览期间是免费的。Fleet会继续在IntelliJ IDEA和IntelliJ平台为Kotlin提供支持，但是针对多平台开发的特性将只在Fleet中支持。想要尝试Kotlin Multiplatform开发，可以通过Fleet进行安装，同时也有专门的教程和项目模板。JetBrains希望收到用户的反馈意见，以便不断改进Kotlin Multiplatform Tooling工具。 <div>
+<p><a href="https://www.jetbrains.com/kotlin-multiplatform/" rel="noreferrer noopener" target="_blank">Kotlin Multiplatform</a> (KMP) is an open-source technology built by JetBrains that allows you to share code across multiple platforms while retaining the benefits of native programming. Supported platforms include iOS, Android, desktop, web, and others.</p>
+
+
+
+<p>Today, we&#8217;re launching a preview for Kotlin Multiplatform support in <a href="https://www.jetbrains.com/fleet/" rel="noreferrer noopener" target="_blank">Fleet</a>, which simplifies the development of multiplatform applications, adding to the already <a href="https://blog.jetbrains.com/kotlin/2023/10/kotlin-support-in-jetbrains-fleet/" rel="noreferrer noopener" target="_blank">extensive Kotlin</a> support in Fleet. Please note that if you’re targeting iOS and macOS, you will need Xcode.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/fleet.html?utm_source=kotlinblog&#038;utm_medium=cta&#038;utm_campaign=kmp-in-fleet" rel="noopener" target="_blank" title="Get Started">Get Started</a></p>
+
+
+
+<p>Let’s take a look at some of the features.</p>
+
+
+
+<h3 class="wp-block-heading">Simplicity</h3>
+
+
+
+<p>When you open a multiplatform project, Fleet will automatically create Run Configurations for the Android and/or iOS platforms, as declared in the project build file. You can use these to execute your application on an Android Virtual Device or the iOS Simulator.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="Kotlin Multiplatform Tooling in Fleet: Auto-generated Run Configurations for Android and/or iOS" class="wp-image-403391" height="519" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/RunConfigurations-1.png" width="1344" /></figure>
+
+
+
+<h3 class="wp-block-heading">Polyglot Programming</h3>
+
+
+
+<p>Because Fleet is a polyglot IDE, you don&#8217;t have to switch to a different editor or compromise usability when working with the native code in your multiplatform project. When editing Swift code, you have the same rich functionality you would expect in Kotlin and Java, as well as full support for Xcode projects.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="Kotlin Multiplatform Tooling in Fleet: Polyglot programming" class="wp-image-403402" height="850" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/PloyglotProgramming-1.png" width="1666" /></figure>
+
+
+
+<h3 class="wp-block-heading">Code navigation</h3>
+
+
+
+<p>Fleet supports cross-language navigation between Swift and Kotlin. For example, when you use the <strong>Show Usages</strong> action on a Kotlin function, any invocations from Swift code will feature in the results. If there is a single match, then the associated file is displayed.</p>
+
+
+
+<img alt="Swift-Kotlin cross-language navigation" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/CrossLanguageNavigation.png" />
+
+
+
+<h3 class="wp-block-heading">Refactoring</h3>
+
+
+
+<p>Refactoring in Fleet is also cross-language. In the example below, if we use <strong>Rename Refactoring</strong> on the MainViewController type, then the refactoring will apply across both Kotlin and Swift modules.</p>
+
+
+
+<img alt="Swift-Kotlin cross-language refactoring" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/CrossLanguageRefactoringLooping.png" />
+
+
+
+<h3 class="wp-block-heading">Debugging</h3>
+
+
+
+<p>Debugging in Fleet is also cross-language. You can set a breakpoint in Swift code, view values and the call stack in that environment, step into a Kotlin call, and then continue as required.</p>
+
+
+
+<img alt="Swift-Kotlin cross-language refactoring" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/FleetDebuggingCut.png" />
+
+
+
+<h2 class="wp-block-heading">A single IDE</h2>
+
+
+
+<p>As you may be aware or have experienced, creating Kotlin Multiplatform applications has oftentimes involved needing to use multiple IDEs in combination. This is still the case when targeting mobile, as Android Studio and Xcode are required. However, our goal with Fleet is to provide a single IDE where you can develop applications without needing to switch tools (Xcode will still be required to be installed when targeting Apple devices, but will not be necessary for daily work).</p>
+
+
+
+<h2 class="wp-block-heading">Pricing model</h2>
+
+
+
+<p>During the Preview period, Fleet, including the Kotlin Multiplatform Tooling, will remain free. Once we release the tooling, we anticipate the pricing model will be in line with that of Fleet itself. We’ll provide more information closer to the release date.</p>
+
+
+
+<h2 class="wp-block-heading">Our commitment to IntelliJ IDEA and the IntelliJ Platform</h2>
+
+
+
+<p>Fleet uses the IntelliJ code-processing engine for Swift and all of our Kotlin support, and consequently, we will continue to provide support for Kotlin in IntelliJ IDEA and on the IntelliJ Platform (thus also Android Studio). In addition, we have an ever-increasing base of developers using Kotlin in IntelliJ IDEA, and we want to assure you that innovation and support will continue on this platform.</p>
+
+
+
+<p>Having said that, the target audience for IntelliJ IDEA will primarily remain that of server-side developers targeting the JVM. While it will be possible to open, navigate, and build Kotlin Multiplatform projects in IntelliJ IDEA and Android Studio, other features such as platform-specific run configurations, Compose Multiplatform features, and many other things that facilitate multiplatform development will be supported in Fleet only.</p>
+
+
+
+<h2 class="wp-block-heading">How to get started</h2>
+
+
+
+<p>To get started with Kotlin Multiplatform development and try out all of the cool features we have been working on, you can install the latest version of Fleet via <a href="https://www.jetbrains.com/fleet/download/" rel="noreferrer noopener" target="_blank">the JetBrains Toolbox App</a>. We also have a brand new <a href="https://kmp.jetbrains.com/" rel="noreferrer noopener" target="_blank">online Web Wizard</a> for creating Kotlin Multiplatform projects.</p>
+
+
+
+<p>Make sure you check out the <a href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/fleet.html?utm_source=kotlinblog&amp;utm_medium=cta&amp;utm_campaign=kmp-in-fleet" rel="noreferrer noopener" target="_blank">Fleet for Kotlin Multiplatform Development</a> tutorial for a step-by-step guide on creating your first application. You can also take a look at some of the <a href="https://kotlinlang.org/docs/multiplatform-mobile-samples.html" rel="noreferrer noopener" target="_blank">KMP sample applications</a>&nbsp; we’ve prepared.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/fleet.html?utm_source=kotlinblog&#038;utm_medium=cta&#038;utm_campaign=kmp-in-fleet" rel="noopener" target="_blank" title="Get Started">Get Started</a></p>
+
+
+
+<h2 class="wp-block-heading">We need your feedback</h2>
+
+
+
+<p>It’s still very early days for Kotlin Multiplatform Tooling in Fleet, and we would love to hear your feedback. Let us know what works, what doesn’t, what is missing, and what you just can’t do without. Leave us a comment on this blog post or use our <a href="https://youtrack.jetbrains.com/issues/FL?u=1:" rel="noreferrer noopener" target="_blank">issue tracker</a>. You can also share any feedback you have on Kotlin Multiplatform, including the tooling, on the <a href="https://slack-chats.kotlinlang.org/c/fleet" rel="noreferrer noopener" target="_blank">#fleet</a> channel on the Kotlin Slack.</p>
+
+
+
+<p>Thank you!</p>
+]]></content:encoded>
+<pubDate>Tue, 07 Nov 2023 14:24:34 +0000</pubDate>
+<pubDate>Tue, 07 Nov 2023 14:24:34 +0000</pubDate>
+</item>
+<item>
+<title>How JetBrains Rider Implemented .NET WebAssembly Debugging</title>
+<link>https://blog.jetbrains.com/dotnet/2023/11/07/how-jetbrains-rider-implemented-net-webassembly-debugging/</link>
+<guid>https://blog.jetbrains.com/dotnet/2023/11/07/how-jetbrains-rider-implemented-net-webassembly-debugging/</guid>
+<content:encoded><![CDATA[
+<div> Blazor, WebAssembly, 调试器, CDP, JetBrains Rider<br>
+Blazor是.NET技术的一部分，使用C#构建全栈Web应用程序，无需编写JavaScript代码。Blazor有服务器端和客户端两种实现，同时使用WebAssembly在浏览器中运行并与DOM交互。.NET IDE——JetBrains Rider，帮助开发Blazor应用程序，并实现了对Blazor WASM和所有.NET应用程序目标WebAssembly的调试器。调试器通过许多工程细节实现了与WebAssembly运行时和浏览器之间的通信。
+总结:<br>
+本文介绍了Blazor、WebAssembly、调试器、CDP和JetBrains Rider等关键词的含义和相关内容，以及它们在.NET Web应用程序的开发和调试中的重要作用。 <div>
+<p><a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" rel="noopener" target="_blank">Blazor</a> is part of a .NET technology that lets you build full-stack web applications using C# without the need to write JavaScript code. There’s server-side Blazor, client-side Blazor (which uses WebAssembly (WASM) to run in the browser and interact with the DOM), and <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-8.0" rel="noopener" target="_blank">other hosting models</a>.</p>
+
+
+
+<p>Our .NET IDE, <a href="https://www.jetbrains.com/rider/" rel="noopener" target="_blank">JetBrains Rider</a>, helps you develop Blazor applications. You can write code and use the debugger to run and troubleshoot the apps you are developing. While the process of implementing a debugger is more or less the same for Blazor Server as it is for any other .NET application, the debugger implementation for Blazor WASM is quite different.</p>
+
+
+
+<p>In this blog post, we’ll look at some of the finer engineering points of how we implemented the IDE frontend for debugging both Blazor WASM and all variations of .NET apps targeting WebAssembly!</p>
+
+
+
+<h2 class="wp-block-heading">The .NET WebAssembly family</h2>
+
+
+
+<p>Before Blazor, there were several other well-known and more obscure frameworks, both from Microsoft and third-party authors, that allowed users to run .NET in the browser. For example, there is <a href="https://opensilver.net/" rel="noopener" target="_blank">OpenSilver</a>, an open-source implementation of the now deprecated Silverlight. For a while, there was also a Bridge.NET framework.</p>
+
+
+
+<p>With Blazor, Microsoft released the first first-party framework for .NET in the browser using WebAssembly technology. Blazor WebAssembly can be used to develop Single-Page Applications (SPAs). These can be hosted by the DevServer that is part of the .NET SDK, or as part of an ASP.NET Core backend running server-side APIs to build full-stack applications with .NET.</p>
+
+
+
+<p>When .NET 7 was released, two new options appeared as part of the new SDK’s <code>wasm-experimental</code> workload: the <code>browser-wasm</code> and <code>console-wasm</code> runtime identifiers (RID). These let you target WASM in the browser with Blazor, and NodeJS in the terminal for other .NET application types.</p>
+
+
+
+<p>Based <a href="https://github.com/SteveSandersonMS/dotnet-wasi-sdk" rel="noopener" target="_blank">on the <code>Wasi.Sdk</code> prototype</a> created by Steve Sanderson, .NET 8 will include another workload that targets the WebAssembly System Interface (WASI), which will make it possible to run .NET code through WebAssembly outside of the browser while maintaining access to the file system, network, system calls, and more.</p>
+
+
+
+<p><em>Tip: Our developer advocate Khalid Abuhakmeh covered a number of these options in t</em><a href="https://blog.jetbrains.com/dotnet/2022/12/15/the-future-of-net-with-wasm/"><em>he Future of .NET with WASM</em></a><em>.</em></p>
+
+
+
+<p>Typically, these approaches use the Mono Ahead of Time (AOT) compiler to generate WebAssembly binaries. There’s an <a href="https://github.com/dotnet/runtimelab/tree/feature/NativeAOT-LLVM" rel="noopener" target="_blank">experimental NativeAOT-LLVM project</a> by the .NET team that uses the Emscripten toolchain, but it is currently not ready for use in real projects.</p>
+
+
+
+<h2 class="wp-block-heading">Anatomy of a .NET WebAssembly application</h2>
+
+
+
+<p>Let’s look at how .NET applications targeting WebAssembly are composed. We’ll start with Blazor WASM and then dig into the <code>wasm-experimental</code> workload.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">Blazor WASM</h3>
+
+
+
+<p>When creating a Blazor WASM application, you will find an <code>index.html</code> file which, like in most other SPA frameworks, contains a <code>div</code> element in which the framework will create and render your application. There will also be a <code>script</code> element that loads the Blazor WebAssembly framework:</p>
+
+
+
+<pre class="EnlighterJSRAW">&lt;!DOCTYPE html>
+&lt;!-- ... -->
+&lt;body>
+  &lt;div id="app">
+    // ...
+  &lt;/div>
+  // ...
+  &lt;script src="_framework/blazor.webassembly.js">&lt;/script>
+&lt;/body>
+&lt;/html></pre>
+
+
+
+<p>After building this project, you will see that several files are created:</p>
+
+
+
+<ul>
+<li><code>BlazorApp1.dll</code> and <code>BlazorApp1.pdb</code> – A compiled version of your application.</li>
+
+
+
+<li><code>blazor.boot.json</code> – Contains information about the entry assembly (<code>BlazorApp1</code>) and information about the runtime, dependencies, and so on.</li>
+
+
+
+<li><code>dotnet.wasm</code>  – A version of the .NET runtime (Mono, to be more precise) compiled into a WebAssembly module.</li>
+
+
+
+<li><code>mscorlib.dll</code> – The .NET framework core libraries, compiled into Common Intermediate Language (CIL).</li>
+
+
+
+<li><code>blazor.webassembly.js</code> – A file that glues all of the above together.</li>
+</ul>
+
+
+
+<p>If you run this application using the <code>dotnet run</code> command, for example, you’ll see a <code>dotnet</code> process begins. This then starts (by default) the DevServer and hosts your application, which you can work with through the browser:</p>
+
+
+
+<pre class="EnlighterJSRAW">dotnet run
+└── dotnet: "~\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\7.0.5/tools/blazor-devserver.dll" --applicationpath "...\BlazorApp1\bin\Debug\net7.0\BlazorApp1.dll"</pre>
+
+
+
+<p>Now let’s see how the <code>wasm-experimental</code> workload handles this.</p>
+
+
+
+<h3 class="wp-block-heading">wasm-experimental</h3>
+
+
+
+<p>To try out the <code>wasm-experimental</code> workload, you’ll first need to install it:</p>
+
+
+
+<pre class="EnlighterJSRAW">dotnet workload install wasm-tools wasm-experimental</pre>
+
+
+
+<p>Once done, you can create a new .NET application using the <code>wasmbrowser</code> template:</p>
+
+
+
+<pre class="EnlighterJSRAW">dotnet new wasmbrowser --name WasmApp1</pre>
+
+
+
+<p>Like with Blazor WASM, an <code>index.html</code> file is created with a <code>span</code> element used for rendering. The HTML file also loads the&nbsp;<code>main.js</code> file as a script, not a Blazor framework-related script like in the previous example.</p>
+
+
+
+<pre class="EnlighterJSRAW">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;!-- ... -->
+  &lt;script type='module' src="./main.js">&lt;/script>
+&lt;/head>
+&lt;body>
+  &lt;span id="out">&lt;/span>
+&lt;/body>
+&lt;/html></pre>
+
+
+
+<p>The <code>main.js</code> that is loaded is very different from the Blazor approach, where there’s little control over how the application is launched. In the <code>main.js</code>, we can see that .NET is imported, some other code is executed, and finally, <code>dotnet.run()</code> is invoked to start the application.</p>
+
+
+
+<pre class="EnlighterJSRAW">import { dotnet } from './dotnet.js'
+
+// ...
+
+await dotnet.run();</pre>
+
+
+
+<p>The <code>...</code> in the above code snippet is important. During startup, you can change the .NET (well, Mono) runtime configuration, such as network download policy settings and more. When using WebGL, for example, you can specify the canvas for rendering. You could also change the logging level, which may be useful for seeing what’s going on when you are porting your application to .NET WebAssembly.</p>
+
+
+
+<p>After building this project, you’ll find that several files are created:</p>
+
+
+
+<ul>
+<li><code>mono-config.json</code> – Metadata generated from your project, specifying the main assembly name, assembly folder, debug level, sources, asset hashes, and more.</li>
+
+
+
+<li><code>managed/</code> (folder) – Your application’s managed assemblies.</li>
+
+
+
+<li><code>dotnet.js</code> and <code>dotnet.js.symbols</code> – JavaScript-based APIs to configure and manipulate the Mono runtime together with debug symbols.</li>
+
+
+
+<li><code>dotnet.wasm</code> – A version of the .NET runtime (Mono, to be more precise) compiled into a WebAssembly binary.</li>
+
+
+
+<li><code>index.html</code> and <code>main.js</code> – The files we saw earlier, bootstrapping your application.</li>
+
+
+
+<li><code>WasmApp1.runtimeconfig.json</code> – A runtime configuration file, which is required since <code>wasm-experimental</code> projects add a new runtime identifier.</li>
+</ul>
+
+
+
+<p>The <code>WasmApp1.runtimeconfig.json</code> contains metadata for the runtime to help determine how the application should be run. It specifies the main assembly, runtime arguments if needed, and an <code>index.html</code> file that will be run in the browser.</p>
+
+
+
+<pre class="EnlighterJSRAW">{
+  "runtimeOptions": {
+    "tfm": "net8.0",
+    "wasmHostProperties": {
+      "perHostConfig": [
+        {
+          "name": "browser",
+          "html-path": "index.html",
+          "Host": "browser"
+        }
+      ],
+      "runtimeArgs": [],
+      "mainAssembly": "WasmApp1.dll"
+    },
+  }
+}</pre>
+
+
+
+<p>To run the application, you can invoke <code>dotnet run</code> again. In the process tree, you’ll notice <code>WasmAppHost</code> as the application (and not the DevServer from earlier):</p>
+
+
+
+<pre class="EnlighterJSRAW">dotnet: run
+└── dotnet: exec "C:\Program Files\dotnet\packs\Microsoft.NET.Runtime.WebAssembly.Sdk\8.0.0-preview.4.23259.5\WasmAppHost\WasmAppHost.dll" --runtime-config "D:\Playground\WasmApp1\WasmApp1\bin\Debug\net8.0\browser-wasm\AppBundle\WasmApp1.runtimeconfig.json"</pre>
+
+
+
+<h3 class="wp-block-heading">In summary</h3>
+
+
+
+<p>Whether you use Blazor WASM or the <code>wasm-experimental</code> workload, almost any .NET WebAssembly application runs with the Mono runtime. It’s important to note, however, that even though you specified a compatible version of the language and the target framework, some C# functionality that you compile will not be understood by the runtime. A good example is generic types in attributes, introduced in C# 11. You can use such an attribute in your code, but at the time of writing this post, it is not supported by the Mono runtime and fails to execute.</p>
+
+
+
+<p><em>Note: Generic attributes in Mono </em><a href="https://github.com/dotnet/runtime/issues/77047" rel="noopener" target="_blank"><em>will work starting from .NET 8</em></a><em>.</em></p>
+
+
+
+<p>In addition to the Mono runtime, we saw that your application will be hosted with the DevServer, the WasmAppHost, or on ASP.NET Core. You will find an <code>index.html</code> file that is opened in the browser, as well as some JavaScript glue code.</p>
+
+
+
+<p>Now, how does the debugger in Rider communicate with the runtime? And how does the runtime itself communicate with the browser (and vice versa)? Let’s find out!</p>
+
+
+
+<h2 class="wp-block-heading">Debugging a .NET desktop application</h2>
+
+
+
+<p>Before we dive into debugging .NET WebAssembly applications, let’s take a quick detour and talk about debugging a .NET desktop application. There are three actors involved in this process – a runtime (which runs your application&#8217;s code), the debugger client (Rider), and your application. When the runtime starts, it waits for the debugger to connect to it, and then continues executing the code.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-399748" height="192" src="https://blog.jetbrains.com/wp-content/uploads/2023/10/image-31.png" width="1240" /></figure>
+
+
+
+<p>When debugging locally, with both the debugger and your application on the same machine, the debugger client is almost always in the same environment as the runtime, so the lifetimes of both actors are closely related. When you close your application, the debugger knows it can stop running.</p>
+
+
+
+<p>For .NET WebAssembly applications, the debugger&#8217;s and debuggee&#8217;s lifetime (your application) becomes more… interesting.</p>
+
+
+
+<p>First of all, there’s a Chromium-based browser involved. The browser hosts the <code>index.html</code> page as a tab. This browser tab hosts a regular WebAssembly runtime that can execute special <code>.wasm</code> code. Meanwhile, the WASM runtime starts the Mono runtime, which can decode and execute .NET’s Common Intermediate Language (CIL) in the form of an assembly.&nbsp;</p>
+
+
+
+<p>As part of this runtime, your application code is executed – the part that we’re interested in debugging. A rather complex onion-like architecture emerges, through which the debugger needs to be able to monitor the code execution process and receive events in the reverse direction, for example, when a breakpoint is hit.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-399759" height="585" src="https://blog.jetbrains.com/wp-content/uploads/2023/10/image-32.png" width="1333" /></figure>
+
+
+
+<p>After this short interruption, let’s look at how JetBrains Rider works with all of these!</p>
+
+
+
+<h2 class="wp-block-heading">The debug proxy</h2>
+
+
+
+<p>Luckily for us, there’s an existing mechanism for working with an architecture like we just described: the Mono Debug Proxy!</p>
+
+
+
+<p>If you go back to the Blazor WASM process tree when running your application, you’ll see that it looks a bit different when you’re running the debugger through Rider. A new child process is started:</p>
+
+
+
+<pre class="EnlighterJSRAW">Rider.Backend.exe: …
+└── winpty-agent.exe: …
+    └── dotnet:
+~/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/7.0.5/tools/blazor-devserver.dll --applicationpath bin\Debug\net7.0\BlazorApp1.dll
+        └── dotnet: exec
+"~\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\7.0.5\tools\BlazorDebugProxy\BrowserDebugHost.dll" --OwnerPid 16152 --DevToolsUrl http://127.0.0.1:64069</pre>
+
+
+
+<p>The last process in this tree launches the <code>BrowserDebugHost.dll</code>, which receives its parent process ID and a value for the <code>DevToolsUrl</code> argument. This URL is one of the key elements for making the debugger proxy work. Let’s add it to our diagram:</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-399770" height="579" src="https://blog.jetbrains.com/wp-content/uploads/2023/10/image-33.png" width="1165" /></figure>
+
+
+
+<p>When the Debug Proxy starts, it uses the Chrom(ium) developer tools URL to retrieve the information it needs in order to work with the browser tab. This includes, for example, how to send and receive events from the browser and how to work with the Mono runtime that hosts your application. The Debug Proxy does a lot of heavy lifting for the debugger client, in our case JetBrains Rider, because now it only needs to work with one entity.</p>
+
+
+
+<p>In other words, the debugger client (JetBrains Rider) does not work directly with the browser tab. Instead, it connects to the Debug Proxy, which serves as a communication layer between the browser, the debugger client, and the runtime.</p>
+
+
+
+<p>As a debugger client, JetBrains Rider can now send and receive calls and events from the browser, for example downloading assets, navigating in the address bar, and so on. The Debug Proxy also listens for JavaScript events from Mono and can work with it through the .NET JavaScript API found in the <code>dotnet.js</code> file. Unfortunately, this API is currently undocumented, and changes quite often.</p>
+
+
+
+<p>Time for some reverse engineering!</p>
+
+
+
+<h2 class="wp-block-heading">Connecting all the components: Rider, Debug Proxy, and the browser</h2>
+
+
+
+<p>To communicate with the Mono runtime running in the browser, JetBrains Rider, the Debug Proxy, and the browser need to communicate with each other. This communication starts with a handshake, ensuring all components know where the other components can be reached.</p>
+
+
+
+<p>The handshake that establishes communication between all the components is the most complex and unstable process in the entire mechanism. Let’s start with a diagram so that you can follow along.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-399781" height="720" src="https://blog.jetbrains.com/wp-content/uploads/2023/10/image-34.png" width="670" /></figure>
+
+
+
+<p>When you start debugging a .NET WebAssembly application, for example <code>WasmApp1</code>, the debugger will launch the <code>WasmApp1</code> process using the DevServer or ASP.NET Core, depending on the hosting option. The Debug Proxy is also launched as a child process, thanks to the <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webassemblynetdebugproxyappbuilderextensions.usewebassemblydebugging" rel="noopener" target="_blank">WebAssembly debugging middleware</a> that is registered automatically as part of your application.</p>
+
+
+
+<p>Next, a Chromium browser such as Google Chrome or Microsoft Edge is launched and instructed to open a special placeholder URL like <code>about:blank?realUrl=...</code>. The browser then writes its debugging port and path to a file in your user profile directory.</p>
+
+
+
+<p>The debugger then constructs the debugger endpoint websocket URL based on the port and path from this file. It will then look like this: <code>ws://127.0.0.1:{port}/{path}</code>. In the next step, the debugger sends an HTTP <code>GET</code> request to a special endpoint – <code>GET http://localhost:5170/_framework/debug/ws-proxy?browser=ws://127.0.0.1:{port}/{path}</code> – which, as you can see, contains the generated websocket URL. The WebAssembly debugging middleware we discussed earlier passes this on to the Debug Proxy.</p>
+
+
+
+<p>After that, the Debug proxy comes into play and initializes a WebSocket connection to the browser using the URL it received. Once connected, it opens a new proxy debugging endpoint and returns the URL to this endpoint with a <code>302 Redirect</code> response.</p>
+
+
+
+<p>Once JetBrains Rider receives the endpoint URL, which the Debug Proxy then returns, it creates a connection to it. And then, the real work begins!</p>
+
+
+
+<p>When connected to the Debug Proxy, JetBrains Rider sends information about all breakpoints that were added by the user in the IDE’s editor. Remember, the browser is still open on a special empty page, so your application is not yet running. The Debug Proxy will keep track of these requests to create breakpoints and will apply them when the Mono runtime is ready to receive them. This approach ensures that a breakpoint on the first line of your <code>Main</code> method can be triggered, which might otherwise not be possible because, at this point, the runtime is already executing your application.</p>
+
+
+
+<p>After the Debug Proxy knows about these breakpoints, JetBrains Rider triggers browser navigation to the actual application – yours! This starts the Mono runtime and makes sure your application is executed.</p>
+
+
+
+<p>As a final step, the Debug Proxy finishes all activities related to activation of the runtime, loads the required assemblies, and sends a signal to JetBrains Rider that it’s ready for action!</p>
+
+
+
+<h2 class="wp-block-heading">The Chrome DevTools Protocol (CDP)</h2>
+
+
+
+<p>Browsers using the Chromium engine all implement the so-called <a href="https://chromedevtools.github.io/devtools-protocol/" rel="noopener" target="_blank">Chrome DevTools Protocol (CDP)</a>. If you’ve worked with <a href="https://www.selenium.dev/" rel="noopener" target="_blank">Selenium</a> or other frontend test automation tools, you may have used it yourself. Through the CDP interface, you can do almost anything with the browser and pages – as long as you stay within the limits of the user&#8217;s security settings.</p>
+
+
+
+<p>The CDP is well documented and versioned. Structurally, it consists of what are called <em>domains</em>, or <em>modules</em>, which in turn consist of <em>types</em>. Think of them like a structure or record that can transfer specific data. Some <em>methods</em> allow the debugger client to make calls into the Chromium instance, and <em>events</em>, where the debugger client can subscribe to calls from the browser into the debugger. The Debug Proxy can be considered a &#8220;virtual&#8221; Chromium browser, because it also communicates using the CDP.</p>
+
+
+
+<p><em>Note: If you want to explore the CDP protocol in detail, check out the </em><a href="https://chromedevtools.github.io/devtools-protocol/" rel="noopener" target="_blank"><em>official CDP documentation</em></a><em> or </em><a href="https://vanilla.aslushnikov.com/" rel="noopener" target="_blank"><em>a simplified version</em></a><em>. Since we had to reverse-engineer the <code>DotnetDebugger</code>, <code>Mono</code>, and <code>Runtime</code> domains of the CDP, we are hosting </em><a href="https://mono-cdp.seclerp.me/" rel="noopener" target="_blank"><em>the CDP documentation</em></a><em> for anyone who is interested in writing their own .NET WebAssembly debugger.</em></p>
+
+
+
+<p>At the transport level, websockets are being used. The messages that flow over this socket are a variation on <a href="https://www.jsonrpc.org/specification" rel="noopener" target="_blank">JSON-RPC 2.0</a>, which is a format describing remote calls using JSON payloads. This format is also used in the <a href="https://langserver.org/" rel="noopener" target="_blank">Language Server Protocol</a>.&nbsp;</p>
+
+
+
+<p>There are three types of messages: requests, responses and events. Request and response messages from and to the debugger client (JetBrains Rider) are ordered by <code>id</code>, whereas events can be triggered at any point in time without strict ordering. Here are some example messages:</p>
+
+
+
+<pre class="EnlighterJSRAW">// request
+{"id":10, "method": "Page.navigate", "params":{"url":"http://localhost:5170/"}}
+
+// response
+{"id":10, “result”: {"frameId":"…","loaderId":"…"}}
+
+// event
+{"method": "Network.requestServedFromCache", "params":{"requestId":"98279.21"}}</pre>
+
+
+
+<p>With CDP, it’s also possible to create <em>sessions </em>on a single connection, to control different browser tabs while re-using the websocket connection.</p>
+
+
+
+<p><em>Targets </em>are another supported concept. The debugger can attach to the browser and a page, but also to service workers, background pages, and so on.</p>
+
+
+
+<h2 class="wp-block-heading">.NET WebAssembly Chrome DevTools Protocol in Rider</h2>
+
+
+
+<p>Whew, what a title! Working with the CDP to interact with the Mono runtime running your WebAssembly application is great! However, we found that working with the protocol messages directly gets boring rather quickly. So, we built an abstraction that we can use in the JetBrains Rider code base!</p>
+
+
+
+<p>Since several folks on our team may be interacting with the .NET WebAssembly debugger, we wanted to create a simple API that doesn&#8217;t require our entire development team to know about all of the details of the CDP protocol and other machinery we covered in this post.. Here’s an example code snippet of setting up the connection to the browser’s websocket URL, which abstracts much of the handshake we saw earlier in this post.</p>
+
+
+
+<pre class="EnlighterJSRAW">// Creating connection
+var connection = new DefaultProtocolClient(new Uri("ws://localhost:5151"), logger);
+await connection.ConnectAsync(cancellationToken);
+
+// Sending commands
+var response = await connection.SendCommandAsync(
+    Domains.DotnetDebugger.SetDebuggerProperty(
+        JustMyCodeStepping: true
+    )
+);
+
+// Firing commands (when we're not interested in response)
+await connection.FireCommandAsync(Domains.Debugger.StepOut());</pre>
+
+
+
+<p>The commands sent with this API correspond to methods in CDP terminology. We can send them and wait for a response or make a fire-and-forget call. The commands (methods), events, and types are generated from the JSON specification of the CDP.</p>
+
+
+
+<p>In addition to sending messages, it is also possible to listen for events and create new sessions (called “scopes” in the API). We try to avoid using the exact CDP terminology because we will also extend this API to the Firefox Debugger Protocol in the future.</p>
+
+
+
+<pre class="EnlighterJSRAW">// Listening for events
+pageClient.ListenEvent&lt;Domains.Debugger.BreakpointResolved>(async e =>
+{
+    ResolveBreakpoint(e.BreakpointId.Value);
+});
+
+
+// Creating scoped clients (clients for specific sessions)
+var scopedClient = connection.CreateScoped(sessionId);</pre>
+
+
+
+<p>Since methods must be ordered in the CDP, they are not sent directly. Instead, they are added to a queue. In a long-running task, they are sent with an incremental message ID. When sending, a <code>TaskCompletionSource</code> is created for the same message id, so that we can <code>await</code> the response to this message.</p>
+
+
+
+<pre class="EnlighterJSRAW">private readonly BlockingCollection&lt;ProtocolRequest&lt;ICommand>> _outgoingMessages = …
+
+public async Task&lt;TResponse> SendCommandAsync&lt;TResponse>(ICommand&lt;TResponse> command,
+  string? sessionId = null,
+  CancellationToken? token = default) where TResponse : IType
+{
+  var id = Interlocked.Increment(ref _currentId);
+  var resolver = new TaskCompletionSource&lt;JObject>();
+  if (_responseResolvers.TryAdd(id, resolver))
+  {
+    await FireInternalAsync(id, GetMethodName(command.GetType()), command, sessionId);
+    var responseRaw = await resolver.Task;
+    var response = responseRaw.ToObject...
+    return response;
+  }
+  throw new Exception("Unable to enqueue message to send");
+}
+
+private async Task FireInternalAsync(int id, string methodName, ICommand command, string? sessionId)
+{
+  var request = new ProtocolRequest&lt;ICommand>(id, methodName, command, sessionId);
+  if (!_outgoingMessages.TryAdd(request)) throw new Exception("Can't schedule outgoing message for sending.");
+}</pre>
+
+
+
+<p>A separate long-running task also listens for incoming messages from the browser. These can be both events and responses to a message that was sent earlier. For events, the appropriate delegate is invoked. In the case of responses to messages, we retrieve the corresponding <code>TaskCompletionSource</code> created when sending the message, and depending on whether it is a result of an error, we set the <code>TaskCompletionSource</code> status.</p>
+
+
+
+<p>When setting breakpoints in the CDP, we do so based on the file name. The runtime loads different assemblies and source maps from debug symbols one by one, and as soon as it finds a candidate that matches the file name pattern, a <code>BreakpointResolved</code> event is fired. JetBrains Rider has to respond to it as quickly as possible to make sure you don’t see a grayed-out breakpoint in the editor.</p>
+
+
+
+<p>A queue is also used to send the commands to create or remove breakpoints, due to the specifics of Rider’s debugger infrastructure.</p>
+
+
+
+<h2 class="wp-block-heading">Hot reload with .NET WebAssembly</h2>
+
+
+
+<p>With hot reload, you can make changes to code while debugging and apply those changes to your application without restarting it. While JetBrains Rider supports hot reload for many application types, it does not (yet!) support hot reload for .NET WebAssembly.</p>
+
+
+
+<p>The way hot reload would work with .NET WebAssembly is by making use of the Edit-and-Continue (EnC) functionality in the runtime.</p>
+
+
+
+<p><em>Note: If you want to learn more, check out this post about </em><a href="https://blog.jetbrains.com/dotnet/2021/12/02/how-rider-hot-reload-works-under-the-hood/"><em>how .NET hot reload works in Rider</em></a><em>.</em></p>
+
+
+
+<p>The Debug Proxy has added support for EnC in .NET 7. With that now available, consider this short section as a confirmation that we are indeed working on it!</p>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<p>Although we did not have time to go over all debugger-related topics such as evaluating expressions, watches, and working with call stacks, we do hope this blog post gave you a solid rundown of how the .NET WebAssembly debugger works in JetBrains Rider!</p>
+
+
+
+<p>Want to join our JetBrains Rider or ReSharper team and help us build the best .NET developer tools on the market? <a href="https://www.jetbrains.com/careers/jobs/" rel="noopener" target="_blank">We’re hiring!</a></p>
+
+
+
+<p><em>Photo by <a href="https://unsplash.com/@clayton_cardinalli?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" rel="noopener" target="_blank">Clayton Cardinalli</a> on <a href="https://unsplash.com/photos/man-in-blue-jacket-standing-beside-brown-wooden-post-hkJNx0EDbjE?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" rel="noopener" target="_blank">Unsplash</a></em></p>
+]]></content:encoded>
+<pubDate>Tue, 07 Nov 2023 12:38:00 +0000</pubDate>
+<pubDate>Tue, 07 Nov 2023 12:38:00 +0000</pubDate>
+</item>
+<item>
+<title>WebStorm 2023.3 EAP Digest #3: Angular, React, and Vue Improvements and More</title>
+<link>https://blog.jetbrains.com/webstorm/2023/11/webstorm-2023-3-eap-3/</link>
+<guid>https://blog.jetbrains.com/webstorm/2023/11/webstorm-2023-3-eap-3/</guid>
+<content:encoded><![CDATA[
+
+<p>It’s time for our last EAP digest to walk you through the new features and improvements coming in WebStorm 2023.3! For more information, check out <a href="https://blog.jetbrains.com/webstorm/tag/webstorm-2023-3/">our previous blog posts</a>.</p>
+<p>The <a href="https://www.jetbrains.com/toolbox-app/" rel="noopener" target="_blank">Toolbox App</a> is the easiest way to get the EAP builds and keep both your stable and EAP versions up to date. You can also manually download the EAP builds from our <a href="https://www.jetbrains.com/webstorm/nextversion/" rel="noopener" target="_blank">website</a>.</p>
+<p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/webstorm/nextversion" rel="noopener" target="_blank">DOWNLOAD WEBSTORM 2023.3 EAP</a></p>
+<p><strong>Important! WebStorm EAP builds are not fully tested and might be unstable.</strong></p>
+<p>Please try the latest EAP build and share your feedback with us. You can do so using <a href="https://youtrack.jetbrains.com/issues/WEB" rel="noopener" target="_blank">our issue tracker</a> or by leaving a comment on this blog post.</p>
+<ul>
+<li><strong>New features</strong>: <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#angular_improvements">Angular improvements</a>, <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#improved_support_for_dev_containers"> improved support for Dev Containers</a>, <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#react_updates">React updates</a>, <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#improvements_for_vue">Vue improvements</a>, <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#initial_support_for_the_built_in_node_js_test_runner">support for the built-in Node.js test runner</a>, <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#support_for_advanced_vitest_extensions">support for advanced Vitest extensions</a>, and <a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#run_to_cursor_inlay_debug_option">the <em>Run to Cursor</em> inlay debug option</a>.</li>
+<li><strong><a href="https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253#other_highlights">Other highlights</a></strong>: We’ve added support for the <code>exports</code> field of <code>package.json</code> for TypeScript files. There are also several bug fixes and some UX improvements.</li>
+</ul>
+<h2 id="new_features">New Features</h2>
+<h3 id="angular_improvements">Angular improvements</h3>
+<h4 id="support_for_signals">Support for Signals</h4>
+<p>We’ve added the following live templates for signals: <code>signal</code>, <code>computed</code>, and <code>effect</code>. It’s also possible to customize the highlighting for signals by going to <em>Settings | Editor | Color Scheme | Angular Template | Signal</em>. You can easily create a signal straight from its template by writing a function and invoking the relevant quick-fix.</p>
+<p><img alt="Gif showing Angular Signals support in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_Ang-signals.png" width="800" /></p>
+<h4 id="improved_standalone_components_support">Improved standalone components support</h4>
+<p>WebStorm 2023.3 will include several new inspections that will help you identify improper usage of standalone components. These include an inspection to highlight standalone declarables added to the declaration array of <code>NgModule</code>, as well as a warning for when imports or schemas are used on components that are not standalone. WebStorm can also verify whether each element is a module or standalone declaration in the import array.</p>
+<p><img alt="Gif showing the Angular standalone components support in WebStorm 2023.3 EAP " src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Ang-standalone.png" width="800" /></p>
+<h4 id="new_angular_quick_fixes">New Angular quick-fixes</h4>
+<p>The <em>Create field</em> and <em>Create method</em> intention actions now take the surrounding context into account, generating correctly declared fields. WebStorm 2023.3 also includes a new quick-fix to create <code>@Input</code> and <code>@Output</code> properties, with or without a transform property, from an Angular component template.</p>
+<p><img alt="Gif showing the Angular quick fixes support in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_Ang-inp-outp.png" width="800" /></p>
+<h3 id="react_updates">React updates</h3>
+<h4 id="syntax_highlighting_for_client_and_server_components">Syntax highlighting for client and server components</h4>
+<p>Starting with WebStorm 2023.3, in projects using React Server Components (such as App Router-based Next.js projects), client components and server components will be highlighted in different colors, making it easier to tell them apart. You can customize the highlighting colors in <em>Settings | Editor | Color Scheme | JavaScript</em>. We&#8217;ve also enhanced the code highlighting for the <code>use strict</code>, <code>use client</code>, and <code>use server</code> directives.</p>
+<p><img alt="Image showing the different syntax highlighting for client and server components in both dark and light theme" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_RSC.png" width="800" /></p>
+<h4 id="react_live_template_cleanup">React live template cleanup</h4>
+<p>We’ve performed some maintenance on and cleaned up the React live templates and removed a few rarely-used ones. If this maintenance has removed any templates you were using that you’d like to keep, please follow the <a href="https://youtrack.jetbrains.com/issue/WEB-63489" rel="noopener" target="_blank">instructions in this issue</a> explaining how to restore them.</p>
+<h3 id="improvements_for_vue">Improvements for Vue 3</h3>
+<p>We’ve improved our support for Vue 3 and added support for <code>defineSlots</code>, as well as resolution and completion for properties with <code>defineExpose</code>. You now also get auto import for components based on the component name defined in the <code>defineOptions</code> function.</p>
+<p><img alt="Gif showing the new Vue improvements in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_Vue.png" width="800" /></p>
+<h3 id="support_for_custom_css_property">Support for custom CSS @property</h3>
+<p>We’ve been following updates around the Interop <a href="https://web.dev/interop-2023/" rel="noopener" target="_blank">initiative</a>. One of the areas of interest in the 2023 plan is <code>@property</code>, under the CSS Houdini umbrella of APIs. It allows you to explicitly define your CSS custom properties, making it possible to check and constrain property types, set default values, and specify whether a custom property can inherit values. WebStorm 2023.3 adds inspections and completion for these properties.</p>
+<p><img alt="Gif showing the support for custom CSS @property in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_CSS-Props.png" width="800" /></p>
+<h3 id="updates_to_the_svelte_plugin">Updates to the Svelte plugin</h3>
+<p>Starting from WebStorm 2023.3, the <a href="https://github.com/sveltejs/language-tools/tree/master/packages/typescript-plugin" rel="noopener" target="_blank">TypeScript plugin</a> will be downloaded and enabled automatically by default for Svelte projects. You can configure the plugin version like you would for the Svelte Language Server. Go to <em>Settings | Languages &amp; Frameworks | TypeScript | Svelte</em> and update the TypeScript plugin package field. In the future, we plan to have the IDE automatically download the latest version.</p>
+<p><img alt="Image showing the updates to the Svelte plugin in WebStorm 2023.3 EAP this shows the settings where a TypeScript plugin package can be selected." src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_Svelte.png" width="800" /></p>
+<h3 id="initial_support_for_the_built_in_node_js_test_runner">Initial support for the built-in Node.js test runner</h3>
+<p>WebStorm 2023.3 introduces support for the built-in Node.js test runner. Tests declared with the <code>node:test</code> API are now recognized, and you can run and debug them via gutter icons. This support is still in its initial implementation and has some limitations, but you are able to write tests for JavaScript code without having to install any packages – you can just write tests and run them directly from your code.</p>
+<p><img alt="Image showing the support for the built-in Node.js test runner in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_node-test-runner.png" width="800" /></p>
+<h3 id="support_for_advanced_vitest_extensions">Support for advanced Vitest extensions</h3>
+<p>WebStorm 2023.3 is better at detecting various Vitest tests, including <code>.concurrent</code> and <code>condition</code> tests like <code>.runIf</code> and <code>.skipIf</code>.</p>
+<p><img alt="Image showing the support for the advanced Vitest extensions in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_Digest3_Vitest.png" width="800" /></p>
+<h3 id="improved_support_for_dev_containers">Improved support for Dev Containers</h3>
+<p>WebStorm 2023.3 introduces support for <a href="https://containers.dev/implementors/features/" rel="noopener" target="_blank">Dev Container Features</a>, providing a fast and convenient way to integrate additional tools, runtimes, and libraries that are essential for development. While you can still rely on Dockerfiles and scripts for this purpose, the introduction of Dev Container Features streamlines the installation of essential components, ensuring a faster setup process.</p>
+<p><img alt="Image showing the new Dev Container Features
+" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Dev-Container-1.png" width="800" /></p>
+<p>We’ve also introduced support for Docker Compose within Dev Containers, enabling the IDE to seamlessly launch both the main container and any dependent containers, such as those with databases or message queues.</p>
+<p><img alt="image showing the Docker Compose in the Dev Container" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Dev-Container-2.png" width="800" /></p>
+<p>In addition, we’ve implemented automatic port forwarding, meaning that any ports the application starts listening to in a Dev Container are seamlessly forwarded.</p>
+<p><img alt="Gif showing the automatic port forwarding in Dev Containers in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Dev-Container-3.png" width="800" /></p>
+<h3 id="run_to_cursor_inlay_debug_option"><em>Run to Cursor</em> inlay debug option</h3>
+<p>WebStorm 2023.3’s new <em>Run to Cursor</em> inlay option allows you to quickly execute up to a specific line of code while debugging. Once your program is suspended, simply hover over the line of code you want to execute up to and use the <em>Run to Cursor</em> popup. You can also use this feature by invoking the keyboard shortcut (<em>⌥F9 / Alt+F9</em> ) after the caret is placed on the desired line.</p>
+<p><img alt="Run to cursor debugging option in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_DebugToCursor.png" width="800" /></p>
+<p>This feature is enabled by default. To adjust it, navigate to <em>Settings | Advanced Settings | Debugger</em> and select the <em>Show inlay Run to Cursor popup</em> option.</p>
+<p><img alt="Showing the advanced settings Shoe inlay Run to Cursor popup option in WebStorm 2023.3" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/WS233_EAP_DebugCursor_settings.png" width="800" /></p>
+<h3 id="visual_editing_for_openapi_specifications">Visual editing for OpenAPI specifications</h3>
+<p>We’ve implemented visual editing capabilities to help you quickly compose well-formatted OpenAPI specifications using live templates. These actions are available for both YAML and JSON files. To insert a template for an object, hover over the gutter on the relevant line and click the <code>+</code> icon.</p>
+<p><img alt="images showing the visual editing for OpenAPI specifications in WebStorm 2023.3 EAP" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Visual-editing-for-OpenAPI-specifications.png" width="800" /></p>
+<h3 id="automatic_code_completion_for_url_path_references">Automatic code completion for URL path references</h3>
+<p>We’ve improved the code completion functionality for handling URLs. Now, when you type / in places where a URL path is expected, the IDE automatically populates the code completion popup with the URLs of server endpoints. When doing so, it considers both available APIs within your application and attached <a href="https://www.jetbrains.com/help/webstorm/endpoints-tool-window.html#options" rel="noopener" target="_blank">OpenAPI specifications</a>. This helps you specify the URL path more quickly.</p>
+<p><img alt="Gif showing the automatic code completion for URL path references." src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Automatic-code-completion-for-URL-path-references.png" width="800" /></p>
+<h2 id="other_highlights">Other Highlights</h2>
+<p>Here’s an overview of the key improvements for various technologies supported by WebStorm, along with some notable bug fixes.</p>
+<p><strong>JavaScript, TypeScript, Markup, and style sheet languages</strong></p>
+<ul>
+<li>We’ve added support for the <code>exports</code> field of package.json for TypeScript files (<a href="https://youtrack.jetbrains.com/issue/WEB-60536" rel="noopener" target="_blank">WEB-60536</a>).</li>
+<li>Autocompletion no longer takes an inordinate amount of time when used on CSS properties (<a href="https://youtrack.jetbrains.com/issue/WEB-58740" rel="noopener" target="_blank">WEB-58740</a>).</li>
+</ul>
+<p><strong>Frameworks and technologies</strong></p>
+<ul>
+<li>Exports are once again correctly recognized in <code>.vue</code> files when both <code>&lt;script&gt;</code> and <code>&lt;script setup&gt;</code> are used (<a href="https://youtrack.jetbrains.com/issue/WEB-53434" rel="noopener" target="_blank">WEB-53434</a>).</li>
+<li>We&#8217;ve fixed the issue in Angular that was causing type mismatches in the generic form control (<a href="https://youtrack.jetbrains.com/issue/WEB-60215" rel="noopener" target="_blank">WEB-60215</a>).</li>
+<li>In Angular templates, type narrowing once again works as expected when checking if a variable is undefined (<a href="https://youtrack.jetbrains.com/issue/WEB-62721" rel="noopener" target="_blank">WEB-62721</a>).</li>
+<li>We&#8217;ve fixed the issues with modules referenced using the <code>workspace:</code> protocol not being resolved in Yarn PnP workspaces (<a href="https://youtrack.jetbrains.com/issue/WEB-59218" rel="noopener" target="_blank">WEB-59218</a> and <a href="https://youtrack.jetbrains.com/issue/WEB-60790/Navigation-doesnt-work-in-the-import-statement-between-workspaces-when-using-yarn-pnp" rel="noopener" target="_blank">WEB-60790</a>).</li>
+</ul>
+<p><strong>User experience</strong></p>
+<ul>
+<li>The <em>Project Errors</em> tab in the <em>Problems</em> tool window no longer refreshes on every selection (<a href="https://youtrack.jetbrains.com/issue/WEB-62636" rel="noopener" target="_blank">WEB-62636</a>).</li>
+<li><em>Prettier</em> and <em>Optimize Imports</em> once again work correctly (<a href="https://youtrack.jetbrains.com/issue/WEB-53115" rel="noopener" target="_blank">WEB-53115</a>).</li>
+<li>We’ve made some internal improvements that will enhance performance when working with TypeScript.</li>
+</ul>
+<p>That’s it for today. For the full list of improvements available in the latest EAP build, check out the release notes. Stay tuned for our beta and release candidate builds!</p>
+]]></content:encoded>
+<pubDate>Mon, 06 Nov 2023 13:57:52 +0000</pubDate>
+<pubDate>Mon, 06 Nov 2023 13:57:52 +0000</pubDate>
+</item>
+<item>
+<title>PyCharm 2023.2.4 Is Out!</title>
+<link>https://blog.jetbrains.com/pycharm/2023/11/2023-2-4/</link>
+<guid>https://blog.jetbrains.com/pycharm/2023/11/2023-2-4/</guid>
+<content:encoded><![CDATA[
+
+<p>We’ve just released another update for v2023.2.&nbsp;</p>
+
+
+
+<p>You can update to this version from inside the IDE, using the&nbsp;<a href="https://www.jetbrains.com/toolbox-app/" rel="noreferrer noopener" target="_blank">Toolbox App</a>, or by using snaps if you are a Ubuntu user. You can also download it from our&nbsp;<a href="https://www.jetbrains.com/pycharm/download/" rel="noreferrer noopener" target="_blank">website</a>.</p>
+
+
+
+<p>This version brings the following refinements:&nbsp;</p>
+
+
+
+<ul>
+<li>Absolute directory paths in the&nbsp;<em>Commit</em>&nbsp;tool window no longer take up too much space as a result of redundantly replicating parent paths. [<a href="https://youtrack.jetbrains.com/issue/IDEA-326271/Commit-window-shows-full-path-irregularly" rel="noreferrer noopener" target="_blank">IDEA-326271</a>]</li>
+
+
+
+<li>We’ve addressed the issue that made it impossible to copy text from the local machine’s editor and paste it into the editor on Windows Remote Desktop. [<a href="https://youtrack.jetbrains.com/issue/IDEA-313776/Can-not-paste-the-text-data-on-the-windows-remote-desktop-copied-from-IDEA-editor" rel="noreferrer noopener" target="_blank">IDEA-313776</a>]. If you’re using older versions of Windows Server, you can go to&nbsp;<em>File | Settings | Advanced Settings</em>&nbsp;and select the&nbsp;<em>Paste at the caret position&nbsp;</em>option instead of&nbsp;<em>When pasting a line copied with no selection</em>. This workaround will fix the clipboard sync issue. Alternatively, you can use the&nbsp;<a href="https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-client-microsoft-store" rel="noreferrer noopener" target="_blank">latest Windows Remote Desktop client</a>&nbsp;as a solution.</li>
+</ul>
+
+
+
+<p>To see the full list of issues addressed in this version, please refer to the&nbsp;<a href="https://youtrack.jetbrains.com/articles/PY-A-233538141/PyCharm-2023.2.4-232.10203.26-build-Release-Notes&amp;quot" rel="noreferrer noopener" target="_blank">release notes</a>.&nbsp;</p>
+
+
+
+<p>If you encounter any bugs, please report them using our <a href="https://youtrack.jetbrains.com/issues/PY" rel="noreferrer noopener" target="_blank">issue tracker</a>. </p>
+]]></content:encoded>
+<pubDate>Mon, 06 Nov 2023 07:20:26 +0000</pubDate>
+<pubDate>Mon, 06 Nov 2023 07:20:26 +0000</pubDate>
+</item>
+<item>
+<title>JetBrains Academy: New Projects and Topics in November</title>
+<link>https://blog.jetbrains.com/education/2023/11/03/jetbrains-academy-new-projects-and-topics-in-november-2/</link>
+<guid>https://blog.jetbrains.com/education/2023/11/03/jetbrains-academy-new-projects-and-topics-in-november-2/</guid>
+<content:encoded><![CDATA[
+
+<p>It’s already November, and we’re excited to share all of the new topics and projects on offer this month. Each comes with its own exciting challenges and learning opportunities to explore. This month we released new projects for Python, Go, ML, and frontend learners! Beyond that, there are also 110 new topics for you to study and enjoy. </p>
+
+
+
+<p>We also introduced our brand new <a href="https://hyperskill.org/tracks/81" rel="noopener" target="_blank">Introduction to Go</a> and <a href="https://hyperskill.org/tracks/105" rel="noopener" target="_blank">Introduction to Flask</a> tracks. </p>
+
+
+
+<p>Exciting news for all mobile development learners! The new <a href="https://hyperskill.org/tracks/95/" rel="noopener" target="_blank">Introduction to Android with Kotlin</a> track is here to help you acquire the fundamental skills needed to create, design, and deploy simple mobile apps. </p>
+
+
+
+<p>Now let’s dive into the updates in more detail.</p>
+
+
+
+<h2 class="wp-block-heading">Frontend</h2>
+
+
+
+<p>&#x1f195; Project: <a href="https://hyperskill.org/projects/393" rel="noreferrer noopener" target="_blank">Chalkboard Printer</a> (Beta).<em> Easy.</em></p>
+
+
+
+<p>In this project, you’ll develop a JavaScript program that prints various jokes to the console. It will help you to practice working with variables and different data types, logging messages to the console, and taking user input. You’ll also learn to use loops and functions to write a complete JavaScript program.</p>
+
+
+
+<p>&#x1f195; Topics:</p>
+
+
+
+<ul>
+<li>HTML: <a href="https://hyperskill.org/learn/step/36407" rel="noreferrer noopener" target="_blank">Form element</a>.</li>
+
+
+
+<li>Vue.js: <a href="https://hyperskill.org/learn/topic/3610" rel="noreferrer noopener" target="_blank">Getters and setters</a>, <a href="https://hyperskill.org/learn/step/37997" rel="noreferrer noopener" target="_blank">Watching for changes</a>, <a href="https://hyperskill.org/learn/step/37983" rel="noreferrer noopener" target="_blank">What are computable properties</a>, <a href="https://hyperskill.org/learn/step/37388" rel="noreferrer noopener" target="_blank">Reactive</a>, <a href="https://hyperskill.org/learn/step/37113" rel="noreferrer noopener" target="_blank">Refs</a>, <a href="https://hyperskill.org/learn/step/37105" rel="noreferrer noopener" target="_blank">Setup</a>, <a href="https://hyperskill.org/learn/step/37094" rel="noreferrer noopener" target="_blank">What are components</a>, and <a href="https://hyperskill.org/learn/step/36701" rel="noreferrer noopener" target="_blank">v-show, v-if, v-else, v-else-if</a>.</li>
+
+
+
+<li>TypeScript: <a href="https://hyperskill.org/learn/step/36924" rel="noreferrer noopener" target="_blank">Union types</a>.</li>
+
+
+
+<li>Node.js: <a href="https://hyperskill.org/learn/step/36594" rel="noreferrer noopener" target="_blank">lstat, fstart and stat</a>, <a href="https://hyperskill.org/learn/step/37641" rel="noreferrer noopener" target="_blank">Migration from pure Node.js to Express</a>, and <a href="https://hyperskill.org/learn/step/37631" rel="noreferrer noopener" target="_blank">What is Express.js?</a>.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Python (Machine Learning) </h2>
+
+
+
+<p>&#x1f195; Machine learning project: <a href="https://hyperskill.org/projects/390" rel="noreferrer noopener" target="_blank">Calculate Metrics with Pen and Paper</a> (Beta).<em> Easy.</em></p>
+
+
+
+<p>When training a machine learning model, it&#8217;s vital to establish the metrics used to evaluate the model&#8217;s performance. There are various metrics, each serving a specific purpose. This project introduces you to the most commonly used metrics for classification and regression tasks, shows you how to calculate them, and provides guidance on interpreting them.</p>
+
+
+
+<p>&#x1f195; Python project: <a href="https://hyperskill.org/projects/391" rel="noreferrer noopener" target="_blank">X-mas Tree</a>. <em>Medium.</em></p>
+
+
+
+<p>Welcome to a fun project that takes us back to the &#8217;80s and the world of ASCII characters. If you have ever been tasked with drawing a Christmas tree using asterisks in your programming journey, this project is for you. Drawing an entire Christmas card will make the task a bit more challenging. In this project, you’ll master string formatting, work on lists, and learn how to build functions and more sophisticated algorithms.</p>
+
+
+
+<p>&#x1f195; Topics:</p>
+
+
+
+<ul>
+<li>Python: <a href="https://hyperskill.org/learn/step/37224" rel="noreferrer noopener" target="_blank">Multiprocessing pool</a>, <a href="https://hyperskill.org/learn/step/36892" rel="noreferrer noopener" target="_blank">Type hints and classes</a>, <a href="https://hyperskill.org/learn/step/37658" rel="noreferrer noopener" target="_blank">When statement</a>, <a href="https://hyperskill.org/learn/step/36298" rel="noreferrer noopener" target="_blank">More dictionary methods</a>, <a href="https://hyperskill.org/learn/step/36290" rel="noreferrer noopener" target="_blank">More operations with list</a>, and <a href="https://hyperskill.org/learn/step/37669" rel="noreferrer noopener" target="_blank">Walrus operator</a>.</li>
+
+
+
+<li>Django: <a href="https://hyperskill.org/learn/step/37722" rel="noreferrer noopener" target="_blank">API documentation</a>, <a href="https://hyperskill.org/learn/step/36785" rel="noreferrer noopener" target="_blank">Intro to DRF</a>, <a href="https://hyperskill.org/learn/step/37141" rel="noreferrer noopener" target="_blank">Serializers in DRF</a>, <a href="https://hyperskill.org/learn/step/36860" rel="noreferrer noopener" target="_blank">Views and routing in DRF</a>, <a href="https://hyperskill.org/learn/step/37290" rel="noreferrer noopener" target="_blank">Django caching framework</a>, <a href="https://hyperskill.org/learn/step/37280" rel="noreferrer noopener" target="_blank">Django testing framework</a>, and <a href="https://hyperskill.org/learn/step/37258" rel="noreferrer noopener" target="_blank">Using class-based views with your models</a>.</li>
+
+
+
+<li>Flask: <a href="https://hyperskill.org/learn/step/37610" rel="noreferrer noopener" target="_blank">Deploying</a>, <a href="https://hyperskill.org/learn/step/37588" rel="noreferrer noopener" target="_blank">Preparing for deployment</a>, and <a href="https://hyperskill.org/learn/step/37411" rel="noreferrer noopener" target="_blank">Sign up</a>.</li>
+</ul>
+
+
+
+<ul>
+<li>Machine learning: <a href="https://hyperskill.org/learn/step/37942" rel="noreferrer noopener" target="_blank">Neural network regularization</a>, <a href="https://hyperskill.org/learn/step/37711" rel="noreferrer noopener" target="_blank">Schedulers</a>, and <a href="https://hyperskill.org/learn/step/37269" rel="noreferrer noopener" target="_blank">Weight initialization</a>.</li>
+
+
+
+<li>NLP: <a href="https://hyperskill.org/learn/step/36803" rel="noreferrer noopener" target="_blank">T5 transformers</a>, <a href="https://hyperskill.org/learn/step/36837" rel="noreferrer noopener" target="_blank">Transformer models for text summarization</a>, <a href="https://hyperskill.org/learn/step/36814" rel="noreferrer noopener" target="_blank">Neural machine translation</a>, <a href="https://hyperskill.org/learn/step/36311" rel="noreferrer noopener" target="_blank">Statistical machine translation</a>, and <a href="https://hyperskill.org/learn/step/36848" rel="noreferrer noopener" target="_blank">Advanced models of spelling correction</a>.</li>
+
+
+
+<li>Pandas: <a href="https://hyperskill.org/learn/step/36963" rel="noreferrer noopener" target="_blank">MultiIndex dataframes</a>.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p>Additionally, the <a href="https://hyperskill.org/tracks/11" rel="noreferrer noopener" target="_blank">Introduction to Django</a> track is no longer in Beta.</p>
+
+
+
+<h2 class="wp-block-heading">Go</h2>
+
+
+
+<p>&#x1f195; Project: <a href="https://hyperskill.org/projects/399" rel="noreferrer noopener" target="_blank">Cinema Room Manager</a> (Beta).<em> Easy.</em></p>
+
+
+
+<p>In this project, you’ll create an application that helps manage a cinema theater: sell tickets, check available seats, see sales statistics, and more. You’ll deal with slices and functions as well as loops and conditional statements.</p>
+
+
+
+<p>&#x1f195; Topics: <a href="https://hyperskill.org/learn/step/36734" rel="noreferrer noopener" target="_blank">Synchronization primitives</a> and <a href="https://hyperskill.org/learn/step/37360" rel="noreferrer noopener" target="_blank">Running several goroutines (WaitGroup, ErrGroup)</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Kotlin</h2>
+
+
+
+<p>&#x1f195; Topics: </p>
+
+
+
+<ul>
+<li>Kotlin: <a href="https://hyperskill.org/learn/step/37926" rel="noreferrer noopener" target="_blank">Asymmetric encryption</a>, <a href="https://hyperskill.org/learn/step/36616" rel="noreferrer noopener" target="_blank">Digital signature</a>, <a href="https://hyperskill.org/learn/step/36628" rel="noreferrer noopener" target="_blank">Hashing and security</a>, <a href="https://hyperskill.org/learn/step/37915" rel="noreferrer noopener" target="_blank">Symmetric encryption</a>, and <a href="https://hyperskill.org/learn/step/36469" rel="noreferrer noopener" target="_blank">kotlinx.css for KMP</a>.</li>
+
+
+
+<li>Android: <a href="https://hyperskill.org/learn/step/37079" rel="noreferrer noopener" target="_blank">Application &amp; Context</a>, <a href="https://hyperskill.org/learn/step/37903" rel="noreferrer noopener" target="_blank">Service Locator</a>, and <a href="https://hyperskill.org/learn/step/37373" rel="noreferrer noopener" target="_blank">Checkboxes, Switches, Toggle Buttons, and Radio Buttons</a>.</li>
+
+
+
+<li>Ktor: <a href="https://hyperskill.org/learn/step/36642" rel="noreferrer noopener" target="_blank">Ktor Client: Content negotiation and serialization</a>.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">C++</h2>
+
+
+
+<p>&#x1f195; Topics: <a href="https://hyperskill.org/learn/step/36396" rel="noreferrer noopener" target="_blank">Access specifiers</a>, <a href="https://hyperskill.org/learn/step/36385" rel="noreferrer noopener" target="_blank">Hidden pointer *this.</a>, <a href="https://hyperskill.org/learn/step/37620" rel="noreferrer noopener" target="_blank">Dynamic arrays</a>, <a href="https://hyperskill.org/learn/step/37577" rel="noreferrer noopener" target="_blank">Dynamic memory allocation</a>, <a href="https://hyperskill.org/learn/step/37786" rel="noreferrer noopener" target="_blank">Smart pointers</a>, <a href="https://hyperskill.org/learn/step/37761" rel="noreferrer noopener" target="_blank">Stack and heap</a>, <a href="https://hyperskill.org/learn/step/37165" rel="noreferrer noopener" target="_blank">Debugging and troubleshooting</a>, <a href="https://hyperskill.org/learn/step/36480" rel="noreferrer noopener" target="_blank">Exception handling</a>, <a href="https://hyperskill.org/learn/step/37829" rel="noreferrer noopener" target="_blank">Advanced STL data structures</a>, <a href="https://hyperskill.org/learn/step/37599" rel="noreferrer noopener" target="_blank">Basic data structures of STL</a>, <a href="https://hyperskill.org/learn/step/36769" rel="noreferrer noopener" target="_blank">Introduction to STL</a>, <a href="https://hyperskill.org/learn/step/37552" rel="noreferrer noopener" target="_blank">Command Line Interface</a>, <a href="https://hyperskill.org/learn/step/37541" rel="noreferrer noopener" target="_blank">Strings and text</a>, and <a href="https://hyperskill.org/learn/step/37563" rel="noreferrer noopener" target="_blank">Working with files</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Java</h2>
+
+
+
+<p>&#x1f195; Topics:</p>
+
+
+
+<ul>
+<li>Java: <a href="https://hyperskill.org/learn/step/36876" rel="noreferrer noopener" target="_blank">A topic on a ternary, binary search problem</a>, <a href="https://hyperskill.org/learn/step/36432" rel="noreferrer noopener" target="_blank">Assertion libs – AssertJ</a>, <a href="https://hyperskill.org/learn/step/36545" rel="noreferrer noopener" target="_blank">Map implementations</a>, <a href="https://hyperskill.org/learn/step/36501" rel="noreferrer noopener" target="_blank">Thread synchronization. Synchronized in action</a>, and <a href="https://hyperskill.org/learn/step/36674" rel="noreferrer noopener" target="_blank">CompletableFuture</a>.</li>
+
+
+
+<li>Spring Boot: <a href="https://hyperskill.org/learn/step/37328" rel="noreferrer noopener" target="_blank">Eager and lazy initialization</a>, <a href="https://hyperskill.org/learn/step/37339" rel="noreferrer noopener" target="_blank">Security events</a>, <a href="https://hyperskill.org/learn/step/37349" rel="noreferrer noopener" target="_blank">Integration tests with Testcontainers</a>, <a href="https://hyperskill.org/learn/step/36523" rel="noreferrer noopener" target="_blank">Response bodies</a>, and <a href="https://hyperskill.org/learn/step/37317" rel="noreferrer noopener" target="_blank">Serving files</a>.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Fundamentals</h2>
+
+
+
+<p>&#x1f195; Topics:</p>
+
+
+
+<ul>
+<li>Algorithms and structures: <a href="https://hyperskill.org/learn/step/36558" rel="noreferrer noopener" target="_blank">Hamming distance</a>, <a href="https://hyperskill.org/learn/step/36987" rel="noreferrer noopener" target="_blank">Booyer-Moore: Good character rule</a>, <a href="https://hyperskill.org/learn/step/36836" rel="noreferrer noopener" target="_blank">Boyer-Moore algorithm</a>, <a href="https://hyperskill.org/learn/step/38018" rel="noreferrer noopener" target="_blank">Introduction to Aho-Corasick algorithm</a>, <a href="https://hyperskill.org/learn/step/37751" rel="noreferrer noopener" target="_blank">Shannon–Fano coding</a>, <a href="https://hyperskill.org/learn/step/37420" rel="noreferrer noopener" target="_blank">Finite-state machine</a>, and <a href="https://hyperskill.org/learn/step/37733" rel="noreferrer noopener" target="_blank">Intro to algorithms</a>.</li>
+
+
+
+<li>DevTools: <a href="https://hyperskill.org/learn/step/37195" rel="noreferrer noopener" target="_blank">Dependency management: libraries</a> and <a href="https://hyperskill.org/learn/step/37206" rel="noreferrer noopener" target="_blank">Run and debug with Intellij IDEA</a>.</li>
+
+
+
+<li>Essentials: <a href="https://hyperskill.org/learn/step/37026" rel="noreferrer noopener" target="_blank">Inter-process communication</a>, <a href="https://hyperskill.org/learn/step/36825" rel="noreferrer noopener" target="_blank">Cache replacement policies</a>, and <a href="https://hyperskill.org/learn/step/36685" rel="noreferrer noopener" target="_blank">Class and package diagrams</a>.</li>
+
+
+
+<li>SQL and Database: <a href="https://hyperskill.org/learn/step/37818" rel="noreferrer noopener" target="_blank">Introduction to Redis</a>, <a href="https://hyperskill.org/learn/step/37853" rel="noreferrer noopener" target="_blank">Sharding in MongoDB</a>, <a href="https://hyperskill.org/learn/step/36570" rel="noreferrer noopener" target="_blank">Materialized view</a>, <a href="https://hyperskill.org/learn/step/37247" rel="noreferrer noopener" target="_blank">Introduction to Node-PostgreSQL</a>, <a href="https://hyperskill.org/learn/step/37972" rel="noreferrer noopener" target="_blank">Queries with pg</a>, <a href="https://hyperskill.org/learn/step/36582" rel="noreferrer noopener" target="_blank">Basic Data cleaning</a>, <a href="https://hyperskill.org/learn/step/37842" rel="noreferrer noopener" target="_blank">Basics of spreadsheets</a>, <a href="https://hyperskill.org/learn/step/37881" rel="noreferrer noopener" target="_blank">Types of Data</a>, and <a href="https://hyperskill.org/learn/step/36272" rel="noreferrer noopener" target="_blank">Unit economics: ROI, CAC, LTV</a>.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">System administration and DevOps</h2>
+
+
+
+<p>&#x1f195; Topics: <a href="https://hyperskill.org/learn/step/36605" rel="noreferrer noopener" target="_blank">Introduction to Amazon Web Services</a>, <a href="https://hyperskill.org/learn/step/36450" rel="noreferrer noopener" target="_blank">Overview of core AWS services</a>, <a href="https://hyperskill.org/learn/step/36657" rel="noreferrer noopener" target="_blank">Outputs and contexts</a>, <a href="https://hyperskill.org/learn/step/36936" rel="noreferrer noopener" target="_blank">Deployment and ReplicaSet</a>, and <a href="https://hyperskill.org/learn/step/37058" rel="noreferrer noopener" target="_blank">Services dependencies: depends on, networks</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Cybersecurity</h2>
+
+
+
+<p>&#x1f195; Topics: <a href="https://hyperskill.org/learn/step/37176" rel="noreferrer noopener" target="_blank">Confidentiality, integrity, availability</a>, <a href="https://hyperskill.org/learn/step/36723" rel="noreferrer noopener" target="_blank">Secure Browsing with HTTP and HTTPS</a>, <a href="https://hyperskill.org/learn/step/37152" rel="noreferrer noopener" target="_blank">Uniform Resource Identifier</a>, and <a href="https://hyperskill.org/learn/step/37047" rel="noreferrer noopener" target="_blank">Useful Terms within Cybersecurity</a>.</p>
+
+
+
+<p>Projects marked as Beta are still in the early stages of testing. If you’re interested in checking out Beta projects on the platform, make sure the Beta tester feature is enabled in your <a href="https://hyperskill.org/users/settings" rel="noreferrer noopener" target="_blank">profile settings</a>.</p>
+
+
+
+<p>We hope that you find these updates valuable and that they will enhance your learning experience. As always, we welcome your feedback and suggestions, so please don’t hesitate to get in touch with us at academy@jetbrains.com, or share your thoughts with us on <a href="https://twitter.com/JetBrains_Edu" rel="noopener" target="_blank">X (formerly Twitter)</a> or <a href="https://www.facebook.com/JetBrainsAcademy/" rel="noopener" target="_blank">Facebook</a>.</p>
+
+
+
+<p><em>Happy learning!<br />Your JetBrains Academy team</em></p>
+]]></content:encoded>
+<pubDate>Fri, 03 Nov 2023 17:53:11 +0000</pubDate>
+<pubDate>Fri, 03 Nov 2023 17:53:11 +0000</pubDate>
+</item>
+<item>
+<title>RubyMine 2023.3 EAP Update</title>
+<link>https://blog.jetbrains.com/ruby/2023/11/rubymine-2023-3-eap-update/</link>
+<guid>https://blog.jetbrains.com/ruby/2023/11/rubymine-2023-3-eap-update/</guid>
+<content:encoded><![CDATA[
+
+<p>Hello everyone!</p>
+
+
+
+<p>We’re back with an update on the state of the 2023.3 Early Access Program.</p>
+
+
+
+<p>You can download the latest EAP build from our <a href="https://www.jetbrains.com/ruby/nextversion/" rel="noopener" target="_blank">website</a>, via the free <a href="https://www.jetbrains.com/toolbox-app/" rel="noopener" target="_blank">Toolbox App</a>, or by using <a href="https://snapcraft.io/rubymine" rel="noopener" target="_blank">snaps</a> for Ubuntu.</p>
+
+
+
+<p>Here are the biggest highlights of this release:</p>
+
+
+
+<h2 class="wp-block-heading">Performance improvements</h2>
+
+
+
+<p>As we mentioned in our <a href="https://blog.jetbrains.com/ruby/2023/09/the-rubymine-2023-3-early-access-program-is-open/">previous blog post</a>, we are dedicated to improving RubyMine’s project indexing. In the 2023.3 EAP release, we’ve managed to increase the speed at which Markdown and ERB files are indexed.</p>
+
+
+
+<p>In addition to indexing speedup, we also addressed a crucial issue with the RubyMine profiler. We identified and resolved several problems that caused low memory performance and freezes when running larger test suites with the profiler in RubyMine.</p>
+
+
+
+<p>We encourage you to explore the new build and share your thoughts on RubyMine’s performance with us. You can do so via our <a href="https://youtrack.jetbrains.com/issues/ruby" rel="noopener" target="_blank">issue tracker</a> or by leaving us a message in the comments below.</p>
+
+
+
+<h2 class="wp-block-heading">Custom paths for Rails and Rails engines</h2>
+
+
+
+<p>Exciting news for developers working on Rails applications with split structures. You can now take full advantage of code insight features, no matter where your controllers, views, models, or other essential application files are located.</p>
+
+
+
+<p>RubyMine offers a feature that allows you to create custom paths for Rails and Rails engines. On top of the default paths, such as <code>app</code>, <code>app/controllers</code>, <code>app/models</code>, and so on, the IDE recognizes any other locations in your project. This enables you to redefine the default structure and pinpoint where your application files are stored. To set up the custom paths, navigate to <strong>Settings | Languages &amp; Frameworks | Rails | Paths</strong>.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-399013" height="1400" src="https://blog.jetbrains.com/wp-content/uploads/2023/10/rm_rails_custom_paths.png" width="1964" /></figure>
+
+
+
+<h2 class="wp-block-heading">Brakeman code inspections</h2>
+
+
+
+<p>Another RubyMine feature designed to make your development journey more enjoyable is the integration with <a href="https://brakemanscanner.org/" rel="noopener" target="_blank">Brakeman</a>, a trusted security scanner for Ruby on Rails applications. With this integration, you can effortlessly investigate and enhance your application’s security.</p>
+
+
+
+<p>Brakeman performs static code analysis, identifies security concerns, and generates detailed reports. Now, you can conveniently see Brakeman&#8217;s insights within RubyMine in a user-friendly format. Tackle security issues promptly, with easy access to Brakeman&#8217;s documentation, confidence indicators, and more. Make sure that you have the brakeman gem installed, then go to <strong>Code | Analyze Code | Run inspection by name</strong> and <a href="https://www.jetbrains.com/help/ruby/running-inspections.html#run-one-inspection" rel="noopener" target="_blank">launch the analysis</a>.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-399069" height="942" src="https://blog.jetbrains.com/wp-content/uploads/2023/10/rm_brakeman_inspections-1.png" width="2282" /></figure>
+
+
+
+<p>Stay tuned for more information about the RubyMine 2023.3 release!</p>
+
+
+
+<h2 class="wp-block-heading">Join the Early Access Program</h2>
+
+
+
+<p>You can download the latest EAP build <a href="https://www.jetbrains.com/ruby/nextversion/" rel="noopener" target="_blank">from our website</a> or via the <a href="https://www.jetbrains.com/toolbox-app/" rel="noopener" target="_blank">Toolbox App</a>. The full list of closed tickets in this EAP build is available in the <a href="https://youtrack.jetbrains.com/articles/RUBY-A-220365117" rel="noopener" target="_blank">release notes</a>.</p>
+
+
+
+<p>We encourage you to share your thoughts in the comments below and to create and vote for new features in the issue tracker.</p>
+
+
+
+<p><em>Happy developing!</em></p>
+
+
+
+<p><em>The RubyMine team</em></p>
+]]></content:encoded>
+<pubDate>Fri, 03 Nov 2023 12:34:39 +0000</pubDate>
+<pubDate>Fri, 03 Nov 2023 12:34:39 +0000</pubDate>
+</item>
+<item>
+<title>Java Annotated Monthly – November 2023</title>
+<link>https://blog.jetbrains.com/idea/2023/11/java-annotated-monthly-november-2023/</link>
+<guid>https://blog.jetbrains.com/idea/2023/11/java-annotated-monthly-november-2023/</guid>
+<content:encoded><![CDATA[
+
+<p>Welcome to the Java Annotated Monthly – November 2023!</p>
+
+
+
+<p>As the Java world keeps on spinning, we&#8217;ve gathered a treasure trove of articles, talks, and insights to warm your Java developers’ hearts. This month&#8217;s edition features a delightful blend of the latest technological advancements and the ever-inspiring soft-skills discussions.</p>
+
+
+
+<p>We’ve also selected several talks recorded during Devoxx Belgium and included an interview with its participants. Moreover, we&#8217;ve handpicked a selection of exciting events, both online and offline, that you might want to check out in November.</p>
+
+
+
+<p>So, settle in and enjoy the read!</p>
+
+
+
+<h2 class="wp-block-heading">Java News</h2>
+
+
+
+<p>Java News Roundup <a href="https://www.infoq.com/news/2023/10/java-news-roundup-sep25-2023/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">1</a>, <a href="https://www.infoq.com/news/2023/10/java-news-roundup-oct09-2023/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">2</a>, <a href="https://www.infoq.com/news/2023/10/java-news-roundup-oct09-2023/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">3</a>, <a href="https://www.infoq.com/news/2023/10/java-news-roundup-oct16-2023/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">4</a> – The crucial updates in the world of Java are collected here. Don’t miss out!</p>
+
+
+
+<p>Here are the new candidates introduced in October:</p>
+
+
+
+<ul>
+<li><a href="https://inside.java/2023/09/27/new-candidate-jep-456/" rel="noopener" target="_blank">New candidate JEP: 456: Unnamed Variables and Patterns</a></li>
+
+
+
+<li><a href="https://openjdk.org/jeps/457" rel="noopener" target="_blank">New candidate JEP: 457: Class-File API (Preview)</a></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Java Tutorials and Tips</h2>
+
+
+
+<p><a href="https://inside.java/2023/10/14/devoxx-leyden/" rel="noopener" target="_blank">Project Leyden</a> – Brian Goetz discusses Project Leyden and outlines its primary objectives, which revolve around enhancing startup time, reducing the time it takes to hit peak performance, and shrinking the overall footprint of Java applications.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/06/devoxx-your-code-runs-even-faster/" rel="noopener" target="_blank">With Java 21, Your Code Runs Even Faster but How is that Possible?</a> – Java 21 is the fastest version so far. In this brief discussion, you’ll find out how the speed was boosted for old classes and look at potential future improvements.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/09/sip084/" rel="noopener" target="_blank">Generational ZGC – Sip of Java</a> – In this podcast hosted by <a href="https://inside.java/u/BillyKorando/" rel="noopener" target="_blank">Billy Korando</a>, we&#8217;ll explore the significant changes made to the Z Garbage Collector (ZGC) in JDK 21. This update has turned ZGC into a multi-generational garbage collector, often referred to as Generational ZGC.</p>
+
+
+
+<p><a href="https://maciejwalkowiak.com/blog/java-reified-generics/" rel="noopener" target="_blank">Reified Generics in Java?</a> – Even though Java does not support reified generics, there is a workaround that allows an array type to be reified even with an erased generics type.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/11/devoxx-teaching-old-streams-new-tricks/" rel="noopener" target="_blank">Teaching Old Streams New Tricks</a> – In this <a href="https://devoxx.be/" rel="noopener" target="_blank">Devoxx </a>presentation, Victor Klang showcases Gatherers, a prospective future API designed to create and reuse intermediate operations for <em>java.util.stream.Stream</em>.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/05/newscast-56/" rel="noopener" target="_blank">New Class-File API will make Java Updates easier – Inside Java Newscast #56</a> – This video introduces the new class-file API that ships an up-to-date bytecode analysis and manipulation API with the JDK.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/11/jepcafe20/" rel="noopener" target="_blank">ArrayList vs. LinkedList – JEP Cafe #20</a> – The Collections Framework has two List implementations: ArrayList and LinkedList. This JEP Café explains how to measure their performance and memory usage to help you pick the right one for your application.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/12/devoxx-jms/" rel="noopener" target="_blank">Where the JVM is Entering the Era of AI Performance Tuning!</a> – Created by Oracle&#8217;s JVM team, the Oracle Java Management Cloud Service (JMS) now includes an AI engine for performance analysis. Ana-Maria Mihalceanu presents this AI engine during her talk at <a href="https://devoxx.be/" rel="noopener" target="_blank">Devoxx Belgium 2023</a>.</p>
+
+
+
+<p><a href="https://mostlynerdless.de/blog/2023/10/11/jdwp-onthrow-and-a-mysterious-error/" rel="noopener" target="_blank">JDWP, onthrow, and a mysterious error</a> – <a href="https://mostlynerdless.de/me/" rel="noopener" target="_blank">Johannes Bechberger</a> describes how the JDWP agent helps to track and solve a JDB bug.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/04/concurrent-undo-cycle/" rel="noopener" target="_blank">What is… a Concurrent Undo Cycle</a> – <a href="https://tschatzl.github.io/about/" rel="noopener" target="_blank">Thomas Schatzl </a>explains what Concurrent Undo Cycle messages in the logs mean and what you should do if they occur.</p>
+
+
+
+<p><a href="https://foojay.io/today/foojay-podcast-30/" rel="noopener" target="_blank">Foojay Podcast #30: Utrecht JUG</a> – If you have ever wondered what a JUG (Java User Group) is, this talk may be interesting.</p>
+
+
+
+<p><a href="https://quarkus.io/blog/virtual-threads-3/" rel="noopener" target="_blank">Testing virtual thread applications</a> – This video shows how to test a CRUD application using virtual threads in Quarkus and detect pinning there.</p>
+
+
+
+<p><a href="https://www.infoq.com/presentations/profilers-open-source/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Java" rel="noopener" target="_blank">Is Your Java Application Slow? Check out These Open-Source Profilers</a> – <a href="https://twitter.com/parttimen3rd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" rel="noopener" target="_blank">Johannes Bechberger</a> focuses on the fundamental aspects of profiling, including topics such as flame graphs, utilizing async-profiler and JMC, and weighing the pros and cons of these various tools.</p>
+
+
+
+<p><a href="https://foojay.io/today/how-to-diagnose-and-mitigate-pinning-in-javas-virtual-thread-execution/" rel="noopener" target="_blank">How to Diagnose and Mitigate Pinning in Java’s Virtual Thread Execution</a> – <a href="https://foojay.io/today/author/bazlur-rahman/" rel="noopener" target="_blank">A N M Bazlur Rahman</a> breaks down the concept of pinning, exploring why it happens, its limitations, and how to manage and track it effectively.</p>
+
+
+
+<p><a href="https://dzone.com/articles/java-21-record-and-pattern-matching-master-data-or" rel="noopener" target="_blank">Java 21 Record and Pattern Matching: Master Data-Oriented Programming [Video]</a> – In this short article and the video linked to it, <a href="https://dzone.com/users/2659907/otaviojava.html" rel="noopener" target="_blank">Otavio Santana</a> demonstrates JEPs 440 and 441.</p>
+
+
+
+<p><a href="https://dzone.com/articles/java-and-mongodb-integration-a-crud-tutorial" rel="noopener" target="_blank">Java and MongoDB Integration: A CRUD Tutorial [Video Tutorial]</a> – This page presents a collection of videos devoted to MongoDB, from installation to updating multiple documents in a MongoDB collection, and many other topics.</p>
+
+
+
+<p><a href="https://foojay.io/today/java-21-and-the-upcoming-jakarta-ee-11-a-new-era-of-cloud-native-java/" rel="noopener" target="_blank">Java 21 and the Upcoming Jakarta EE 11: A New Era of Cloud Native Java</a> – In this blog, <a href="https://foojay.io/today/author/jadon-ortlepp/" rel="noopener" target="_blank">Jadon Ortlepp</a> discusses how Java 21 and the upcoming Jakarta EE release can improve cloud-native Java development, both individually and together.</p>
+
+
+
+<p><a href="https://foojay.io/today/beyond-pass-fail-a-modern-approach-to-java-integration-testing/" rel="noopener" target="_blank">Beyond Pass/Fail- a Modern Approach to Java Integration Testing</a> – In this article, <a href="https://foojay.io/today/author/roni-dover/" rel="noopener" target="_blank">Roni Dover</a> reevaluates the testing pyramid in light of evolving technology trends and proposes a fresh default approach for testing your application.</p>
+
+
+
+<p><a href="https://inside.java/2023/10/13/markdown-in-javadoc-comments/" rel="noopener" target="_blank">Support Markdown in Javadoc Comments</a> – <a href="https://www.linkedin.com/in/jonathangibbons/" rel="noopener" target="_blank">Jonathan Gibbons</a> provides updates on the improved support for Markdown in documentation comments, including a new form for documentation comments, code spans and code blocks, reference links, and more.</p>
+
+
+
+<h2 class="wp-block-heading">Languages, Frameworks, Libraries, and Technologies</h2>
+
+
+
+<p>This Week in Spring <a href="https://spring.io/blog/2023/10/03/this-week-in-spring-october-3rd-2023" rel="noopener" target="_blank">1</a>, <a href="https://spring.io/blog/2023/10/10/this-week-in-spring-october-10th-2023" rel="noopener" target="_blank">2,</a> <a href="https://spring.io/blog/2023/10/17/this-week-in-spring-october-17th-2023" rel="noopener" target="_blank">3</a>, <a href="https://spring.io/blog/2023/10/24/this-week-in-spring-october-24th-2023" rel="noopener" target="_blank">4</a> – Check out the most important Spring-related news.&nbsp;</p>
+
+
+
+<p><a href="https://vladmihalcea.com/spring-data-jpa-stream/" rel="noopener" target="_blank">The best way to use Spring Data JPA Stream methods</a> – <a href="https://vladmihalcea.com/" rel="noopener" target="_blank">Vlad Mihalcea</a> explores the optimal approach to using Spring Data JPA Stream query methods. When dealing with large result sets, Java Streams offer the advantage of fetching data progressively instead of all at once.</p>
+
+
+
+<p><a href="https://spring.io/blog/2023/10/05/a-bootiful-podcast-spring-data-legend-greg-turnquist-on-optimizations-and" rel="noopener" target="_blank">A Bootiful Podcast: Spring Data legend Greg Turnquist on optimizations and queries and more</a> – This podcast features a chat with the Spring Data expert <a href="https://spring.io/team/gregturn" rel="noopener" target="_blank">Greg Turnquist</a> about the remarkable performance improvements and query enhancements, the overall project, and a whole lot more.</p>
+
+
+
+<p><a href="https://medium.com/wriketechclub/caching-spring-context-between-test-runs-how-to-speed-up-the-local-testing-process-90839e794c36" rel="noopener" target="_blank">Caching Spring Context Between Test Runs: How to Speed Up the Local Testing Process</a> – Optimizing tests is crucial. The challenge is to save time on test initialization while keeping testing efficient. This article suggests a new way to solve this problem by caching a Spring context between test runs.</p>
+
+
+
+<p><a href="https://dzone.com/articles/how-to-generate-spring-properties-documentation" rel="noopener" target="_blank">How To Generate Spring Properties Documentation</a> – Are you having trouble keeping your Spring configuration properties documentation in sync with your code? Discover solutions to this problem in this article.</p>
+
+
+
+<p><a href="https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka" rel="noopener" target="_blank">Transactional Rollback Strategies with Spring Cloud Stream and Apache Kafka</a> – This blog contains links to a series of articles about working with transactions in Spring Cloud Stream Kafka applications. It also provides more details on rolling back a transaction when an error occurs.</p>
+
+
+
+<p><a href="https://glaforge.dev/posts/2023/10/20/tech-watch-003/" rel="noopener" target="_blank">Tech Watch #3 — October 20, 2023</a> – <a href="https://glaforge.dev/" rel="noopener" target="_blank">Guillaume Laforge</a> offers a personal selection of tech news and updates.</p>
+
+
+
+<p><a href="https://youtu.be/yA5_xp2nlgk?feature=shared" rel="noopener" target="_blank">Spring Boot &amp; Kotlin Tutorial – Crash Course For Java Devs</a> – <a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbjUtc2FZNTZzcUFyeUxwWkNBU3lyaUQxOWx1d3xBQ3Jtc0tuRDVGdEEyUVlhMDRkMnZTZWFVTU0wZUZsbFdETkg3TE5vajh6MDd5UTZybkVBZmsyNTBHd09GSEhKREh5bFlWY2VHdzRQb3dSZm5mdWlfQ2s0NzRfQ1lObDNRdW1JZ1lfR1RnNmhoUHkzWWF0YzRWRQ&amp;q=https%3A%2F%2Ftwitter.com%2FMarcoBehler&amp;v=yA5_xp2nlgk" rel="noopener" target="_blank">Marco Behler</a> demonstrates how to create a Spring Boot application using Kotlin. He begins with a fresh project and builds a small CRUD REST service. Throughout, he explores fundamental Kotlin concepts and more advanced topics, including Kotlin&#8217;s compatibility with JPA.</p>
+
+
+
+<p><a href="https://dzone.com/articles/micro-frontends-for-quarkus-microservices" rel="noopener" target="_blank">Microfrontends for Quarkus Microservices</a> – <a href="https://dzone.com/users/3918319/nicolasduminil.html" rel="noopener" target="_blank">Nicolas Duminil</a> explains the concept behind microfrontends.</p>
+
+
+
+<p><a href="https://www.infoq.com/news/2023/10/chatgpt-voice-image/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">OpenAI Announces ChatGPT Voice and Image Features</a> – OpenAI has recently unveiled exciting updates for ChatGPT. They&#8217;re introducing GPT-4V, a powerful model for handling image inputs and enhancing DALL-E to generate images. Plus, the mobile ChatGPT app will soon support voice conversations with the chatbot.</p>
+
+
+
+<p><a href="https://www.infoq.com/presentations/overcomplicated-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">Presentation: Overcomplicated Architecture: Scaling Bottleneck</a> – <a href="https://www.linkedin.com/in/cassandrashum/" rel="noopener" target="_blank">Cassandra Shum</a> discusses a common software development challenge: dealing with overly complex architectures. She explores how companies end up with such complex systems and offers insights on simplifying and streamlining them.</p>
+
+
+
+<p><a href="https://www.infoq.com/news/2023/10/producing-quality-code-AI/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">The Challenges of Producing Quality Code When Using AI-Based Generalistic Models</a> – <a href="https://www.infoq.com/profile/Ben-Linders/" rel="noopener" target="_blank">Ben Linders</a> explains how using AI with generalistic models can help you eliminate the feeling that the generated code was created by a stranger, which may not match your standards and quality.</p>
+
+
+
+<p><a href="https://www.infoq.com/presentations/ray-ml/" rel="noopener" target="_blank">Presentation: Ray: The Next Generation Compute Runtime for ML Applications</a> – <a href="https://www.linkedin.com/in/zhezhang-zhz/" rel="noopener" target="_blank">Zhe Zang </a>introduces the basic API and architectural concepts of Ray, as well as diving deeper into some of its innovative ML use cases.</p>
+
+
+
+<p><a href="https://foojay.io/today/level-up-your-java-debugging-skills-with-on-demand-debugging/" rel="noopener" target="_blank">Level-up your Java Debugging Skills with on-demand Debugging</a> – <a href="https://mostlynerdless.de/me/" rel="noopener" target="_blank">Johannes Bechberger</a> writes about the hidden gems of the Java Debugging (JDWP) agent: JCmd triggered debugging, Exception triggered debugging, and more.</p>
+
+
+
+<h2 class="wp-block-heading">Kotlin Corner</h2>
+
+
+
+<p><a href="https://blog.jetbrains.com/kotlin/2023/10/kotlin-support-in-jetbrains-fleet/">Kotlin Support in Fleet: Explore a New IDE from JetBrains</a> – In this blog post, we want to provide insights into the current status of Kotlin support in the Fleet Public Preview. We&#8217;ll offer an overview of the IDE&#8217;s various features for Kotlin projects.</p>
+
+
+
+<p><a href="https://sessionize.com/kotlinconf-2024" rel="noopener" target="_blank">KotlinConf 2024 CFP is still open! </a>– KotlinConf is an official JetBrains conference. It is devoted to the Kotlin programming language and is the place for the community to gather and discuss all things Kotlin. Join us!</p>
+
+
+
+<p><a href="https://dev.to/jakub_zalas/functional-event-sourcing-1ea5" rel="noopener" target="_blank">Functional event sourcing with Kotlin and Arrow </a>– <a href="https://dev.to/jakub_zalas" rel="noopener" target="_blank">Jakub Zalas</a> shows how to apply the event sourcing pattern to a functional domain model.</p>
+
+
+
+<p><a href="https://void2unit.onrender.com/post/multimodule-maven-java-kotlin-config/" rel="noopener" target="_blank">How to add Kotlin as a second language to a SpringBoot app using Maven multimodule</a> – Stephan Schröder shares his experience in adding Kotlin as a second language to a SpringBoot app that is separated into several Maven modules.</p>
+
+
+
+<p><a href="https://towardsdev.com/how-to-deal-with-transaction-handling-in-springboot-applications-when-using-either-5f9686bee897" rel="noopener" target="_blank">How to deal with transactions in SpringBoot applications with Arrow’s Either </a>– <a href="https://medium.com/@inzuael?source=post_page-----5f9686bee897--------------------------------" rel="noopener" target="_blank">Matthias Schenk</a> shares the things he has learned in this process of studying exception handling with<em> Either</em>.</p>
+
+
+
+<p><a href="https://blog.kotlin-academy.com/kotlin-and-variance-navigating-type-relationships-86809d84fd01" rel="noopener" target="_blank">Kotlin and Variance: Navigating Type Relationships</a> – <a href="https://verbosemode.dev/?source=post_page-----86809d84fd01--------------------------------" rel="noopener" target="_blank">Mirco on Tech</a> explains “invariance, covariance, and contravariance”. While this article uses Kotlin for illustration, the core concepts resonate across several programming languages, including Scala, Java, C#, and Swift.</p>
+
+
+
+<p><a href="https://kt.academy/article/ak-reflection" rel="noopener" target="_blank">Kotlin Reflection: Method and property references</a> – Read this comprehensive tutorial for more detail on function, parameter, and property references.</p>
+
+
+
+<h2 class="wp-block-heading">Conferences and Events</h2>
+
+
+
+<p><a href="https://foojay.io/today/foojay-podcast-31/" rel="noopener" target="_blank">Foojay Podcast #31: Report of Devoxx ’23 in Belgium</a> – Frank Delporte walks around with a microphone and talks to visitors and speakers. Check out these exclusive interviews!</p>
+
+
+
+<p>Here are some events you might want to attend in person or online in November:</p>
+
+
+
+<p><a href="https://heapcon.io/2023/" rel="noopener" target="_blank">Heapcon</a> – Belgrade, Serbia, November 2–3.</p>
+
+
+
+<p><a href="https://jax.de/munich/" rel="noopener" target="_blank">W-Jax</a> – Munich, Germany, November 6–10.</p>
+
+
+
+<p><a href="https://www.fooconf.fi/" rel="noopener" target="_blank">FooConf Helsinki</a> – Helsinki, Finland, November 7.</p>
+
+
+
+<p><a href="https://javadays.cz/" rel="noopener" target="_blank">JavaDays Czech Republic</a> – Prague, Czech Republic, November 8–9.</p>
+
+
+
+<p><a href="https://oredev.org" rel="noopener" target="_blank">Øredev</a> – Malmö, Sweden, November 8–10.</p>
+
+
+
+<p><a href="https://jfall.nl/" rel="noopener" target="_blank">JFall</a> – Ede, Netherlands, November 9.</p>
+
+
+
+<p><a href="https://2023.world.jcon.one" rel="noopener" target="_blank">JCon World</a> – Online, November 21–23.</p>
+
+
+
+<p><a href="https://voxxeddays.com/thessaloniki/" rel="noopener" target="_blank">Voxxed Days Thessaloniki</a> – Thessaloniki, Greece, November 24–25.</p>
+
+
+
+<h2 class="wp-block-heading">Culture and Community</h2>
+
+
+
+<p><a href="https://engineercodex.substack.com/p/how-instagram-scaled-to-14-million" rel="noopener" target="_blank">How Instagram scaled to 14 million users with only 3 engineers</a> – From October 2010 to December 2011, Instagram scaled from nothing to 14 million users. They did this with only three engineers. How did they manage to do that in just over a year?</p>
+
+
+
+<p><a href="https://www.infoq.com/articles/improve-predictability-measure-stability/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener" target="_blank">Article: How Agile Teams Can Improve Predictability by Measuring Stability</a> – Read the article to learn more about the new Stability Metric (ψ), that uses queueing theory to test assumptions of system stability in agile systems.</p>
+
+
+
+<p><a href="https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html" rel="noopener" target="_blank">Death By a Thousand Microservices</a> – <a href="https://renegadeotter.com/contact" rel="noopener" target="_blank">Andrei Taranchenko</a> shares his opinion on why overcomplicated microservices usually solve problems that you don’t have.</p>
+
+
+
+<p><a href="https://benjiweber.co.uk/blog/2023/10/15/one-does-not-simply-deliver-software/" rel="noopener" target="_blank">One does not simply deliver software</a> – <a href="https://benjiweber.co.uk/" rel="noopener" target="_blank">Benji Weber</a> helps you discover the unexpected similarities between a Murano glass deliverer and a software developer in this article.</p>
+
+
+
+<p><a href="https://benjiweber.co.uk/blog/2023/10/15/engineering-team-lessons-from-cycling/" rel="noopener" target="_blank">Engineering Team Lessons from Cycling</a> – This is another metaphor from the same author as the previous article.</p>
+
+
+
+<h2 class="wp-block-heading">And Finally…</h2>
+
+
+
+<p><a href="https://blog.jetbrains.com/blog/2023/10/12/ai-assistant-update-october-2023/">AI Assistant Update – October 2023 </a>– This article presents the latest features of our AI Assistant, introduced in the 2023.3 EAP of JetBrains IDEs, such as in-editor code generation, context-aware smart chat, project-aware AI actions, and a refactorings diff view.</p>
+
+
+
+<p><a href="http://blog.jetbrains.com/idea/2023/10/new-livestream-jpa-buddy-from-zero-to-hero/">The Best of IntelliJ IDEA&#8217;s HTTP Client</a> – Discover the most exciting features in the HTTP Client. See how you can easily handle HTTP requests and environment files, and explore the support for gRPC, GraphQL, WebSocket requests, and beyond.</p>
+
+
+
+<p>That&#8217;s a wrap for today!</p>
+
+
+
+<p>If you have content suggestions for the next Java Annotated Monthly, please send them via email or <a href="https://twitter.com/intellijidea?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" rel="noopener" target="_blank">Twitter</a>. Article suggestions are welcome until November 20.<br />You can access all previous JAM issues in our <a href="https://www.jetbrains.com/lp/jam/?_gl=1*c0y996*_ga*MTU4OTU4OTM4OC4xNjc0NDc0MTMy*_ga_9J976DJZ68*MTY4Nzc4MzExOC4zMDkuMS4xNjg3Nzg2MDIxLjQ5LjAuMA..&amp;_ga=2.200387629.2063623878.1687783118-1589589388.1674474132" rel="noopener" target="_blank">dedicated archive</a>. If you missed any interesting blog posts or articles, you&#8217;ll find them there.</p>
+]]></content:encoded>
+<pubDate>Fri, 03 Nov 2023 11:41:08 +0000</pubDate>
+<pubDate>Fri, 03 Nov 2023 11:41:08 +0000</pubDate>
+</item>
+<item>
+<title>JetBrains at Unite Amsterdam</title>
+<link>https://blog.jetbrains.com/dotnet/2023/11/03/jetbrains-at-unite-amsterdam/</link>
+<guid>https://blog.jetbrains.com/dotnet/2023/11/03/jetbrains-at-unite-amsterdam/</guid>
+<content:encoded><![CDATA[
+
+<p>For the first time in four years, the Unite conference will take place in person, and it will be in Amsterdam on November 15–16. JetBrains couldn’t miss the opportunity to be there!</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-403920" height="1440" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/Copy-of-Preview-page-1280x720-2x.png" width="2560" /></figure>
+
+
+
+<p>Our involvement doesn’t end at our booth at the expo – we are also hosting the <strong>JetBrains Pre-Unite Borrel Party</strong>! Join us at our Amsterdam office and be among the first to socialize with conference attendees ahead of the official Unite Welcome Party.</p>
+
+
+
+<h3 class="wp-block-heading">What&#8217;s a “borrel”?</h3>
+
+
+
+<p>A “borrel” is Dutch for a shot of whiskey or another alcoholic beverage, but more broadly, it describes a social gathering with drinks and snacks in an informal setting – a cocktail party.</p>
+
+
+
+<h3 class="wp-block-heading">Here’s what you’ll be able to do at our borrel</h3>
+
+
+
+<ul>
+<li>Relax after your flight at our cozy pre-party. A buffet with free food and drinks will be waiting for you.</li>
+
+
+
+<li>Take part in special activities to learn more about JetBrains Rider and more! We’ve prepared a couple of quiz games for you to check how familiar you are with JetBrains tools and the history of game development, along with short demo talks to learn more about Rider and TeamCity. If you have any specific questions, our product team will be around and happy to chat.</li>
+
+
+
+<li>Meet with new and old friends to discuss the latest industry news or just say hi.</li>
+</ul>
+
+
+
+<p>The party is free to attend – you don’t even need a ticket for Unite itself to join us. Just register via the link below.</p>
+
+
+    <div class="buttons">
+        <div class="buttons__row">
+                                                <a class="btn" href="https://lp.jetbrains.com/unite-pre-party/?utm_source=google&#038;utm_medium=social&#038;utm_campaign=rider&#038;utm_content=blog_post" rel="noopener" target="">Join us</a>
+                                                    </div>
+    </div>
+
+
+
+
+
+
+
+<h3 class="wp-block-heading">How to find us</h3>
+
+
+
+<p>JetBrains is hosting its Pre-Unite Borrel Party at its office in Terrace Tower, Amsterdam (Gelrestraat 16), which is only 15 minutes from the Heineken Experience, where the Welcome Party takes place.</p>
+
+
+
+<p>See you there,</p>
+
+
+
+<p>Your JetBrains team</p>
+]]></content:encoded>
+<pubDate>Fri, 03 Nov 2023 11:37:21 +0000</pubDate>
+<pubDate>Fri, 03 Nov 2023 11:37:21 +0000</pubDate>
+</item>
+<item>
+<title>More Bug Fixes: ReSharper 2023.2.3 and Rider 2023.2.3 Are Out!</title>
+<link>https://blog.jetbrains.com/dotnet/2023/11/03/resharper-rider-2023-2-3/</link>
+<guid>https://blog.jetbrains.com/dotnet/2023/11/03/resharper-rider-2023-2-3/</guid>
+<content:encoded><![CDATA[
+
+<p><a href="https://www.jetbrains.com/resharper/download" rel="noopener" target="_blank">ReSharper</a> and <a href="https://www.jetbrains.com/rider/download/#section=windows" rel="noopener" target="_blank">Rider</a> have just received their third set of bug-fix updates for the 2023.2 release! Let’s take a look at the most important issues that have been resolved in this update.</p>
+
+
+
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-401392" height="1440" src="https://blog.jetbrains.com/wp-content/uploads/2023/11/rs-bug-fix-prev-featured_blog_1280x720.png" width="2560" /></figure>
+
+
+
+<h2 class="wp-block-heading">ReSharper&nbsp;</h2>
+
+
+
+<ul>
+<li>The previously insufficient timeout period has been extended to allow for Visual Studio to update its configuration after ReSharper’s installation is completed. (<a href="https://youtrack.jetbrains.com/issue/RSRP-494277" rel="noopener" target="_blank">RSRP-494277</a>)</li>
+
+
+
+<li>Visual Studio 2022 &nbsp;running on ARM64 processors no longer crashes during the typing of C# code with ReSharper is enabled. (<a href="https://youtrack.jetbrains.com/issue/RSRP-494300" rel="noopener" target="_blank">RSRP-494300</a>)</li>
+</ul>
+
+
+
+<p>For the full list of resolved issues, please refer to <a href="https://youtrack.jetbrains.com/issues/RSRP?q=Available%20in:%202023.2.3%20" rel="noopener" target="_blank">our issue tracker</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Rider</h2>
+
+
+
+<ul>
+<li>Rider once again correctly displays Unity’s declarations on macOS. [<a href="https://youtrack.jetbrains.com/issue/RIDER-93883/Rider-2023.1-and-later-cannot-show-Unitys-declaration." rel="noopener" target="_blank">RIDER-93883</a>]</li>
+
+
+
+<li>The ability to deploy and debug to physical iOS 17 devices using Xamarin has been restored. [<a href="https://youtrack.jetbrains.com/issue/RIDER-99240/Deploy-Debug-to-physical-iOS-17-devices-via-XCode-15-using-Xamarin-16.4.0.18" rel="noopener" target="_blank">RIDER-99240</a>]</li>
+
+
+
+<li>The list of directories is again correctly rendered in the <em>Solution Explorer</em>. [<a href="https://youtrack.jetbrains.com/issue/IDEA-326394" rel="noopener" target="_blank">IDEA-326394</a>]</li>
+
+
+
+<li>Absolute directory paths in the <em>Commit</em> tool window no longer take up too much space as a result of redundantly replicating parent paths. [<a href="https://youtrack.jetbrains.com/issue/IDEA-326271/Commit-window-shows-full-path-irregularly" rel="noopener" target="_blank">IDEA-326271</a>]</li>
+
+
+
+<li>We’ve addressed the issue that made it impossible to copy text from a local machine’s editor and paste it into the editor on Windows Remote Desktop. [<a href="https://youtrack.jetbrains.com/issue/IDEA-313776/Can-not-paste-the-text-data-on-the-windows-remote-desktop-copied-from-IDEA-editor" rel="noopener" target="_blank">IDEA-313776</a>].</li>
+
+
+
+<li>This build also includes support for @ variables in <a href="https://www.jetbrains.com/help/rider/Http_client_in__product__code_editor.html" rel="noopener" target="_blank">HTTP Client</a>. [<a href="https://youtrack.jetbrains.com/issue/RIDER-98743/HTTP-Client-232-support-variables" rel="noopener" target="_blank">RIDER-98743</a>, <a href="https://youtrack.jetbrains.com/issue/IDEA-320823/HTTP-Client-Support-for-variables" rel="noopener" target="_blank">IDEA-320823</a>]</li>
+</ul>
+
+
+
+<p>For the full list of resolved issues, please refer to <a href="https://youtrack.jetbrains.com/issues/RIDER?q=available%20in:%202023.2.3*" rel="noopener" target="_blank">our issue tracker</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+
+
+<p><br />You can download <a href="https://www.jetbrains.com/rider/download/?_gl=1*jjt5hz*_ga*MTA4OTA3Mzc3Mi4xNjU2NTk3Mzkx*_ga_9J976DJZ68*MTY2MDA0MzY4MS43Ny4xLjE2NjAwNDYwMTkuNjA.&amp;_ga=2.2607218.370901230.1659966440-1089073772.1656597391" rel="noopener" target="_blank">Rider 2023.2.3</a> and <a href="https://www.jetbrains.com/resharper/download/?_gl=1*jjt5hz*_ga*MTA4OTA3Mzc3Mi4xNjU2NTk3Mzkx*_ga_9J976DJZ68*MTY2MDA0MzY4MS43Ny4xLjE2NjAwNDYwMTkuNjA.&amp;_ga=2.2607218.370901230.1659966440-1089073772.1656597391" rel="noopener" target="_blank">ReSharper 2023.2.3</a> from our website or update either product via the <a href="https://www.jetbrains.com/toolbox/app/" rel="noopener" target="_blank">Toolbox App</a>. You can also update Rider as a <a href="https://snapcraft.io/rider" rel="noopener" target="_blank">snap</a> for Ubuntu. We would appreciate your feedback on the latest versions! Please don’t hesitate to share your thoughts in the comments below or on X (formerly Twitter) (<a href="https://twitter.com/resharper" rel="noopener" target="_blank">ReSharper</a>, <a href="https://twitter.com/jetbrainsrider" rel="noopener" target="_blank">Rider</a>).</p>
+]]></content:encoded>
+<pubDate>Fri, 03 Nov 2023 11:23:54 +0000</pubDate>
+<pubDate>Fri, 03 Nov 2023 11:23:54 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

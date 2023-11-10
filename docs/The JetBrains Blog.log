@@ -1,0 +1,39 @@
+------------------------------------------------------
+Started: 2023-11-10 03:08:58.920756
+Existing_entries: 0
+Fetching from https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253
+Token length: 5772
+Summarized using GPT-3.5-turbo-1106
+Append: [ReSharper 2023.3 EAP 6: Code Analysis Performance Improvements, Support for C# 12 Interceptors, and Much More.](https://blog.jetbrains.com/dotnet/2023/11/08/resharper-2023-3-eap-6/) 摘要: ReSharper 2023.3, 更新, 分析, C#, 安全性
+<br>
+ReSharper 2023.3 最新版本带来了性能改进，改进了代码分析服务在用户输入时可进行增量操作，提高了大型文件的处理速度。另外，重构了提取本地函数重构的用户体验，改进了用户界面并提供了具体的预览。同时，该版本支持了C# 12的拦截器功能，提供了导航和配置功能。此外，还引入了针对API漏洞的新的安全检查功能，以及对Razor的新格式引擎和对StyleCop.Analyzers的支持。
+Token length: 2443
+Summarized using GPT-3.5-turbo-1106
+Append: [ReSharper C++ 2023.3 EAP: HLSL Updates and Completion in Inactive Code](https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/) 摘要: HLSL, code completion, inactive preprocessor branches, inlay hint, updates<br>
+ReSharper C++的最新Early Access Program版本已经发布，更新内容包括对HLSL的支持，支持条件预处理器分支内的代码补全，引入新的内联提示和其他更新。HLSL支持现在包括对模板的完整支持，以及对RayQuery的支持。在不活跃的代码块内，代码补全现在可以包括全局作用域内的符号，并且查找用法功能已经更新，可以找到潜在的用法。内联提示现在有一个单独的标记，用来快速识别转发引用。除此之外，对C99的restrict类型限定符提供了支持，同时对于宏替换所产生的符号进行了隐藏，以提高代码导航体验。此外，对于大括号布局的格式设置添加了一项新的选项。总的来说，这次更新为ReSharper C++带来了多项重要的改进和新功能。
+Token length: 3387
+Summarized using GPT-3.5-turbo-1106
+Append: [OSS Power-Ups: MassTransit – Webinar Recording](https://blog.jetbrains.com/dotnet/2023/11/08/oss-power-ups-masstransit-webinar-recording/) 摘要: MassTransit, webinar, Chris Patterson, messaging patterns, open-source.NET projects
+<br><br>
+总结:
+这篇文章介绍了有关MassTransit的网络研讨会。讲座的主题包括MassTransit所支持的消息模式，Chris Patterson的介绍和关于MassTransit的相关内容。Chris Patterson还演示了如何使用MassTransit发布消息，监视消息并消费消息，以及配置重试模式和处理失败。讲座还涉及了与RabbitMQ的集成，请求/响应与发布之间的区别，以及如何在响应中演变API契约。除此之外，还介绍了Sagas的概念以及MassTransit的状态机示例。讲座最后提供了有关讲者Chris Patterson的相关资源和信息。Chris Patterson是一位资深的企业软件架构师，同时也是Loosely Coupled, LLC的创始人，他还是MassTransit开源分布式应用框架的作者。
+Token length: 4322
+Summarized using GPT-3.5-turbo-1106
+Append: [Welcome Fleet with Kotlin Multiplatform Tooling](https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-tooling-in-fleet/) 摘要: Kotlin Multiplatform, Fleet, JetBrains, 开发, 跨平台
+<br><br>总结:
+JetBrains推出的Kotlin Multiplatform（KMP）技术允许开发人员在多个平台共享代码，包括iOS、Android、桌面、web等。Fleet是一个多语言IDE，支持Kotlin Multiplatform开发，提供了简单性、多语言编程、代码导航、重构和调试等特性。在Fleet中开发Kotlin Multiplatform应用无需切换工具，而且在预览期间是免费的。Fleet会继续在IntelliJ IDEA和IntelliJ平台为Kotlin提供支持，但是针对多平台开发的特性将只在Fleet中支持。想要尝试Kotlin Multiplatform开发，可以通过Fleet进行安装，同时也有专门的教程和项目模板。JetBrains希望收到用户的反馈意见，以便不断改进Kotlin Multiplatform Tooling工具。
+Token length: 22236
+Summarized using GPT-3.5-turbo-1106
+Append: [How JetBrains Rider Implemented .NET WebAssembly Debugging](https://blog.jetbrains.com/dotnet/2023/11/07/how-jetbrains-rider-implemented-net-webassembly-debugging/) 摘要: Blazor, WebAssembly, 调试器, CDP, JetBrains Rider<br>
+Blazor是.NET技术的一部分，使用C#构建全栈Web应用程序，无需编写JavaScript代码。Blazor有服务器端和客户端两种实现，同时使用WebAssembly在浏览器中运行并与DOM交互。.NET IDE——JetBrains Rider，帮助开发Blazor应用程序，并实现了对Blazor WASM和所有.NET应用程序目标WebAssembly的调试器。调试器通过许多工程细节实现了与WebAssembly运行时和浏览器之间的通信。
+总结:<br>
+本文介绍了Blazor、WebAssembly、调试器、CDP和JetBrains Rider等关键词的含义和相关内容，以及它们在.NET Web应用程序的开发和调试中的重要作用。
+Append: [WebStorm 2023.3 EAP Digest #3: Angular, React, and Vue Improvements and More](https://blog.jetbrains.com/webstorm/2023/11/webstorm-2023-3-eap-3/) 摘要: None
+Append: [PyCharm 2023.2.4 Is Out!](https://blog.jetbrains.com/pycharm/2023/11/2023-2-4/) 摘要: None
+Append: [JetBrains Academy: New Projects and Topics in November](https://blog.jetbrains.com/education/2023/11/03/jetbrains-academy-new-projects-and-topics-in-november-2/) 摘要: None
+Append: [RubyMine 2023.3 EAP Update](https://blog.jetbrains.com/ruby/2023/11/rubymine-2023-3-eap-update/) 摘要: None
+Append: [Java Annotated Monthly – November 2023](https://blog.jetbrains.com/idea/2023/11/java-annotated-monthly-november-2023/) 摘要: None
+Append: [JetBrains at Unite Amsterdam](https://blog.jetbrains.com/dotnet/2023/11/03/jetbrains-at-unite-amsterdam/) 摘要: None
+Append: [More Bug Fixes: ReSharper 2023.2.3 and Rider 2023.2.3 Are Out!](https://blog.jetbrains.com/dotnet/2023/11/03/resharper-rider-2023-2-3/) 摘要: None
+append_entries: 12
+Finish: 2023-11-10 03:10:25.682034

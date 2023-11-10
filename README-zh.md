@@ -54,8 +54,9 @@
 
 如果你觉得本项目有帮助，欢迎 star。
 
-- https://brett.trpstra.net/brettterpstra -> https://github.com/brett-terpstra.xml
-- https://meta.appinn.net/tag/chrome.rss, https://meta.appinn.net/tag/ios.rss, https://meta.appinn.net/tag/macos.rss -> https://github.com/appinn.xml
-- https://rsshub.app/sspai/index -> https://github.com/sspai.xml
-- https://rsshub.app/36kr/motif/327685554177, https://rsshub.app/36kr/motif/327687077889, https://rsshub.app/36kr/motif/1366661828936836, https://rsshub.app/36kr/motif/1366662419875203, https://rsshub.app/36kr/motif/1756302767423108, https://rsshub.app/36kr/motif/327686815745, https://rsshub.app/36kr/motif/327685734401 -> https://github.com/36kr.xml
-- https://rsshub.app/36kr/motif/327686782977 -> https://github.com/36kr-ai.xml
+- https://brett.trpstra.net/brettterpstra -> https://github.com/ArnoFrost/RSS-GPTbrett-terpstra.xml
+- https://meta.appinn.net/tag/chrome.rss, https://meta.appinn.net/tag/ios.rss, https://meta.appinn.net/tag/macos.rss -> https://github.com/ArnoFrost/RSS-GPTappinn.xml
+- https://rsshub.app/sspai/index -> https://github.com/ArnoFrost/RSS-GPTsspai.xml
+- https://rsshub.app/36kr/motif/327685554177, https://rsshub.app/36kr/motif/327687077889, https://rsshub.app/36kr/motif/1366661828936836, https://rsshub.app/36kr/motif/1366662419875203, https://rsshub.app/36kr/motif/1756302767423108, https://rsshub.app/36kr/motif/327686815745, https://rsshub.app/36kr/motif/327685734401 -> https://github.com/ArnoFrost/RSS-GPT36kr.xml
+- https://rsshub.app/36kr/motif/327686782977 -> https://github.com/ArnoFrost/RSS-GPT36kr-ai.xml
+- https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253 -> https://github.com/ArnoFrost/RSS-GPTThe JetBrains Blog.xml
