@@ -293,8 +293,8 @@ def output(sec, language):
                     out_put = gpt_summary(cleaned_article, model=GPT_MODEL_3_5, language=language)
                     # 提取关键词和摘要文本
                     parts = out_put.split('\n')
-                    keywords_part = parts[0].replace('Keywords: ', '').split(', ')
-                    summary_text = parts[1].replace('Summary: ', '')
+                    keywords_part = parts[0].replace('关键词: ', '').split(', ')
+                    summary_text = parts[1].replace('总结: ', '')
                     entry.keywords = keywords_part
                     entry.summary = summary_text
 
