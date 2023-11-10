@@ -6,21 +6,29 @@ from jinja2 import Template
 from bs4 import BeautifulSoup
 import re
 import datetime
-#from dateutil.parser import parse
+
+
+# from dateutil.parser import parse
 
 def generate_untitled(entry):
-    try: return entry.title
-    except: 
-        try: return entry.article[:50]
-        except: return entry.link
+    try:
+        return entry.title
+    except:
+        try:
+            return entry.article[:50]
+        except:
+            return entry.link
+
 
 def get_cfg(sec, name, default=None):
-    value=config.get(sec, name, fallback=default)
+    value = config.get(sec, name, fallback=default)
     if value:
         return value.strip('"')
 
+
 def set_cfg(sec, name, value):
     config.set(sec, name, '"%s"' % value)
+
 
 def clean_html(html_content):
     """
@@ -48,14 +56,15 @@ def clean_html(html_content):
 
     for audio in soup.find_all("audio"):
         audio.decompose()
-    
+
     for iframe in soup.find_all("iframe"):
         iframe.decompose()
-    
+
     for input in soup.find_all("input"):
         input.decompose()
 
     return soup.get_text()
+
 
 def filter_entry(entry, filter_apply, filter_type, filter_rule):
     """
@@ -95,6 +104,7 @@ def filter_entry(entry, filter_apply, filter_type, filter_rule):
     else:
         raise Exception('filter_type not supported')
 
+
 def read_entry_from_file(sec):
     """
     This function is used to read the RSS feed entries from the feed.xml file.
@@ -111,21 +121,25 @@ def read_entry_from_file(sec):
     except:
         return []
 
+
 def truncate_entries(entries, max_entries):
     if len(entries) > max_entries:
         entries = entries[:max_entries]
     return entries
 
-def gpt_summary(query,model,language):
+
+def gpt_summary(query, model, language):
     if language == "zh":
         messages = [
             {"role": "user", "content": query},
-            {"role": "assistant", "content": f"请用中文总结这篇文章，先提取出{keyword_length}个关键词，在同一行内输出，然后换行，用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，并按照以下格式输出'<br><br>总结:'，<br>是HTML的换行符，输出时必须保留2个，并且必须在'总结:'二字之前"}
+            {"role": "assistant",
+             "content": f"请用中文总结这篇文章，先提取出{keyword_length}个关键词，在同一行内输出，然后换行，用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，并按照以下格式输出'<br><br>总结:'，<br>是HTML的换行符，输出时必须保留2个，并且必须在'总结:'二字之前"}
         ]
     else:
         messages = [
             {"role": "user", "content": query},
-            {"role": "assistant", "content": f"Please summarize this article in {language} language, first extract {keyword_length} keywords, output in the same line, then line break, write a summary containing all the points in {summary_length} words in {language}, output in order by points, and output in the following format '<br><br>Summary:' , <br> is the line break of HTML, 2 must be retained when output, and must be before the word 'Summary:'"}
+            {"role": "assistant",
+             "content": f"Please summarize this article in {language} language, first extract {keyword_length} keywords, output in the same line, then line break, write a summary containing all the points in {summary_length} words in {language}, output in order by points, and output in the following format '<br><br>Summary:' , <br> is the line break of HTML, 2 must be retained when output, and must be before the word 'Summary:'"}
         ]
     client = OpenAI(
         api_key=OPENAI_API_KEY,
@@ -135,6 +149,7 @@ def gpt_summary(query,model,language):
         messages=messages,
     )
     return completion.choices[0].message.content
+
 
 def output(sec, language):
     """ output
@@ -219,8 +234,10 @@ def output(sec, language):
             try:
                 entry.article = entry.content[0].value
             except:
-                try: entry.article = entry.description
-                except: entry.article = entry.title
+                try:
+                    entry.article = entry.description
+                except:
+                    entry.article = entry.title
 
             cleaned_article = clean_html(entry.article)
 
@@ -229,12 +246,11 @@ def output(sec, language):
                     f.write(f"Filter: [{entry.title}]({entry.link})\n")
                 continue
 
-
-#            # format to Thu, 27 Jul 2023 13:13:42 +0000
-#            if 'updated' in entry:
-#                entry.updated = parse(entry.updated).strftime('%a, %d %b %Y %H:%M:%S %z')
-#            if 'published' in entry:
-#                entry.published = parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
+            #            # format to Thu, 27 Jul 2023 13:13:42 +0000
+            #            if 'updated' in entry:
+            #                entry.updated = parse(entry.updated).strftime('%a, %d %b %Y %H:%M:%S %z')
+            #            if 'published' in entry:
+            #                entry.published = parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
 
             cnt += 1
             if cnt > max_items:
@@ -242,13 +258,13 @@ def output(sec, language):
             elif OPENAI_API_KEY:
                 token_length = len(cleaned_article)
                 try:
-                    entry.summary = gpt_summary(cleaned_article,model="gpt-3.5-turbo-1106", language=language)
+                    entry.summary = gpt_summary(cleaned_article, model="gpt-3.5-turbo-1106", language=language)
                     with open(log_file, 'a') as f:
                         f.write(f"Token length: {token_length}\n")
                         f.write(f"Summarized using GPT-3.5-turbo-1106\n")
                 except:
                     try:
-                        entry.summary = gpt_summary(cleaned_article,model="gpt-4-1106-preview", language=language)
+                        entry.summary = gpt_summary(cleaned_article, model="gpt-4-1106-preview", language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using GPT-4-1106-preview\n")
@@ -260,13 +276,14 @@ def output(sec, language):
 
             append_entries.append(entry)
             with open(log_file, 'a') as f:
-                f.write(f"Append: [{entry.title}]({entry.link})\n")
+                # f.write(f"Append: [{entry.title}]({entry.link})\n")
+                f.write(f"Append: [{entry.title}]({entry.link}) 摘要: {entry.summary}\n")
 
     with open(log_file, 'a') as f:
         f.write(f'append_entries: {len(append_entries)}\n')
 
     template = Template(open('template.xml').read())
-    
+
     try:
         rss = template.render(feed=feed, append_entries=append_entries, existing_entries=existing_entries)
         with open(out_dir + '.xml', 'w') as f:
@@ -274,9 +291,10 @@ def output(sec, language):
         with open(log_file, 'a') as f:
             f.write(f'Finish: {datetime.datetime.now()}\n')
     except:
-        with open (log_file, 'a') as f:
+        with open(log_file, 'a') as f:
             f.write(f"error when rendering xml, skip {out_dir}\n")
             print(f"error when rendering xml, skip {out_dir}\n")
+
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -288,7 +306,7 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 U_NAME = os.environ.get('U_NAME')
 # deployment_url = f'https://{U_NAME}.github.io/RSS-GPT/'
 deployment_url = f'https://github.com/ArnoFrost/RSS-GPT'
-BASE =get_cfg('cfg', 'BASE')
+BASE = get_cfg('cfg', 'BASE')
 keyword_length = int(get_cfg('cfg', 'keyword_length'))
 summary_length = int(get_cfg('cfg', 'summary_length'))
 language = get_cfg('cfg', 'language')
@@ -303,9 +321,10 @@ links = []
 
 for x in secs[1:]:
     output(x, language=language)
-    feed = {"url": get_cfg(x, 'url').replace(',','<br>'), "name": get_cfg(x, 'name')}
+    feed = {"url": get_cfg(x, 'url').replace(',', '<br>'), "name": get_cfg(x, 'name')}
     feeds.append(feed)  # for rendering index.html
-    links.append("- "+ get_cfg(x, 'url').replace(',',', ') + " -> " + deployment_url + feed['name'] + ".xml\n")
+    links.append("- " + get_cfg(x, 'url').replace(',', ', ') + " -> " + deployment_url + feed['name'] + ".xml\n")
+
 
 def append_readme(readme, links):
     with open(readme, 'r') as f:
@@ -316,6 +335,7 @@ def append_readme(readme, links):
     readme_lines.extend(links)
     with open(readme, 'w') as f:
         f.writelines(readme_lines)
+
 
 append_readme("README.md", links)
 append_readme("README-zh.md", links)
