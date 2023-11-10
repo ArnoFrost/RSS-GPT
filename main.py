@@ -167,7 +167,7 @@ def gpt_summary(query, model, language):
         messages = [
             {"role": "user", "content": query},
             {"role": "assistant",
-             "content": f"Please summarize this article in {language}, starting with extracting {keyword_length} keywords and listing them. Then, write a summary that contains all the main points in {summary_length} words. Format your output by first presenting the keywords, followed by a line break, and then the summary. Use the following format: 'Keywords: [keyword1], [keyword2], [keyword3], ...<br><br>Summary:<br>[Summary content]'."
+             "content": f"Please summarize this article in {language}. Start by extracting {keyword_length} keywords and list them as bullet points. Then, write a summary that contains all the main points in no more than {summary_length} words. Format your output by first presenting the keywords as a bullet list, followed by 'Summary:' and then the summary content."
              }
         ]
     client = OpenAI(
@@ -290,15 +290,28 @@ def output(sec, language):
                 token_length = len(cleaned_article)
 
                 try:
-                    cnt += 1
-                    entry.summary = gpt_summary(cleaned_article, model=GPT_MODEL_3_5, language=language)
+                    out_put = gpt_summary(cleaned_article, model=GPT_MODEL_3_5, language=language)
+                    # 提取关键词和摘要文本
+                    parts = out_put.split('\n')
+                    keywords_part = parts[0].replace('Keywords: ', '').split(', ')
+                    summary_text = parts[1].replace('Summary: ', '')
+                    entry.keywords = keywords_part
+                    entry.summary = summary_text
+
                     cnt += 1  # 只有成功生成摘要后才增加计数
                     with open(log_file, 'a') as f:
                         f.write(f"Token length: {token_length}\n")
                         f.write(f"Summarized using {GPT_MODEL_3_5}\n")
                 except:
                     try:
-                        entry.summary = gpt_summary(cleaned_article, model=GPT_MODEL_4, language=language)
+                        out_put = gpt_summary(cleaned_article, model=GPT_MODEL_4, language=language)
+                        # 提取关键词和摘要文本
+                        parts = out_put.split('\n')
+                        keywords_part = parts[0].replace('Keywords: ', '').split(', ')
+                        summary_text = parts[1].replace('Summary: ', '')
+                        entry.keywords = keywords_part
+                        entry.summary = summary_text
+
                         cnt += 1  # 只有成功生成摘要后才增加计数
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")

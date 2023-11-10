@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-    <title>{{ feed.feed.title.replace('&', '&amp;') }}</title>
-    <link>{{ feed.feed.link.replace('&', '&amp;') }}</link>
-    <description>{{ feed.feed.description.replace('&', '&amp;') }}</description>
-    <atom:link href="{{ feed.feed.link.replace('&', '&amp;') }}" rel="self" type="application/rss+xml" />
-    {% for entry in append_entries %}
-    <item>
-        <title>{{ entry.title.replace('&', '&amp;') }}</title>
-        <link>{{ entry.link.replace('&', '&amp;') }}</link>
-        <guid isPermaLink="true">{{ entry.link.replace('&', '&amp;') }}</guid>
-        <description><![CDATA[{{ entry.summary | safe }}]]></description>
-        <content:encoded><![CDATA[
-            {% if entry.summary %}
-            <div style="margin-bottom: 20px;">
-                {% set segments = entry.summary.split('<br>') %}
-                <div style="margin-bottom: 10px;">
-                    <strong>关键词：</strong>
-                    <span style="color: #0056b3;">{{ segments[0].replace('关键词：', '') | safe }}</span>
-                </div>
-                <div style="font-style: italic; color: #333;">
-                    {{ segments[2] | safe }}
-                </div>
+    <channel>
+        <title>{{ feed.feed.title.replace('&', '&amp;') }}</title>
+        <link>{{ feed.feed.link.replace('&', '&amp;') }}</link>
+        <description>{{ feed.feed.description.replace('&', '&amp;') }}</description>
+        <atom:link href="{{ feed.feed.link.replace('&', '&amp;') }}" rel="self" type="application/rss+xml"/>
+        {% for entry in append_entries %}
+        <item>
+            <title>{{ entry.title.replace('&', '&amp;') }}</title>
+            <link>{{ entry.link.replace('&', '&amp;') }}</link>
+            <guid isPermaLink="true">{{ entry.link.replace('&', '&amp;') }}</guid>
+            <description><![CDATA[{{ entry.summary | safe }}]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                {% if entry.keywords %}
+                <p><strong>关键词：</strong><span style="color: #0056b3;">{{ entry.keywords | join(', ') | safe }}</span></p>
+                {% endif %}
+                {% if entry.summary %}
+                <p><strong>总结：</strong>{{ entry.summary | safe }}</p>
+                {% endif %}
+                <p>{{ entry.article | safe }}</p>
             </div>
-            {% endif %}
-            <div>{{ entry.article | safe }}</div>
         ]]></content:encoded>
-        {% if entry.published %}<pubDate>{{ entry.published }}</pubDate>{% endif %}
-        {% if entry.updated %}<dc:date>{{ entry.updated }}</dc:date>{% endif %}
-    </item>
-    {% endfor %}
-    {% for entry in existing_entries %}
-    <item>
-        <title>{{ entry.title.replace('&', '&amp;') }}</title>
-        <link>{{ entry.link.replace('&', '&amp;') }}</link>
-        <guid isPermaLink="true">{{ entry.link.replace('&', '&amp;') }}</guid>
-        <description><![CDATA[{{ entry.summary | safe }}]]></description>
-        <content:encoded><![CDATA[{{ entry.content[0].value | safe }}]]></content:encoded>
-        <pubDate>{{ entry.published }}</pubDate>
-    </item>
-    {% endfor %}
-</channel>
+            {% if entry.published %}<pubDate>{{ entry.published }}</pubDate>{% endif %}
+        </item>
+        {% endfor %}
+    </channel>
 </rss>
