@@ -88,3 +88,10 @@ Filter: [别让大模型被基准评估坑了，测试集乱入预训练，分�
 Filter: [让“郭德纲”说英语相声，HeyGen的视频生意不好做](https://www.36kr.com/p/2510457802801152)
 append_entries: 0
 Finish: 2023-11-10 02:38:51.895615
+------------------------------------------------------
+Started: 2023-11-10 02:40:56.989849
+Existing_entries: 6
+Fetching from https://rsshub.app/36kr/motif/327686782977
+Feed error: 404
+append_entries: 0
+error when rendering xml, skip docs/36kr-ai
