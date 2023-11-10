@@ -1,0 +1,2061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>BrettTerpstra.com - The Mad Science of Brett Terpstra</title>
+        <link>https://brettterpstra.com/</link>
+        <description>Welcome to The Lab, detailing the coding and automation exploits of Brett Terpstra.</description>
+        <atom:link href="https://brettterpstra.com/" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>Halp: Universal help for Fish</title>
+            <link>https://brett.trpstra.net/link/535/16436713/halp-universal-help-for-fish</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16436713/halp-universal-help-for-fish</guid>
+            <description><![CDATA[总结：]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                <p><strong>关键词：</strong><span style="color: #0056b3;">关键词：Fish, halp, 命令帮助, 安装, 编辑器</span></p>
+                
+                
+                <p><strong>总结：</strong>总结：</p>
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Post banner" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2020/04/gonefishin-rb.png" title="Post banner" width="800" />
+              </noscript>
+            
+
+<p>I’ve had it out there for a while, but I thought I’d point out that I’ve ported my universal “help” command to Fish. <code class="language-plaintext highlighter-rouge">halp</code> removes the hassle of figuring out whether a command’s help comes from <code class="language-plaintext highlighter-rouge">man CMD</code>, <code class="language-plaintext highlighter-rouge">help CMD</code>, <code class="language-plaintext highlighter-rouge">CMD -h</code>, or <code class="language-plaintext highlighter-rouge">type CMD</code>. Just run <code class="language-plaintext highlighter-rouge">halp CMD</code> (where CMD is the command you want help on) and it will figure out the rest.</p>
+
+<p>To install the function, just save the <a href="https://github.com/ttscoff/fish_files/blob/master/functions/halp.fish">halp.fish</a> file to <code class="language-plaintext highlighter-rouge">~/.config/fish/functions</code>. Once there, you can just type <code class="language-plaintext highlighter-rouge">halp CMD</code> to get an appropriate help screen, whether it has a man page, a help page, command line help, or is an alias or function. By default it’s set up to use <a href="https://kapeli.com/dash" title="Dash for macOS-API Documentation Browser, Snippet Manager">Dash</a> for Fish native commands (rather than opening your browser), but you can edit the function to change that (see the comments). That requires that you’ve installed the Fish docset (Dash Preferences-&gt;Downloads-&gt;User Contributed). My local version of the function also replaces the <code class="language-plaintext highlighter-rouge">man $cmd</code> line with <code class="language-plaintext highlighter-rouge">open "dash://man%3A$cmd"</code> to open man pages in Dash (requires the manpage docset). Edit as needed to make it work for you.</p>
+
+<p>As an aside, if you regularly edit Fish functions, it can be handy to use your favorite text editor rather than Vim or the internal editor. I have a function called <code class="language-plaintext highlighter-rouge">funcsubl</code> that wraps the <code class="language-plaintext highlighter-rouge">funced</code> command with <code class="language-plaintext highlighter-rouge">subl -w</code> and autosaves after closing the window. You can modify this to work with any editor, you just need a “wait” flag (like <code class="language-plaintext highlighter-rouge">subl -w</code>). Here’s <a href="https://github.com/ttscoff/fish_files/blob/master/functions/funcsubl.fish">my version</a>.</p>
+
+<p>Check out all my public Fish functions in the <a href="https://github.com/ttscoff/fish_files/tree/master">GitHub repo</a>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111376216107447355" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F08%2Fhalp-universal-help-for-fish%2F&amp;text=Halp%3A+Universal+help+for+Fish&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F08%2Fhalp-universal-help-for-fish%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16436713.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-08T11:46:00-06:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Hazel giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16431556/hazel-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16431556/hazel-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Hazel icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-hazel2023-rb.jpg" title="Giveaway Robot with Hazel icon" width="800" />
+              </noscript>
+            
+
+<p>I’m excited to offer the next giveaway, 5 licenses ($42 value each) for <a href="https://www.noodlesoft.com/">Hazel</a>. Hazel lets you create automations based on changes to files, allowing you to do things like automatically filing PDFs, sorting downloads, running optimizations on new images, or just about any file operation you can imagine.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Hazel can open, archive, tag and even upload. You can have Hazel rename your files or sort them into subfolders based on name, date or whatever combination of attributes you choose. Coupled with Hazel’s powerful pattern matching, you can create workflows to process your files, your way.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Hazel screenshot" class="aligncenter" height="409" src="https://cdn3.brettterpstra.com/uploads/2023/09/hazel-screenshot-800.jpg" title="Hazel screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://www.noodlesoft.com/">Hazel</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, November 10, at 12pm Central. The drawing is for 5 licenses ($42 value each) for Hazel, one per winner. Note that if you’re reading this via RSS, you’ll need to visit <a href="https://brettterpstra.com/2023/11/06/hazel-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<div class="btcountdownwrapper">
+<p class="btcountdowncaption">Giveaway ends in...</p>
+<div class="btcountdown"><time datetime="2023-11-10T12:00:00-06:00"></time></div></div>
+
+<p>You need to view this post on brettterpstra.com to enter.</p>
+
+<p>Stay tuned for more giveaways every week through August, 2024 (and maybe beyond).</p>
+
+<p>If you have an app you’d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111363990535696856" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F06%2Fhazel-giveaway%2F&amp;text=Hazel+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F06%2Fhazel-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16431556.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-06T08:00:00-06:00</pubDate>
+        </item>
+        
+        <item>
+            <title>SearchLink gets Google Search back</title>
+            <link>https://brett.trpstra.net/link/535/16429946/searchlink-gets-google-search-back</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16429946/searchlink-gets-google-search-back</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>So it turns out Google now offers <a href="https://developers.google.com/custom-search/v1/introduction">an API</a> (once again). It’s limited to 100 searches per day for the free version, so I don’t want to put my API key into the public distribution of SearchLink, but if you want to tap into Google’s power for your searches, you can now add your own API key to the config and get 100 searches per day for free. If you should, for whatever reason, run out of searches in a day, it should gracefully switch out to the previous DuckDuckGo configuration.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">!g</code> search will now test for the presence of a Google API key, and if it exists, use Google for the search. You can also use <code class="language-plaintext highlighter-rouge">!gg</code> to force a Google search. If there’s not a key set up, it will continue operating as it has using DuckDuckGo. As far as privacy concerns go, these searches don’t include any tracking data, so using Google in this manner shouldn’t present any new issues. For anyone creating plugins, the <code class="language-plaintext highlighter-rouge">SL.ddg()</code> method will also test for an API key and use Google if available.</p>
+
+<p>To use this, install the latest version (download below) and then see the <a href="https://github.com/ttscoff/searchlink/wiki/Using-Google-Search">wiki page I created</a> to generate your own key.</p>
+
+<p>Enjoy!</p>
+
+<div class="download" id="dlbox"><h4>SearchLink v2.3.57</h4><p class="dl-icon"><a href="https://github.com/ttscoff/searchlink/releases/latest/download/SearchLink.zip" title="Download SearchLink v2.3.57"><img height="100" src="https://cdn3.brettterpstra.com/uploads/2023/01/searchlink-thumbnail.jpg" width="100" /></a></p><div class="dl-body"><p class="dl-link"><a href="https://github.com/ttscoff/searchlink/releases/latest/download/SearchLink.zip" title="Download SearchLink v2.3.57">Download SearchLink v2.3.57</a></p><p class="dl-description">Generate Markdown links from web searches without leaving your editor.</p><p class="dl-published">Published 11/10/14.</p><p class="dl-updated">Updated 11/07/23. <a class="changelog" href="https://brettterpstra.com/projects/searchlink/#changelog">Changelog</a></p><p class="dl-info"><a href="https://brettterpstra.com//donate/">Donate</a> &bull; <a href="https://brettterpstra.com//projects/searchlink/" title="More information on SearchLink">More info&hellip;</a></p></div></div>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111360321106213092" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F05%2Fsearchlink-gets-google-search-back%2F&amp;text=SearchLink+gets+Google+Search+back&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F05%2Fsearchlink-gets-google-search-back%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16429946.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-05T16:27:00-06:00</pubDate>
+        </item>
+        
+        <item>
+            <title>The WordCounter giveaway winners!</title>
+            <link>https://brett.trpstra.net/link/535/16428225/the-wordcounter-giveaway-winners</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16428225/the-wordcounter-giveaway-winners</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with WordCounter icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/wordcounter2023-winners-rb.jpg" title="Giveaway Robot with WordCounter icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The WordCounter giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Chris</li>
+  <li>Nick Taylor</li>
+  <li>Carley E Knight</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn’t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn’t win!</h3>
+
+<p>If you didn’t win, sorry, but <a href="https://wordcounterapp.com/">WordCounter is still worth checking out</a>. You can start tracking your writing productivity today, and get going for <a href="https://blog.reedsy.com/guide/nanowrimo/">NaNoWriMo</a>! You can still save 33% off your purchase using the code <code class="language-plaintext highlighter-rouge">DONTBESAD</code> <a href="https://wordcounterapp.com/">when you buy</a>!</p>
+
+<p>Next up is <a href="https://www.noodlesoft.com/">Hazel</a>. Check back every Monday through August, 2024 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://noteplan.co/">Noteplan</a></li>
+  <li><a href="https://www.stclairsoft.com/DefaultFolderX/">Default Folder X</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+  <li><a href="https://soulver.app/">Soulver</a></li>
+  <li><a href="https://c-command.com/spamsieve/">SpamSieve</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you’d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111348092010935142" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F03%2Fthe-wordcounter-giveaway-winners%2F&amp;text=The+WordCounter+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F03%2Fthe-wordcounter-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16428225.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-03T13:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Tower - making Git easy (and enjoyable!) to use [Sponsor]</title>
+            <link>https://brett.trpstra.net/link/535/16422495/tower-making-git-easy-and-enjoyable-to-use-sponsor</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16422495/tower-making-git-easy-and-enjoyable-to-use-sponsor</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Thanks to Tower for sponsoring BrettTerpstra.com this week! I swear by this app, and anyone who uses Git for any part of their work or play should check it out.</p>
+
+<p><a href="https://www.git-tower.com/?utm_source=brettterpstra&amp;utm_medium=sponsored&amp;utm_campaign=november-2023" rel="nofollow">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Tower screenshot" class="aligncenter" height="450" src="https://cdn3.brettterpstra.com/uploads/2023/09/tower-november.jpg" title="Tower screenshot" width="800" />
+              </noscript>
+            </a></p>
+
+<p>Tower’s mission is simple: to make Git easy and enjoyable for everyone.</p>
+
+<p>All the features of our native Git client have been carefully crafted with this specific goal in mind. Here are five examples:</p>
+
+<ol>
+  <li>Undo any Git operation by simply pressing CMD+Z (or CTRL+Z on Windows). This convenient keystroke allows you to easily roll back any mistakes made.</li>
+  <li>Use Drag and Drop to efficiently reorder commits, cherry-pick, merge/rebase branches, or create pull requests.</li>
+  <li>Solve merge conflicts easily with Tower’s Merge Wizard, which provides clear context about the conflict.</li>
+  <li>Review your repository’s branches with Tower’s “Branches Review” feature. This feature helps identify stale branches or those that have already been fully merged.</li>
+  <li>Enable Syntax Coloring to quickly identify changes made in every diff. Tower supports almost 200 languages, making it easy to spot differences in code.</li>
+</ol>
+
+<p>Some of the world’s best software teams use Tower every day - on both macOS and Windows.</p>
+
+<p><a href="https://www.git-tower.com/?utm_source=brettterpstra&amp;utm_medium=sponsored&amp;utm_campaign=november-2023" rel="nofollow">Learn more about Tower and begin your 30-day free trial today!</a> Use code <code class="language-plaintext highlighter-rouge">TERPSTRA25</code> to get 25% off your first year. And if you are a student or teacher, you can get Tower Pro for free!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111341106532096486" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F02%2Ftower-making-git-easy-and-enjoyable-to-use-sponsor%2F&amp;text=Tower+-+making+Git+easy+%28and+enjoyable%21%29+to+use+%5BSponsor%5D&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F02%2Ftower-making-git-easy-and-enjoyable-to-use-sponsor%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16422495.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-02T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Web Excursions for November 01, 2023</title>
+            <link>https://brett.trpstra.net/link/535/16420745/web-excursions-for-november-01-2023</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16420745/web-excursions-for-november-01-2023</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with Backblaze. <a href="https://secure.backblaze.com/r/00dszk">Back up everything.</a></p>
+
+<dl>
+  <dt><a href="https://cloudprompter.com/">CloudPrompter</a></dt>
+  <dd>The idea of a teleprompter is simple, yet so many people screw it up. Teleprompter Premium is my favorite on iOS/Mac, and the same devs have just released a web version of the same. It’s a bit pricier than I think it should be, but you can get a lifetime 50% discount for signing up before Nov 3rd.</dd>
+  <dt><a href="https://github.com/Royaljerry/jerrys-workflows-for-alfred">“Planter” redux for Alfred</a></dt>
+  <dd>Nice to see a new version of <a href="https://brettterpstra.com/projects/planter/">Planter</a> taking root. An Alfred workflow for creating new projects based on a template file.</dd>
+  <dt><a href="https://thesweetsetup.com/a-closer-look-at-apple-notess-smart-folders/">A Closer Look at Apple Notes’ Smart Folders</a></dt>
+  <dd>I have to admit Notes has become a killer app. I never would have guessed Apple would put this much development into it.</dd>
+  <dt><a href="https://christianheilmann.com/2023/08/24/quick-tip-getting-all-links-from-any-web-site-into-a-spreadsheet-using-browser-developer-tools/">Quick tip: Getting all links from any web site into a spreadsheet using browser developer tools</a></dt>
+  <dd>I finally get how useful <code class="language-plaintext highlighter-rouge">console.table()</code> can be.</dd>
+</dl>
+
+<p>Backblaze securely backs up your entire computer to the cloud, affordably and reliably. I trust it with all my data. <a href="https://secure.backblaze.com/r/00dszk">Check it out today.</a></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111336855173287515" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F01%2Fweb-excursions-for-november-01-2023%2F&amp;text=Web+Excursions+for+November+01%2C+2023&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F01%2Fweb-excursions-for-november-01-2023%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16420745.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-01T14:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Searchlink, not just for searching</title>
+            <link>https://brett.trpstra.net/link/535/16420225/searchlink-not-just-for-searching</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16420225/searchlink-not-just-for-searching</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="searchlink-text-short-400.jpg" class="alignright" height="142" src="https://cdn3.brettterpstra.com/uploads/2023/01/searchlink-text-short-400.jpg" title="searchlink-text-short-400.jpg" width="400" />
+              </noscript>
+            
+<p>First, I’ve created a <a href="https://github.com/ttscoff/searchlink-plugins">repo for SearchLink plugins</a>. This is mostly going to be example code, but you might find some useful ones in there. If you’ve never checked out SearchLink and do any kind of writing that requires linking to web sites/pages, app landing pages, Gist embeds, or basically any kind of blogging, web writing, or show notes, you should <a href="https://brettterpstra.com/projects/searchlink/">check it out</a>.</p>
+
+<p>See the <a href="https://github.com/ttscoff/searchlink-plugins">plugin repository</a> for details on installing and contributing. All of the available searches in SearchLink are defined as plugins, so you can also <a href="https://github.com/ttscoff/searchlink/tree/main/lib/searchlink/searches">use those as examples</a>.</p>
+
+<h2 id="text-filters">Text Filters</h2>
+
+<p>One thing I wanted to explore was using SearchLink for more than just searches. I created a couple proofs of concept as plugins. Some of these make more sense as TextExpander snippets, but I wanted to experiment, so here’s what I came up with.</p>
+
+<h3 id="mixcase">MixCase</h3>
+
+<p>This plugin is a text filter that will turn <code class="language-plaintext highlighter-rouge">!mix A string of text</code> into <code class="language-plaintext highlighter-rouge">A STRInG of TExT</code>, randomly capitalizing characters. It’s just to demonstrate how easily a text filter can be implemented (if you know a little Ruby, anyway).</p>
+
+<figure class="animated_vid_frame" style="padding-bottom: 41.25%;" tabindex="0" title="">
+              <video class="lazy" loop="" poster="https://cdn3.brettterpstra.com/uploads/2023/11/mixcaseplugin.jpg">
+                <source src="https://cdn3.brettterpstra.com/uploads/2023/11/mixcaseplugin.webm" type="video/webm" />
+                <source src="https://cdn3.brettterpstra.com/uploads/2023/11/mixcaseplugin.mp4" type="video/mp4" />
+              </video>
+            </figure>
+
+<h3 id="calendar">Calendar</h3>
+
+<p>Another example of a text filter. This one can insert a Markdown calendar for any month and year. You can define the month and year like <code class="language-plaintext highlighter-rouge">!cal 5 2024</code> to get a calendar for May, 2024. If you use <code class="language-plaintext highlighter-rouge">!cal now</code> it will insert a calendar for the current month and year. It can also print how many days are in a month with <code class="language-plaintext highlighter-rouge">!days 2 2024</code> to show how many days are in February in 2024. Silly, and again would probably be better as a TextExpander snippet, but I’m just experimenting with extending SearchLink.</p>
+
+<figure class="animated_vid_frame" style="padding-bottom: 35.52%;" tabindex="0" title="">
+              <video class="lazy" loop="" poster="https://cdn3.brettterpstra.com/uploads/2023/11/calendarplugin.jpg">
+                <source src="https://cdn3.brettterpstra.com/uploads/2023/11/calendarplugin.webm" type="video/webm" />
+                <source src="https://cdn3.brettterpstra.com/uploads/2023/11/calendarplugin.mp4" type="video/mp4" />
+              </video>
+            </figure>
+
+<h3 id="makeadate">MakeADate</h3>
+
+<p>This is a port of a TextExpander snippet I use. It takes a natural language date and inserts a formatted date. It provides the following formats:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Abbr</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!ddate tomorrow 8am</code></td>
+      <td>2023-11-02 8:00am</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!dshort 2/2/24 6:30am</code></td>
+      <td>2024-2-2 6:30am</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!diso tomorrow 1pm</code></td>
+      <td>2023-11-02 13:00</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!dlong tomorrow 8am</code></td>
+      <td>Thursday, November 2nd, 2023 at 8:00am</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All of the searches can be abbreviated to two letters, with <code class="language-plaintext highlighter-rouge">!diso</code> becoming <code class="language-plaintext highlighter-rouge">!di</code>, <code class="language-plaintext highlighter-rouge">!dlong</code> becoming <code class="language-plaintext highlighter-rouge">!dl</code>, etc.</p>
+
+<p><strong>This plugin requires that PHP be installed on the system, either with the Apple Command Line Utilties (I think), or with Homebrew (<code class="language-plaintext highlighter-rouge">brew install php</code>).</strong></p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Use the fully-commented code in <code class="language-plaintext highlighter-rouge">lyrics.rb</code> (<a href="https://github.com/ttscoff/searchlink/wiki/Plugins">documented in the SearchLink wiki</a>) to generate your own plugins, and reference <a href="https://github.com/ttscoff/searchlink/tree/main/lib/searchlink/searches">the existing searches</a> for inspiration. Feel free to fork and submit a PR to <a href="https://github.com/ttscoff/searchlink-plugins">the plugin repository</a> if you create something you’d like to share!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111335966839473950" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F01%2Fsearchlink-not-just-for-searching%2F&amp;text=Searchlink%2C+not+just+for+searching&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F11%2F01%2Fsearchlink-not-just-for-searching%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16420225.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-11-01T10:01:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>SearchLink Fixes</title>
+            <link>https://brett.trpstra.net/link/535/16416050/searchlink-fixes</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16416050/searchlink-fixes</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p><a href="https://brettterpstra.com/projects/searchlink/" title="SearchLink">SearchLink</a> 2.3.50 is out and contains fixes for some recent changes in DuckDuckGo’s responses. It currently passes all tests except for one (TMDB is returning a movie for the search result “Brad Pitt”, rather than the actor page, and when I add “actor” to the search it dumps out to IMDB, which I don’t fully understand).</p>
+
+<p>Don’t forget that the source code is all neatly organized on GitHub and you can compile the whole thing as a gem for command line usage, if you like. Every search is <a href="https://github.com/ttscoff/searchlink/tree/main/lib/searchlink/searches">a plugin</a> and you can add new search types pretty easily. If you <em>do</em> extend SearchLink at all, be sure to make a Pull Request and be part of the development!</p>
+
+<p>Download below, and see the <a href="https://brettterpstra.com/projects/searchlink/" title="SearchLink">SearchLink project page</a> for more details!</p>
+
+<p><strong>Update:</strong> Also added browser identification headers when trying to get a page title, which avoids some 502 errors on sites that ban <code class="language-plaintext highlighter-rouge">curl</code> scraping (like IMDB).</p>
+
+<div class="download" id="dlbox"><h4>SearchLink v2.3.57</h4><p class="dl-icon"><a href="https://github.com/ttscoff/searchlink/releases/latest/download/SearchLink.zip" title="Download SearchLink v2.3.57"><img height="100" src="https://cdn3.brettterpstra.com/uploads/2023/01/searchlink-thumbnail.jpg" width="100" /></a></p><div class="dl-body"><p class="dl-link"><a href="https://github.com/ttscoff/searchlink/releases/latest/download/SearchLink.zip" title="Download SearchLink v2.3.57">Download SearchLink v2.3.57</a></p><p class="dl-description">Generate Markdown links from web searches without leaving your editor.</p><p class="dl-published">Published 11/10/14.</p><p class="dl-updated">Updated 11/07/23. <a class="changelog" href="https://brettterpstra.com/projects/searchlink/#changelog">Changelog</a></p><p class="dl-info"><a href="https://brettterpstra.com//donate/">Donate</a> &bull; <a href="https://brettterpstra.com//projects/searchlink/" title="More information on SearchLink">More info&hellip;</a></p></div></div>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111324470420050697" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F30%2Fsearchlink-fixes%2F&amp;text=SearchLink+Fixes&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F30%2Fsearchlink-fixes%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16416050.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-30T09:19:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>WordCounter giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16415970/wordcounter-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16415970/wordcounter-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with WordCounter icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-wordcounter2023-rb.jpg" title="Giveaway Robot with WordCounter icon" width="800" />
+              </noscript>
+            
+
+<p>I’m excited to offer the next giveaway, 3 licenses ($19.99 value each) for <a href="https://wordcounterapp.com/">WordCounter</a>. Just in time for <a href="https://blog.reedsy.com/guide/nanowrimo/">NaNoWriMo</a>, WordCounter is an app for writers who want to track the most important metric in their daily goal: how many words you write and where. It records your writing productivity automatically in any app, allowing you to just write.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>The WordCounter gives immediate feedback on your productivity as a writer, encourages you by showing you your daily output, gives you clarity about your daily goals, keeps a complete history of your daily achievements, assists with finding your perfect writing environment, counts what counts: words – the ultimate metric for writing.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="WordCounter screenshot" class="aligncenter" height="765" src="https://cdn3.brettterpstra.com/uploads/2023/10/wordcount-statistics.jpg" title="WordCounter screenshot" width="947" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://wordcounterapp.com/">WordCounter</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, November 03, at 12pm Central. The drawing is for 3 licenses ($19.99 value each) for WordCounter, one per winner. Note that if you’re reading this via RSS, you’ll need to visit <a href="https://brettterpstra.com/2023/10/30/wordcounter-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for more giveaways every week through August, 2024 (and maybe beyond).</p>
+
+<p>If you have an app you’d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111324118780981343" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F30%2Fwordcounter-giveaway%2F&amp;text=WordCounter+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F30%2Fwordcounter-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16415970.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-30T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>The Scrivener giveaway winners!</title>
+            <link>https://brett.trpstra.net/link/535/16413505/the-scrivener-giveaway-winners</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16413505/the-scrivener-giveaway-winners</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Scrivener icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/scrivener2023-winners-rb.jpg" title="Giveaway Robot with Scrivener icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Scrivener giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Philip Zastrow</li>
+  <li>David Lynch</li>
+  <li>paul kesselma</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn’t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn’t win!</h3>
+
+<p>If you didn’t win, sorry, but <a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener is still worth checking out</a>. If you’re a writer, you really should be using Scrivener, and you can still save 20% off using the coupon <code class="language-plaintext highlighter-rouge">Brett-Scriv-2023</code> at checkout. You’ll want it for <a href="https://blog.reedsy.com/guide/nanowrimo/">NaNoWriMo</a>, or just for your next writing project!</p>
+
+<p>Next up is <a href="https://wordcounterapp.com/">WordCounter</a>. Check back every Monday through August for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://www.noodlesoft.com/">Hazel</a></li>
+  <li><a href="https://noteplan.co/">Noteplan</a></li>
+  <li><a href="https://www.stclairsoft.com/DefaultFolderX/">Default Folder X</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+  <li><a href="https://soulver.app/">Soulver</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you’d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111309164737607271" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F27%2Fthe-scrivener-giveaway-winners%2F&amp;text=The+Scrivener+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F27%2Fthe-scrivener-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16413505.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-27T13:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Sanebox and implementing the Eisenhower Matrix [Sponsor]</title>
+            <link>https://brett.trpstra.net/link/535/16411504/sanebox-and-implementing-the-eisenhower-matrix-sponsor</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16411504/sanebox-and-implementing-the-eisenhower-matrix-sponsor</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Thanks to Sanebox for sponsoring BrettTerpstra.com again this week! I don’t know what I’d do without it!</p>
+
+<p><a href="https://try.sanebox.com/be2h3q" rel="nofollow">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="sanebox.jpg" class="aligncenter" height="267" src="https://cdn3.brettterpstra.com/uploads/2023/04/sanebox.jpg" title="sanebox.jpg" width="800" />
+              </noscript>
+            </a></p>
+
+<p>Envision your email as a bustling conference hall, filled with diverse attendees. Professional correspondences, casual updates, informative newsletters, enticing promotions, and the occasional unwelcome intruder all vying for your attention. Now, consider a seasoned curator (inspired by the Eisenhower Matrix) coordinating the event, teamed up with an expert organizer (the prowess of SaneBox) to streamline the flow and ensure a harmonious gathering. This is the synergy we’re spotlighting.</p>
+
+<p>SaneBox, our sophisticated digital tool, acquires proficiency much like a dedicated student mastering a new subject. Each interaction with your emails refines its algorithm, enhancing its efficiency. When combined with the strategic principles of the Eisenhower Matrix, which prioritizes tasks based on urgency and significance, you’re presented with a seamlessly integrated email management system.</p>
+
+<p>Let’s get practical. The Custom Folders inside of SaneBox let you decide what’s important to you and where it belongs on the Eisenhower Matrix. Start by creating folders for each quadrant. The traditional Eisenhower Matrix works like this:</p>
+
+<ul>
+  <li>Urgent and Important (Quadrant I): These are tasks that need immediate attention and are crucial to your goals.</li>
+  <li>Not Urgent but Important (Quadrant II): These are tasks that contribute to your long-term goals and values but don’t require immediate attention.</li>
+  <li>Urgent but Not Important (Quadrant III): These tasks demand your immediate attention but aren’t critical to reaching your long-term goals.</li>
+  <li>Neither Urgent nor Important (Quadrant IV): These are the tasks that provide little to no value and can often be deferred or even deleted.</li>
+</ul>
+
+<p>Once you’ve created your folders (and named them whatever you want), start moving emails into their appropriate places. It won’t take long for SaneBox to learn what’s important to you. Then you can be selective about which folders get attention and when.</p>
+
+<p>But it’s more than just cleaning up. This method helps shape an email experience that feels uniquely yours. Merging the practical approach of the Eisenhower Matrix with SaneBox’s functions, your inbox goes from being chaotic to organized and manageable.</p>
+
+<p>If you’re among those buried under a mountain of emails, feeling the strain, it’s worth trying the combination of SaneBox and the Eisenhower Matrix. And remember, <a href="https://try.sanebox.com/be2h3q" rel="nofollow">signing up today can even get you a $25 discount on any subscription.</a> Your emails deserve a system that works.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111301467116922192" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F26%2Fsanebox-and-implementing-the-eisenhower-matrix-sponsor%2F&amp;text=Sanebox+and+implementing+the+Eisenhower+Matrix+%5BSponsor%5D&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F26%2Fsanebox-and-implementing-the-eisenhower-matrix-sponsor%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16411504.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-26T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Introducing the BrettTerpstra.com Forum</title>
+            <link>https://brett.trpstra.net/link/535/16408585/introducing-the-brettterpstra-dot-com-forum</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16408585/introducing-the-brettterpstra-dot-com-forum</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="discourse-header-rb.jpg" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/10/discourse-header-rb.jpg" title="discourse-header-rb.jpg" width="800" />
+              </noscript>
+            
+
+<p>I’ve created a forum for discussing all things nerdy, the <a href="https://forum.brettterpstra.com">BrettTerpstra.com Forum</a>. I wanted a place to have conversations about my various projects, but also to allow more interaction with my readers. I’ll be active on it, and I hope you will too.</p>
+
+<p>Right now every one of my projects has different discussion forums, mostly hosted on GitHub, but they’re separated by project and there’s no unified place for support, questions, feature requests, and actual interaction. This is my attempt to consolidate and also increase interaction with the community.</p>
+
+<p>I’m nervous about launching this because I fear nobody will talk and I’ll feel unpopular, but I won’t know until I try. I know, one more place to be active online, one more source of notifications, yet another place to chat. I know we all have too many of these. I chose this format over a Discord server or other synchronous communication because I like that it’s _a_synchronous. You can show up when you feel like it, and just get email notifications about responses to your conversations, waiting until you have the time to add to the discussion.</p>
+
+<p>The forum is at forum.brettterpstra.com. Here’s a <a href="https://forum.brettterpstra.com/invites/o9MfRxFeMG">special invite link</a> that will get you in and give you immediate access to introduce yourself and join/start a conversation.</p>
+
+<p>I set this up using the <a href="https://docs.digitalocean.com/products/marketplace/catalog/discourse/">Discourse droplet</a> on <a href="https://www.digitalocean.com/">DigitalOcean</a>, which is a very affordable way to host cloud applications, if you’re ever interested in building your own. I’m also using a free account at <a href="https://www.mailgun.com/">Mailgun</a> to handle notification emails and such.</p>
+
+<p>I’ve switched the comments on this blog over to using the forum as an embed. Each blog post will create a new topic on the forum, and you’ll be able to discuss and add comments via Discourse. It will require login (you can log in with GitHub or email), but should offer a saner way to handle comments on my posts. Give it a shot on this one and let me know what you think! In the process I’ve lost all comment history, but it is what it is.</p>
+
+<p>I sincerely hope you’ll join, participate, and make a community out of my readership. Don’t be shy. I have 20,000 site viewers, 35,000 RSS subscribers, 13,000 Twitter followers, 2500 Mastodon followers, 9000 GitHub stars, and yet I still have a hard time getting interaction… I’d love to hear from you!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111291147528499274" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F24%2Fintroducing-the-brettterpstra-dot-com-forum%2F&amp;text=Introducing+the+BrettTerpstra.com+Forum&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F24%2Fintroducing-the-brettterpstra-dot-com-forum%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16408585.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-24T12:14:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Scrivener giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16406637/scrivener-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16406637/scrivener-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Scrivener icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-scrivener2023-rb.jpg" title="Giveaway Robot with Scrivener icon" width="800" />
+              </noscript>
+            
+
+<p>I’m excited to offer the next giveaway, 3 licenses ($59 value each) for <a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a>. Scrivener is the ultimate app for writers. Organize your story, add research, and get to writing with full support for notes, links, footnotes, rich text, Markdown and so much more. With story organization features, character tracking, and a complete set of writing tools, it’s the most fully-fledged writing app you’ll find. Get ready for <a href="https://blog.reedsy.com/guide/nanowrimo/">NaNoWriMo</a>! (By the way, it also <a href="https://marked2app.com/help/Scrivener_Support.html">integrates well with Marked 2</a>.)</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Scrivener is the go-to app for writers of all kinds, used every day by best-selling novelists, screenwriters, non-fiction writers, students, academics, lawyers, journalists, translators and more. Scrivener won’t tell you how to write—it simply provides everything you need to start writing and keep writing.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Scrivener screenshot" class="aligncenter" height="788" src="https://cdn3.brettterpstra.com/uploads/2023/09/scrivener-screenshot.jpg" title="Scrivener screenshot" width="1200" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, October 27, at 12pm Central. The drawing is for 3 licenses ($59 value each) for Scrivener, one per winner. Note that if you’re reading this via RSS, you’ll need to visit <a href="https://brettterpstra.com/2023/10/23/scrivener-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for more giveaways every week through August (and maybe beyond).</p>
+
+<p>If you have an app you’d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> so you can be the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111284478784717393" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F23%2Fscrivener-giveaway%2F&amp;text=Scrivener+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F23%2Fscrivener-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16406637.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-23T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>iTunesIcon updated</title>
+            <link>https://brett.trpstra.net/link/535/16405699/itunesicon-updated</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16405699/itunesicon-updated</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>A long time ago I published a tool called <a href="https://brettterpstra.com/projects/itunesicon/">iTunesIcon</a> that would grab an app icon from iTunes. It worked well in its time, but has been mostly broken in recent years. It was designed mostly for writers who were reviewing apps and needed to get an app’s icon for artwork, but could be used by anyone with a need for such things.</p>
+
+<p>As part of automating the giveaways I’m running, I’ve had a need to start grabbing app icons again, so I’ve revived the project. This script requires installing ImageMagick for rounding the corners of iOS icons (<code class="language-plaintext highlighter-rouge">brew install imagemagick</code>).</p>
+
+<p>I previously had a shell function called <code class="language-plaintext highlighter-rouge">geticonpng</code> that read a local app’s icon file. These days, most local Mac apps tend to store their icons in Assets.car archives, so the default .icns file only has images up to 256 pixels in most cases. I’ve worked around that. And when a local icon can’t be found, I’m falling back to searching iTunes, replicating the behavior of iTunesIcon. This script handles the following:</p>
+
+<ul>
+  <li>Allow defining platform (mac, iOS, iPad, iPhone)</li>
+  <li>Allow defining size (small, medium, large, or specific pixel dimensions)</li>
+  <li>If the platform is Mac, test for a local copy from which to extract the icon</li>
+  <li>If the platform is iOS or a local Mac app isn’t found, search iTunes and return the first result</li>
+  <li>If the platform is Mac and a local version is found, extract the icon from the Assets file to allow higher resolutions</li>
+  <li>If the platform is iOS, automatically round the corners and resize the image</li>
+</ul>
+
+<p><a href="https://gist.github.com/ttscoff/1f30e9042a4cfbdc68bc3fb3fec64046">Here’s the (Ruby) script</a>. It handles all of the above.</p>
+
+<p>Platform can be defined in two ways:</p>
+
+<ol>
+  <li>Use the <code class="language-plaintext highlighter-rouge">-d DEVICE</code> flag when running the script. This can be <code class="language-plaintext highlighter-rouge">ios</code>, <code class="language-plaintext highlighter-rouge">iphone</code>, <code class="language-plaintext highlighter-rouge">ipad</code>, or <code class="language-plaintext highlighter-rouge">mac</code></li>
+  <li>Add a modifier to the search terms in the form of <code class="language-plaintext highlighter-rouge">@ios</code>, <code class="language-plaintext highlighter-rouge">@iphone</code>, <code class="language-plaintext highlighter-rouge">@ipad</code>, or <code class="language-plaintext highlighter-rouge">@mac</code>, e.g. <code class="language-plaintext highlighter-rouge">OmniFocus @ipad</code></li>
+</ol>
+
+<p>Similarly, size can be defined using:</p>
+
+<ol>
+  <li>Use the <code class="language-plaintext highlighter-rouge">-s SIZE</code> flag, which can be <code class="language-plaintext highlighter-rouge">s(mall)</code>, <code class="language-plaintext highlighter-rouge">m(edium)</code>, or <code class="language-plaintext highlighter-rouge">l(arge)</code> or a specific pixel dimension (square), e.g. <code class="language-plaintext highlighter-rouge">grabicon.rb -s small OmniFocus</code></li>
+  <li>Use a modifier in the search terms in the form of <code class="language-plaintext highlighter-rouge">%s(mall)</code>, <code class="language-plaintext highlighter-rouge">%m(edium)</code>, <code class="language-plaintext highlighter-rouge">%l(arge)</code> or a specific pixel dimension, e.g. <code class="language-plaintext highlighter-rouge">OmniFocus %1024</code></li>
+</ol>
+
+<p>Modifiers in the search terms override flags given to the script.</p>
+
+<p>If a local copy can be found, the asset will be extracted at any size specified. If searching iTunes, you’re generally limited to 1024px, depending on the assets the app has provided. The nearest icon format will be downloaded, and ImageMagick will convert to specific pixel dimensions. Note that when downloading an iOS icon, the artwork provided is square, so the script will round the corners and add 10% padding around the icon (using ImageMagick) to offer similar dimensions to what Mac icons have or what you see on your iOS device screen.</p>
+
+<p>All options:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code>Usage: grabicon.rb 'APP NAME/SEARCH TERM' [@PLATFORM] [%SIZE]
+       @ and % modifiers override options
+
+OPTIONS:
+    -p, --preview                    Show a Quick Look preview after saving
+    -s, --size SIZE                  Size to save (small, medium, large, or pixels)
+    -d, --device PLATFORM            Platform to search (mac, ios, iphone, ipad)
+    -o, --output PATH                Path to save icon to (default ~/Desktop/ICON.png)
+    -h, --help                       Display this screen</code></pre></div></div>
+
+<p>This is working well for me so far. I’ll publish the rest of the giveaway automation in the future, as it uses some ImageMagick commands I think might be useful to other people. But for now, this is <a href="https://gist.github.com/ttscoff/1f30e9042a4cfbdc68bc3fb3fec64046">the new iTunesIcon script</a>.</p>
+
+<p>To install the script, save the raw version to a file called <code class="language-plaintext highlighter-rouge">grabicon.rb</code> in your PATH, and then run <code class="language-plaintext highlighter-rouge">chmod a+x PATH/TO/grabicon.rb</code>. Once that’s done, just run <code class="language-plaintext highlighter-rouge">grabicon.rb -h</code> to see available options.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111280611366369271" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F22%2Fitunesicon-updated%2F&amp;text=iTunesIcon+updated&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F22%2Fitunesicon-updated%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16405699.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-22T15:27:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Automating the giveaways</title>
+            <link>https://brett.trpstra.net/link/535/16394621/automating-the-giveaways</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16394621/automating-the-giveaways</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="giveawayrobot-rb.jpg" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/10/giveawayrobot-rb.jpg" title="giveawayrobot-rb.jpg" width="800" />
+              </noscript>
+            
+
+<p>You may have noticed I’m running a series of giveaways on this blog. Literally every developer I’ve reached out to has been willing to put up 1-10 licenses or 1-year subscriptions for their app, and I’m <em>extremely</em> pleased with <a href="https://brettterpstra.com/giveaways/upcoming/">the list I’ve put together</a>. In an effort to keep track of all of them, I’ve built some (if I do say so myself) impressive automation around this project, and I thought I’d share. It’s some mad science, but it’s working great and I kinda want to brag about it.</p>
+
+<p>For every giveaway, there are 5 major pieces:</p>
+
+<ol>
+  <li>The announcement post containing the form to enter for the drawing, on Monday</li>
+  <li>An announcement email to subscribers linking to the announcement post, also on Monday</li>
+  <li>A followup email on Thursday reminding subscribers there’s still time to enter</li>
+  <li>A drawing of the winners, and notification emails sent to them, on Friday</li>
+  <li>An announcement post listing the winner’s names and upcoming giveaways, also on Friday</li>
+</ol>
+
+<p>So here’s how it works. I have a master YAML file where each giveaway has the following info:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code><span class="pi">-</span> <span class="na">app_name</span><span class="pi">:</span> <span class="s">Timing</span>
+  <span class="na">contact</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">Hookmark link to email conversation with developer</span><span class="pi">]</span>
+  <span class="na">dev_email</span><span class="pi">:</span> <span class="s">Daniel Gräfe &lt;REDACTED&gt;</span>
+  <span class="na">keywords</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">productivity</span><span class="pi">,</span> <span class="nv">time tracking</span><span class="pi">,</span> <span class="nv">timing</span><span class="pi">]</span>
+  <span class="na">dev_link</span><span class="pi">:</span> <span class="s">https://timingapp.com/</span>
+  <span class="na">offer</span><span class="pi">:</span> <span class="s">a 1-year subscription ($108 value)</span>
+  <span class="na">number_of_prizes</span><span class="pi">:</span> <span class="m">1</span>
+  <span class="na">followup</span><span class="pi">:</span> <span class="s">I guarantee it will be useful for anyone who needs to know where they spend there time, for any reason.</span>
+  <span class="na">fulfillment</span><span class="pi">:</span> <span class="s">emails</span>
+  <span class="na">giveaway_slug</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">secret giveaway slug</span><span class="pi">]</span>
+  <span class="na">blurb</span><span class="pi">:</span> <span class="pi">&gt;</span>
+    <span class="s">I use Timing daily and it's helped me automatically track time that I would never have had the discipline to</span>
+    <span class="s">manage on my own. Billable hours, time I spend on personal projects, time I spend gaming, pretty much</span>
+    <span class="s">anything I do on my Mac, my iPhone, or my iPad gets tracked and I can easily categorize based on rules</span>
+    <span class="s">(that are as easy as dragging and dropping to generate). I even integrated it with</span>
+    <span class="s">[Doing](https://brettterpstra.com/projects/doing/) for adding depth to my "What Was I Doing" tracking.</span>
+  <span class="na">dev_blurb</span><span class="pi">:</span> <span class="pi">&gt;</span>
+    <span class="s">Just keep focusing on your work while Timing records your time automatically, then review your time when you</span>
+    <span class="s">want to. Record time faster than ever with just a few clicks. See when you worked on what and how</span>
+    <span class="s">productive you were.</span>
+  <span class="na">screenshot</span><span class="pi">:</span> <span class="s">/uploads/2023/09/timingscreenshot.jpg</span>
+  <span class="na">setapp</span><span class="pi">:</span> <span class="no">true</span></code></pre></div></div>
+
+<p>It takes me about 10 minutes to build an entry. I have to write out my personal blurb, get a developer blurb from the website, and generate images including a screenshot (usually pulled from the website and automatically sized and converted by a <a href="https://www.noodlesoft.com/">Hazel</a> script when I save it to my desktop) and a blog header and winner post header<sup id="fnref:imageautomation"><a class="footnote" href="https://brettterpstra.com#fn:imageautomation" rel="footnote">1</a></sup>. (Social sharing images and WEBP versions are automatically generated from the header images using <a href="https://flyingmeat.com/retrobatch/" title="Retrobatch, from Flying Meat">RetroBatch</a>.) So that’s the bulk of the creation time.</p>
+
+<p>Slotting a new giveaway in is simply a matter of adding a new entry like above to the YAML array, and I can slot them in at any point and all of the dates will adjust accordingly.</p>
+
+<p>When my <code class="language-plaintext highlighter-rouge">giveaways.rb</code> script runs, it goes through this YAML file and generates all of the pieces mentioned above. It has a start date hardcoded for the start of this series, and then for each giveaway entry it adds 7 days, and sets a drawing date for the following Friday. It uses ERB templates to generate the giveaway announcement (including blurbs and screenshot), the two emails, and the winner announcement (including the followup text). The winner announcement, which gets saved to my drafts folder, includes a note letting me know exactly what command to run to execute the drawing, including how many winners to draw, where to pull the fulfillment codes from, etc. The winner announcement is also “hooked” to the conversation with the developer using <a href="https://hookproductivity.com/">Hookmark</a>, so I can easily jump back to it. It also creates a list of upcoming giveaways, saved twice, once to a Markdown file with the secret slugs used to populate and query the Firebase database for the drawing, and once to a list that becomes <a href="https://brettterpstra.com/giveaways/upcoming/">publicly viewable</a>.</p>
+
+<p>The fulfillment key can be one of <code class="language-plaintext highlighter-rouge">emails</code>, <code class="language-plaintext highlighter-rouge">coupons</code>, or <code class="language-plaintext highlighter-rouge">codes</code>, and depends on the developer’s preference for fulfilling the giveaway. If there are coupons or codes, those get a YAML array listing them and they’re written out to an individual YAML file that the Giveaway Robot will read. The Giveaway Robot (the script that does the random picking of entrants) reads the appropriate type of fulfillment file and sends a notification email to each of the winners containing a link, a redeem code, or notification that their email has been shared with the developer (who gets cc’d based on the <code class="language-plaintext highlighter-rouge">dev_email</code> setting) who will be in touch with a license.</p>
+
+<p>The emails that are generated are in Markdown format, saved locally. On the week that a giveaway is going to run, I run a script called <code class="language-plaintext highlighter-rouge">create_giveaway_emails.rb APP_NAME</code>, where app name is just something like <code class="language-plaintext highlighter-rouge">App Tamer</code> or <code class="language-plaintext highlighter-rouge">Timing</code>. That will find and render the generated Markdown files, apply my BrettTerpstra.com styling, and use the <a href="https://sendy.co/" title="Sendy-Send Newsletters 100x cheaper via Amazon SES">Sendy</a> API to create and schedule both emails for the week.</p>
+
+<p>All of these moving pieces of this are a lot to track, so the script includes notes at every pertinent point letting me know which script needs to be run, and also generates a calendar entry with an alert that links (Hookmark) to the necessary notes, which literally tell me exactly which command to run and what to do with the output.</p>
+
+<p>There’s a Jekyll plugin that generates and runs the giveaway form. I just include:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code>{% giveaway SLUG ISO_END_DATE %}</code></pre></div></div>
+
+<p>which is generated automatically by the <code class="language-plaintext highlighter-rouge">giveaways.rb</code> script in the announcement post, and all entries will go to a Firebase database named for the SLUG. At the end of the giveaway, I just give the same slug to the “robot” and it uses random number generation to pick winners. The robot (run by the command in the winner announcement post note) generates emails to the winners, saves a list of names and emails, and outputs a list of winner names to the Terminal, ready for pasting into the winner announcement post. Actually it also uses <code class="language-plaintext highlighter-rouge">pbcopy</code> to put the list right into my clipboard and opens the winner post for pasting…</p>
+
+<p>So, aside from the time it took to build all of this automation, my effort per giveaway is:</p>
+
+<ul>
+  <li>email discussion with the developer, nailing down number of copies and fulfillment options, 10m elapsed time per giveaway</li>
+  <li>edit the master YAML file with details, 10m</li>
+  <li>run the giveaways.rb script, 5s</li>
+  <li>on Sunday
+    <ul>
+      <li>edit and publish the generated giveaway post for the week, 2m</li>
+      <li>run the <code class="language-plaintext highlighter-rouge">create_giveaway_emails.rb</code> script to generate the emails, 5s</li>
+      <li>double check the emails and scheduling because I don’t fully trust the automation, 2m</li>
+    </ul>
+  </li>
+  <li>on Wednesday
+    <ul>
+      <li>share the giveaway reminder to social media, 5m</li>
+    </ul>
+  </li>
+  <li>on Friday
+    <ul>
+      <li>run the giveaway robot using the command already saved in the winners post, 1m</li>
+      <li>edit the giveaway post with the list of winners returned by the robot, 2m</li>
+    </ul>
+  </li>
+</ul>
+
+<p>So, now that the automation is built, it takes me approximately 23 minutes to add and run a giveaway. This would take me at least 3 hours per week if I were doing this manually every time, with the multiple posts, the multiple emails, and the drawing/notification, plus all of the tracking down of previous conversations and handling of codes for every giveaway. So this automation is <em>easily</em> saving me almost 3 hours per giveaway, and with nearly 40 giveaways currently lined up (and growing), that’s almost 120 hours of time saved already. Easily worth the ~8 hours I put into building it.</p>
+
+<p>I doubt all of the scripts behind this will be of use to anyone else as is, but if you want to create any kind of similar automation, I’m available to help. If you just want to see my code to alter on your own, I’ll share it for free, and if you want to hire me to build something out for you, I charge a reasonable hourly fee. If I ever lose my cushy corporate job, this is exactly the kind of thing I would love to freelance on, so keep me in mind for that fateful day.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:imageautomation">
+      <p>All of these header images are the same background with an app icon rotated and positioned in the hand of the “giveaway robot,” but I haven’t yet been able to automate the generation of these images. I just need to extract a PNG from the app (easy), then size, rotate, and position it over a static background. RetroBatch can’t do it, so if anyone has any grand ideas, I’d love to hear them. I bet ImageMagick could do this, but I get into rabbit holes when I start looking into it… <a class="reversefootnote" href="https://brettterpstra.com#fnref:imageautomation">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111233521513144996" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F14%2Fautomating-the-giveaways%2F&amp;text=Automating+the+giveaways&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F14%2Fautomating-the-giveaways%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16394621.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-14T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>The Hookmark giveaway winner!</title>
+            <link>https://brett.trpstra.net/link/535/16394031/the-hookmark-giveaway-winner</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16394031/the-hookmark-giveaway-winner</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Hookmark icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/hookmark2023-winners-rb.jpg" title="Giveaway Robot with Hookmark icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Hookmark giveaway has ended, and I have a winner to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Marcus Phelan</li>
+</ul>
+
+<p>You should have received an email and the developer will be in touch, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn’t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn’t win!</h3>
+
+<p>If you didn’t win, sorry, but <a href="https://hookproductivity.com/">Hookmark is still worth checking out</a>. It will change the way you work. You can still save 30% off for the next week using coupon <code class="language-plaintext highlighter-rouge">TTSCOFF</code> <a href="https://hookproductivity.com/buy">at checkout</a> (click on Add Discount)!</p>
+
+<p>By the way, Hookmark is also available on <a href="https://go.setapp.com/stp44">Setapp</a>, along with hundreds of other amazing apps. You should probably <a href="https://go.setapp.com/stp44">get a subscription</a>.</p>
+
+<p>Next up is <a href="https://textexpander.com/terpstra">TextExpander</a>. Check back every Monday through June for more giveaways.</p>
+
+<p>Other upcoming apps include:</p>
+
+<ul>
+  <li><a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a></li>
+  <li><a href="https://wordcounterapp.com/">WordCounter</a></li>
+  <li><a href="https://www.noodlesoft.com/">Hazel</a></li>
+  <li><a href="https://noteplan.co/">Noteplan</a></li>
+  <li><a href="https://www.stclairsoft.com/DefaultFolderX/">Default Folder X</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+  <li><a href="https://soulver.app/">Soulver</a></li>
+  <li><a href="https://c-command.com/spamsieve/">SpamSieve</a></li>
+  <li><a href="https://stclairsoft.com/AppTamer/index.html">App Tamer</a></li>
+  <li><a href="https://kaleidoscope.app/">Kaleidoscope</a></li>
+  <li><a href="https://www.zengobi.com/curio/">Curio</a></li>
+  <li><a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a></li>
+  <li><a href="https://www.macbartender.com/">Bartender</a></li>
+  <li><a href="https://redsweater.com/marsedit/">MarsEdit</a></li>
+  <li><a href="https://www.omnigroup.com/omnifocus/">OmniFocus</a></li>
+  <li><a href="https://redsweater.com/fastscripts/">FastScripts</a></li>
+  <li><a href="https://www.taskpaper.com/">TaskPaper</a></li>
+  <li><a href="https://redsweater.com/blackink/">Black Ink</a></li>
+  <li><a href="https://culturedcode.com/things/">Things for Mac</a></li>
+  <li><a href="https://www.hogbaysoftware.com/bike/">Bike</a></li>
+  <li><a href="https://flexibits.com/pricing">Flexibits Premium</a></li>
+  <li><a href="https://c-command.com/eaglefiler/">EagleFiler</a></li>
+  <li><a href="https://zettelkasten.de/the-archive/">The Archive</a></li>
+  <li><a href="https://www.bzgapps.com/unite">Unite 5</a></li>
+  <li><a href="https://bear.app/">Bear</a></li>
+  <li><a href="https://www.omnigroup.com/omnigraffle">OmniGraffle</a></li>
+  <li><a href="https://flyingmeat.com/acorn/">Acorn</a></li>
+  <li><a href="https://www.barebones.com/products/bbedit/">BBEdit</a></li>
+  <li><a href="https://www.devontechnologies.com/apps/devonthink">DEVONthink</a></li>
+  <li><a href="https://www.toketaware.com/ithoughts-osx">iThoughtsX</a></li>
+  <li><a href="https://flyingmeat.com/retrobatch/">RetroBatch Pro</a></li>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+  <li><a href="https://marked2app.com">Marked</a></li>
+  <li><a href="https://aptonic.com/">Dropzone</a></li>
+  <li><a href="https://tableflipapp.com/">TableFlip</a></li>
+  <li><a href="https://www.backblaze.com/cloud-backup">Backblaze</a></li>
+  <li><a href="https://www.omnigroup.com/omnioutliner">OmniOutliner</a></li>
+</ul>
+
+<p>If you want to suggest an app you’d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111228946178450515" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F13%2Fthe-hookmark-giveaway-winner%2F&amp;text=The+Hookmark+giveaway+winner%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F13%2Fthe-hookmark-giveaway-winner%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16394031.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-13T12:35:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Hookmark giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16386371/hookmark-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16386371/hookmark-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Hookmark icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-hookmark2023-rb.jpg" title="Giveaway Robot with Hookmark icon" width="800" />
+              </noscript>
+            
+
+<p>I’m excited to offer the next giveaway, a Pro license ($69.99 value) for <a href="https://hookproductivity.com/">Hookmark</a>. Hookmark is the ultimate tool for keeping track of all of your stuff. Your links, your notes, your documents, your tasks… Hookmark makes everything linkable and provides easy navigation between related objects. It takes a minute to work it into your workflow, but once you do, you’ll wonder how you lived without it.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Hookmark connects information in and between great apps such as Obsidian, Bookends, Zotero, DEVONthink, Craft, OmniOutliner Pro, Bike, Curio, Marked2, TextMate, Scrivener, Tinderbox, GoodTask, Nisus Writer, Nitro PDF, Skim, Sketch, Bike, OmniGraffle, HoudahSpot, LibreOffice, MailMate, Airmail, Apple Mail, Word, Excel, Powerpoint, BBEdit, Things and many more. Hookmark links your research and development!</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Hookmark screenshot" class="aligncenter" height="377" src="https://cdn3.brettterpstra.com/uploads/2023/09/hookmark-screenshot-800.jpg" title="Hookmark screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://hookproductivity.com/">Hookmark</a> site for more info.</p>
+
+<p>Sign up below to enter. A winner will be randomly drawn on Friday, October 13, at 12pm Central. The drawing is for a Pro license ($69.99 value) for Hookmark. Note that if you’re reading this via RSS, you’ll need to visit <a href="https://brettterpstra.com/2023/10/09/hookmark-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for more giveaways every week through April (and maybe beyond).</p>
+
+<p>If you have an app you’d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> so you can be the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111205211454394783" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F09%2Fhookmark-giveaway%2F&amp;text=Hookmark+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F09%2Fhookmark-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16386371.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-09T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Marked and Bear</title>
+            <link>https://brett.trpstra.net/link/535/16385532/marked-and-bear</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16385532/marked-and-bear</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="bear-marked-header-rb.jpg" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/10/bear-marked-header-rb.jpg" title="bear-marked-header-rb.jpg" width="800" />
+              </noscript>
+            
+
+<p>Recent releases of Marked have fixed Bear compatibility on Sonoma. As part of this, I’ve updated the Bear style for Marked, and written a little custom preprocessor to handle Bear’s (CommonMark) syntax properly. If you want a Marked preview styled to look exactly like Bear (with all of Marked’s options for export, navigation, and other features), you can use the Bear style in combination with the preprocessor, but if you just want Bear’s syntax properly interpreted, you can use the preprocessor with the style of your choosing<sup id="fnref:underline"><a class="footnote" href="https://brettterpstra.com#fn:underline" rel="footnote">1</a></sup>.</p>
+
+<p>To get the Bear style, go the the <a href="https://marked2app.com/styles/">Style Gallery</a> and open the <a href="https://marked2app.com/styles/preview#Bear">Bear style</a>. Click “Install” to add it to Marked in one click.</p>
+
+<blockquote class="warn">
+  <p>For the custom preprocessor to work, you’ll need Ruby available on your system. As far as I know, Ruby is still distributed with macOS (for now), and if you open Terminal and run <code class="language-plaintext highlighter-rouge">which ruby</code>, you should get a path back, e.g. <code class="language-plaintext highlighter-rouge">/usr/bin/ruby</code>. If this isn’t the case for you and you need further help, please post on <a href="http://support.markedapp.com">the support forum</a> and I’ll update the instructions as needed.</p>
+</blockquote>
+
+<p>For handling Bear’s specific syntax, like <code class="language-plaintext highlighter-rouge">[[links]]</code>, underlining, and strikethrough, you’ll need a custom preprocessor. Save the following to a file called <code class="language-plaintext highlighter-rouge">bear-preprocessor.rb</code> in a safe folder (one you won’t move in the future).</p>
+
+<p><strong>Updated:</strong> now handles making tags clickable as well, and no longer requires that the <code class="language-plaintext highlighter-rouge">#Text is tag</code> preference be set in Marked.</p>
+
+<p><strong>Updated:</strong> now handles links with titles (<code class="language-plaintext highlighter-rouge">[[link|title]]</code>) and links with headers (<code class="language-plaintext highlighter-rouge">[[link/header]]</code>).</p>
+
+<figure class="code">
+<figcaption><span>bear_preprocessor.rb</span><a href="https://gist.githubusercontent.com/ttscoff/86e10e65ddf9f26468c4e0c1612676a2/raw/61278588be3c32c1390d1bbd421e32ca1335f7a2/bear_preprocessor.rb">raw</a></figcaption>"
+<div class="highlight"><pre><code class="ruby"><span class="line"><span></span><span class="ch">#!/usr/bin/env ruby</span>
+</span><span class="line"><span class="c1"># frozen_string_literal: true</span>
+</span><span class="line">
+</span><span class="line"><span class="nb">require</span> <span class="s1">'cgi'</span>
+</span><span class="line">
+</span><span class="line"><span class="n">input</span> <span class="o">=</span> <span class="vg">$stdin</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">force_encoding</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># Handle [[links]]</span>
+</span><span class="line"><span class="n">input</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/\[\[(?&lt;content&gt;.*?)\]\]/</span><span class="p">)</span> <span class="k">do</span>
+</span><span class="line">  <span class="n">m</span> <span class="o">=</span> <span class="no">Regexp</span><span class="o">.</span><span class="n">last_match</span>
+</span><span class="line">  <span class="c1"># Test for link|title matchup</span>
+</span><span class="line">  <span class="k">if</span> <span class="n">m</span><span class="o">[</span><span class="s1">'content'</span><span class="o">]</span> <span class="o">=~</span> <span class="sr">/(?&lt;link&gt;.+)\|(?&lt;title&gt;.+)/</span>
+</span><span class="line">    <span class="n">l</span> <span class="o">=</span> <span class="no">Regexp</span><span class="o">.</span><span class="n">last_match</span>
+</span><span class="line">    <span class="n">title</span> <span class="o">=</span> <span class="n">l</span><span class="o">[</span><span class="s1">'title'</span><span class="o">]</span>
+</span><span class="line">    <span class="n">link</span> <span class="o">=</span> <span class="n">l</span><span class="o">[</span><span class="s1">'link'</span><span class="o">]</span>
+</span><span class="line">  <span class="k">else</span>
+</span><span class="line">    <span class="n">title</span> <span class="o">=</span> <span class="n">m</span><span class="o">[</span><span class="s1">'content'</span><span class="o">]</span>
+</span><span class="line">    <span class="n">link</span> <span class="o">=</span> <span class="n">m</span><span class="o">[</span><span class="s1">'content'</span><span class="o">]</span>
+</span><span class="line">  <span class="k">end</span>
+</span><span class="line">
+</span><span class="line">  <span class="c1"># Test for note/header matchup</span>
+</span><span class="line">  <span class="k">if</span> <span class="n">link</span> <span class="o">=~</span> <span class="sr">%r{(?&lt;page&gt;.+)/(?&lt;header&gt;.+)}</span>
+</span><span class="line">    <span class="n">l</span> <span class="o">=</span> <span class="no">Regexp</span><span class="o">.</span><span class="n">last_match</span>
+</span><span class="line">    <span class="n">link</span> <span class="o">=</span> <span class="n">l</span><span class="o">[</span><span class="s1">'page'</span><span class="o">]</span>
+</span><span class="line">    <span class="n">header</span> <span class="o">=</span> <span class="n">l</span><span class="o">[</span><span class="s1">'header'</span><span class="o">]</span>
+</span><span class="line">  <span class="k">else</span>
+</span><span class="line">    <span class="n">header</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class="line">  <span class="k">end</span>
+</span><span class="line">
+</span><span class="line">  <span class="n">header</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">nil?</span> <span class="p">?</span> <span class="s1">''</span> <span class="p">:</span> <span class="s2">&quot;&amp;header=</span><span class="si">#{</span><span class="no">CGI</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">header</span><span class="p">)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/\+/</span><span class="p">,</span> <span class="s1">'%20'</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class="line">
+</span><span class="line">  <span class="n">url</span> <span class="o">=</span> <span class="no">CGI</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">link</span><span class="p">)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/\+/</span><span class="p">,</span> <span class="s1">'%20'</span><span class="p">)</span>
+</span><span class="line">  <span class="n">callback</span> <span class="o">=</span> <span class="no">CGI</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="s2">&quot;bear://x-callback-url/create?title=</span><span class="si">#{</span><span class="n">url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/\+/</span><span class="p">,</span> <span class="s1">'%20'</span><span class="p">)</span>
+</span><span class="line">  <span class="s2">&quot;[</span><span class="si">#{</span><span class="n">title</span><span class="si">}</span><span class="s2">](bear://x-callback-url/open-note?title=</span><span class="si">#{</span><span class="n">url</span><span class="si">}#{</span><span class="n">header</span><span class="si">}</span><span class="s2">&amp;x-error=</span><span class="si">#{</span><span class="n">callback</span><span class="si">}</span><span class="s2">)&quot;</span>
+</span><span class="line"><span class="k">end</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># Handle ==highlight==</span>
+</span><span class="line"><span class="n">input</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/==(.*?)==/</span><span class="p">,</span> <span class="s1">'&lt;mark&gt;</span><span class="se">\1</span><span class="s1">&lt;/mark&gt;'</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># Handle ~~deletion~~</span>
+</span><span class="line"><span class="n">input</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/~~(.*?)~~/</span><span class="p">,</span> <span class="s1">'&lt;del&gt;</span><span class="se">\1</span><span class="s1">&lt;/del&gt;'</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># Handle ~underline~</span>
+</span><span class="line"><span class="n">input</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/~(.*?)~/</span><span class="p">,</span> <span class="s1">'&lt;span class=&quot;underline&quot;&gt;</span><span class="se">\1</span><span class="s1">&lt;/span&gt;'</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># Handle tags, linking to tag pages in Bear</span>
+</span><span class="line"><span class="n">input</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">%r{(?!&lt;#)#(?&lt;tag&gt;[^\s#,?.!]+)}i</span><span class="p">)</span> <span class="k">do</span>
+</span><span class="line">  <span class="n">m</span> <span class="o">=</span> <span class="no">Regexp</span><span class="o">.</span><span class="n">last_match</span>
+</span><span class="line">  <span class="n">tag</span> <span class="o">=</span> <span class="no">CGI</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">m</span><span class="o">[</span><span class="s1">'tag'</span><span class="o">]</span><span class="p">)</span>
+</span><span class="line">  <span class="sx">%(&lt;span class=&quot;mkstyledtag&quot;&gt;&lt;a href=&quot;bear://x-callback-url/open-tag?name=</span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="sx">&quot;&gt;#</span><span class="si">#{</span><span class="n">m</span><span class="o">[</span><span class="s1">'tag'</span><span class="o">]</span><span class="si">}</span><span class="sx">&lt;/a&gt;&lt;/span&gt;)</span>
+</span><span class="line"><span class="k">end</span>
+</span><span class="line">
+</span><span class="line"><span class="nb">puts</span> <span class="n">input</span>
+</span></code></pre></div>
+</figure>
+
+<p>Open terminal and run <code class="language-plaintext highlighter-rouge">chmod a+x /path/to/file/bear-preprocessor.rb</code>. That will make it executable, then you can just add <code class="language-plaintext highlighter-rouge">/path/to/file/bear-preprocessor.rb</code> as your custom preprocessor path in Marked-&gt;Advanced preferences. (To get the absolute path for a file, right click it in Finder, hold down Option, and click ‘Copy “bear-preprocess.rb” as Pathname’. That will put the absolute path to the file in your clipboard, which you can paste for both the <code class="language-plaintext highlighter-rouge">chmod</code> command and the Custom Preprocessor field.)</p>
+
+<p>This script will convert <code class="language-plaintext highlighter-rouge">[[wiki links]]</code> into Bear internal links, which will open linked notes in Bear when clicked, and handle special cases like <code class="language-plaintext highlighter-rouge">~~strikethrough~~</code>, <code class="language-plaintext highlighter-rouge">~underline~</code>, and <code class="language-plaintext highlighter-rouge">==highlighting==</code>.</p>
+
+<p><del>In addition, you’ll want to set your Processor to MultiMarkdown and enable “#Text is tag” and the sub-item “Style tags” in Preferences-&gt;Processor. Note that the <code class="language-plaintext highlighter-rouge">#tag</code> processing will only work if you’re not using a custom <em>processor</em> (custom <em>pre</em>processor like above won’t override it).</del> <ins>New script above handles #tags and makes them clickable.</ins></p>
+
+<p>If you need additional help setting this up, just ping me on <a href="http://support.markedapp.com">http://support.markedapp.com</a>.</p>
+
+<p>If you’re using a non-Bear Style and want underlines formatted, you can modify a custom Style or add the following to Marked-&gt;Preferences-&gt;Style-&gt;Additional CSS and modify as desired:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code><span class="nc">.underline</span> <span class="p">{</span>
+<span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">222</span><span class="p">,</span> <span class="m">84</span><span class="p">,</span> <span class="m">86</span><span class="p">);</span><span class="err">;</span>
+<span class="p">}</span></code></pre></div></div>
+
+<p>I might eventually add support for Bear (CommonMark) syntax directly to Marked, but the whole purpose of the preprocessor functionality was to handle cases like this, and linking to Bear documents internally should be a case-by-case decision. The same part of the custom preprocessor that handles <code class="language-plaintext highlighter-rouge">[[links]]</code> could be repurposed for any system that allows internal <code class="language-plaintext highlighter-rouge">[[linking]]</code> and has a url handler syntax (like nvUltra, which I’ll post a preprocessor for when it’s available<sup id="fnref:right"><a class="footnote" href="https://brettterpstra.com#fn:right" rel="footnote">2</a></sup>, or Obsidian). You can also always set up CommonMark as a custom processor to get full compatibility.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:underline">
+      <p>It won’t include underline styling unless you add it to your Style, as detailed below <a class="reversefootnote" href="https://brettterpstra.com#fnref:underline">&#8617;</a></p>
+    </li>
+    <li id="fn:right">
+      <p>you don’t believe me at this point, which is fully understandable, but it really is coming. <a class="reversefootnote" href="https://brettterpstra.com#fnref:right">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111201864207632477" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F08%2Fmarked-and-bear%2F&amp;text=Marked+and+Bear&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F08%2Fmarked-and-bear%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16385532.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-08T17:31:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>The Timing giveaway winner!</title>
+            <link>https://brett.trpstra.net/link/535/16383214/the-timing-giveaway-winner</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16383214/the-timing-giveaway-winner</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Timing icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/timing-winners-rb.jpg" title="Giveaway Robot with Timing icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Timing giveaway has ended, and I have a winner to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Scott Willsey</li>
+</ul>
+
+<p>You should have received an email and the developer will be in touch, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn’t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn’t win!</h3>
+
+<p>If you didn’t win, sorry, but <a href="https://timingapp.com/">Timing is still worth checking out</a>. I guarantee it will be useful for anyone who needs to know where they spend there time, for any reason.</p>
+
+<p>By the way, Timing is also available on <a href="https://go.setapp.com/stp44">Setapp</a>, along with hundreds of other amazing apps. You should probably <a href="https://go.setapp.com/stp44">get a subscription</a>.</p>
+
+<p>Next up is <a href="https://hookproductivity.com/">Hookmark</a>. Check back every Monday through April for more giveaways.</p>
+
+<p>Other upcoming apps include:</p>
+
+<ul>
+  <li><a href="https://textexpander.com/terpstra">TextExpander</a></li>
+  <li><a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a></li>
+  <li><a href="https://www.noodlesoft.com/">Hazel</a></li>
+  <li><a href="https://noteplan.co/">Noteplan</a></li>
+  <li><a href="https://www.stclairsoft.com/DefaultFolderX/">Default Folder X</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+  <li><a href="https://soulver.app/">Soulver</a></li>
+  <li><a href="https://c-command.com/spamsieve/">SpamSieve</a></li>
+  <li><a href="https://stclairsoft.com/AppTamer/index.html">App Tamer</a></li>
+  <li><a href="https://kaleidoscope.app/">Kaleidoscope</a></li>
+  <li><a href="https://www.zengobi.com/curio/">Curio</a></li>
+  <li><a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a></li>
+  <li><a href="https://www.macbartender.com/">Bartender</a></li>
+  <li><a href="https://redsweater.com/marsedit/">MarsEdit</a></li>
+  <li><a href="https://www.omnigroup.com/omnifocus/">OmniFocus</a></li>
+  <li><a href="https://redsweater.com/fastscripts/">FastScripts</a></li>
+  <li><a href="https://www.taskpaper.com/">TaskPaper</a></li>
+  <li><a href="https://redsweater.com/blackink/">Black Ink</a></li>
+  <li><a href="https://culturedcode.com/things/">Things for Mac</a></li>
+  <li><a href="https://www.hogbaysoftware.com/bike/">Bike</a></li>
+  <li><a href="https://flexibits.com/pricing">Flexibits Premium</a></li>
+  <li><a href="https://c-command.com/eaglefiler/">EagleFiler</a></li>
+  <li><a href="https://www.bzgapps.com/unite">Unite 5</a></li>
+  <li><a href="https://www.omnigroup.com/omnigraffle">OmniGraffle</a></li>
+  <li><a href="https://www.barebones.com/products/bbedit/">BBEdit</a></li>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+  <li><a href="https://aptonic.com/">Dropzone</a></li>
+  <li><a href="https://www.omnigroup.com/omnioutliner">OmniOutliner</a></li>
+</ul>
+
+<p>If you want to suggest an app you’d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111189656442350496" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F06%2Fthe-timing-giveaway-winner%2F&amp;text=The+Timing+giveaway+winner%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F06%2Fthe-timing-giveaway-winner%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16383214.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-06T13:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Marked and Bunch updates for Sonoma</title>
+            <link>https://brett.trpstra.net/link/535/16381661/marked-and-bunch-updates-for-sonoma</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16381661/marked-and-bunch-updates-for-sonoma</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Just a quick note to let you know that there are new versions of Marked and Bunch Beta with some fixes for Sonoma.</p>
+
+<p>The Marked update is live for direct customers, and in review for Setapp and Mac App Store customers. Watch for updates on your channel. It fixes an issue that prevented Marked from opening <em>any</em> files on Sonoma, and also crashes when using with Drafts’ or Bear’s “Preview in Marked” features. It should solve the issue for all versions of macOS.</p>
+
+<p>The Bunch update is specifically to fix modifier keys not working when clicking Bunches in the menu. E.g. you’re supposed to be able to Cmd-Click a Bunch and open the text file in your editor of choice instead of launching it, and this wasn’t working anymore. The current release of the Beta should solve it. I would love some feedback on whether it’s working for you on Sonoma, and additionally whether I broke it for people on earlier versions of macOS. If the fix is solid, I’ll release it to the main channel. You can download the beta <a href="https://bunchapp.co/download/">on the Downloads page</a>.</p>
+
+<p>Thanks for any feedback!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111183555246576225" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F05%2Fmarked-and-bunch-updates-for-sonoma%2F&amp;text=Marked+and+Bunch+updates+for+Sonoma&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F05%2Fmarked-and-bunch-updates-for-sonoma%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16381661.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-05T12:11:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Dropzone 4, the essential drag &amp; drop productivity enhancer [Sponsor]</title>
+            <link>https://brett.trpstra.net/link/535/16381391/dropzone-4-the-essential-drag-and-drop-productivity-enhancer-sponsor</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16381391/dropzone-4-the-essential-drag-and-drop-productivity-enhancer-sponsor</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Thanks to Dropzone for sponsoring BrettTerpstra.com this week! I’ve been a Dropzone fan for many years now, and use it daily for everything from processing images to sharing files via my S3 account.</p>
+
+<p><a href="https://aptonic.com?utm_source=brettterpstra" rel="nofollow">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Dropzone4-Sponsor.jpeg" class="aligncenter" height="681" src="https://cdn3.brettterpstra.com/uploads/2023/09/Dropzone4-Sponsor.jpeg" title="Dropzone4-Sponsor.jpeg" width="800" />
+              </noscript>
+            </a></p>
+
+<p>Dropzone brings everyday productivity shortcuts to your Mac. Set up your frequently used actions in the Dropzone interface, then simply drag and drop files into the shortcut icons to perform your saved actions. Move, copy, and share files in an instant, or even develop your own timesaving actions.</p>
+
+<p>🚀 Drag-and-Drop Simplicity: Dropzone 4 lets you effortlessly drag and drop files and folders to your most-used destinations, whether it’s a specific folder, cloud service, or application. It will turbocharge drag &amp; drop and help you get things done faster.</p>
+
+<p>📁 Customizable Actions: Tailor Dropzone 4 to your unique needs with a plethora of customizable actions. Create workflows that suit your daily routine, from resizing images or shortening URLs to sending files via email, all with a simple drag-and-drop.</p>
+
+<p>🗃️ Stash files for later: Drop Bar allows you to keep files handy you know you’ll need later, instead of having to dig them up from their folders. Simply drop files into Dropzone’s holding area, and they’ll stay put until you’re ready to use them again. The holding area is a feature you won’t want to give up, proving incredibly useful for putting together documents that pull in from many sources.</p>
+
+<p>🌐 Cloud Integration: Upload to your favorite cloud services like Imgur, Google Drive, YouTube, SFTP servers and many more.</p>
+
+<p>🧩 Extensive Plugin Support: Expand Dropzone 4’s capabilities with our library of actions available from <a href="https://aptonic.com/actions" rel="nofollow">aptonic.com/actions</a></p>
+
+<p>🌟 Updated and improved for macOS Sonoma</p>
+
+<p>Ready to supercharge your Mac experience? Join the thousands of satisfied users who have already discovered the magic of Dropzone 4. <a href="https://aptonic.com?utm_source=brettterpstra" rel="nofollow">Download it today</a> and transform the way you use drag &amp; drop on your Mac.</p>
+
+<p>For a limited time for BrettTerpstra.com readers, we’re also offering a 15% discount off a Dropzone 4 Pro Lifetime License with the coupon code <code class="language-plaintext highlighter-rouge">BRETTTERPSTRA</code>.
+<a href="https://checkout.paddle.com/checkout/product/613556?coupon=BRETTTERPSTRA" rel="nofollow">Click here to receive the discount</a>.</p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F05%2Fdropzone-4-the-essential-drag-and-drop-productivity-enhancer-sponsor%2F&amp;text=Dropzone+4%2C+the+essential+drag+%26+drop+productivity+enhancer+%5BSponsor%5D&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F05%2Fdropzone-4-the-essential-drag-and-drop-productivity-enhancer-sponsor%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16381391.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-05T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Timing giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16374917/timing-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16374917/timing-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Timing icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-timing-rb.jpg" title="Giveaway Robot with Timing icon" width="800" />
+              </noscript>
+            
+
+<p>I’m excited to offer the next giveaway, a 1-year subscription ($108 value) for <a href="https://timingapp.com/">Timing</a>. I use Timing daily and it’s helped me automatically track time that I would never have had the discipline to manage on my own. Billable hours, time I spend on personal projects, time I spend gaming, pretty much anything I do on my Mac, my iPhone, or my iPad gets tracked and I can easily categorize based on rules (that are as easy as dragging and dropping to generate). I even integrated it with <a href="https://brettterpstra.com/projects/doing/">Doing</a> for adding depth to my “What Was I Doing” tracking.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Just keep focusing on your work while Timing records your time automatically, then review your time when you want to. Record time faster than ever with just a few clicks. See when you worked on what and how productive you were.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Timing screenshot" class="aligncenter" height="450" src="https://cdn3.brettterpstra.com/uploads/2023/09/timingscreenshot.jpg" title="Timing screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://timingapp.com/">Timing</a> site for more info.</p>
+
+<p>Sign up below to enter. A winner will be randomly drawn on Friday, October 06, at 12pm Central. The drawing is for a 1-year subscription ($108 value) for Timing. Note that if you’re reading this via RSS, you’ll need to visit <a href="https://brettterpstra.com/2023/10/02/timing-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for more giveaways every week through April (and maybe beyond).</p>
+
+<p>If you have an app you’d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> so you can be the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111165570639574671" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F02%2Ftiming-giveaway%2F&amp;text=Timing+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F10%2F02%2Ftiming-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16374917.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-10-02T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Historical weather for Journal CLI</title>
+            <link>https://brett.trpstra.net/link/535/16373194/historical-weather-for-journal-cli</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16373194/historical-weather-for-journal-cli</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="fullmoon-rb.jpg" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/fullmoon-rb.jpg" title="fullmoon-rb.jpg" width="800" />
+              </noscript>
+            
+
+<p>I pushed a couple updates to <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">Journal</a>, my command line journaling tool today.</p>
+
+<p>As a reminder, you can add a natural language argument to your journal command which will set the date of the entry, e.g. <code class="language-plaintext highlighter-rouge">journal mood "yesterday 8pm"</code>. This allows you to create entries in post with historical data you might have missed. One thing that it didn’t do well, though, is to get the <em>correct</em> weather for any weather type questions in the journal when using past dates. This latest update is able to get historical weather data and insert it correctly in the entry. No changes required for the user, just enter a past date and Journal will figure it out.</p>
+
+<p>Second, I’ve noticed my mood and sleep shifts with the moon phase. I’m not into astrology or anything, but that seemed like useful data to track and start to draw better conclusions from. So now a question type of <code class="language-plaintext highlighter-rouge">weather.forecast</code> will include the moon phase as a <code class="language-plaintext highlighter-rouge">moon_phase</code> key, and you can use <code class="language-plaintext highlighter-rouge">weather.moon</code> to get just the moon phase for its own entry. The forecast in Markdown will also now include the moon phase.</p>
+
+<p>That’s it, just tying up some loose ends. Journal is working pretty well for me to collect data and provide my therapist with detailed mood/behavior information. Let me know if there’s anything it doesn’t do that might help you out!</p>
+
+<p>The latest version can be installed with <code class="language-plaintext highlighter-rouge">gem install journal-cli</code>. Visit the <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">Journal</a> project page for more info.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111155089353567473" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F30%2Fhistorical-weather-for-journal-cli%2F&amp;text=Historical+weather+for+Journal+CLI&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F30%2Fhistorical-weather-for-journal-cli%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16373194.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-30T11:11:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>The CleanShot X giveaway winners!</title>
+            <link>https://brett.trpstra.net/link/535/16372125/the-cleanshot-x-giveaway-winners</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16372125/the-cleanshot-x-giveaway-winners</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with CleanShot X icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/cleanshot-winners-rb.jpg" title="Giveaway Robot with CleanShot X icon, confetti background" width="800" />
+              </noscript>
+            
+
+<h3 id="the-winners">The Winners</h3>
+
+<p>The CleanShot X giveaway has ended, and I have three winners to announce!</p>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Scott Rychnowski</li>
+  <li>Darren Everden</li>
+  <li>David Brown</li>
+</ul>
+
+<p>Each winner should have received an email with a redeem link/code, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn’t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I Didn’t Win!</h3>
+
+<p>If you didn’t win, sorry, but <a href="https://cleanshot.sjv.io/DKRzyd">CleanShot X</a> is still worth checking out. It’s by far the best app for screenshots on the Mac, no matter where or how you’re using them.</p>
+
+<p>You should also consider a <a href="https://go.setapp.com/stp44">subscription to Setapp</a>, which will include CleanShot X among a couple hundred other amazing apps.</p>
+
+<h3 id="coming-soon">Coming Soon</h3>
+
+<p>Next up is <a href="https://timingapp.com/">Timing</a> (the perfect app for automatic time tracking on Mac). Check back every Monday through December for more giveaways. Upcoming apps include:</p>
+
+<ul>
+  <li><a href="https://hookproductivity.com/">Hookmark</a></li>
+  <li><a href="https://textexpander.com/">TextExpander</a></li>
+  <li><a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a></li>
+  <li><a href="https://www.noodlesoft.com/">Hazel</a></li>
+  <li><a href="https://noteplan.co/">Noteplan</a></li>
+  <li><a href="https://www.stclairsoft.com/DefaultFolderX/">Default Folder X</a></li>
+  <li><a href="https://www.git-tower.com/">Tower</a></li>
+  <li><a href="https://soulver.app/">Soulver</a></li>
+  <li><a href="https://c-command.com/spamsieve/">SpamSieve</a></li>
+  <li><a href="https://stclairsoft.com/AppTamer/index.html">App Tamer</a></li>
+  <li><a href="https://kaleidoscope.app/">Kaleidoscope</a></li>
+  <li><a href="https://www.zengobi.com/curio/">Curio</a></li>
+  <li><a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a></li>
+  <li><a href="https://www.macbartender.com/">Bartender</a></li>
+  <li><a href="https://redsweater.com/marsedit/">MarsEdit</a></li>
+  <li><a href="https://www.bzgapps.com/unite">Unite 5</a></li>
+  <li><a href="https://redsweater.com/fastscripts/">FastScripts</a></li>
+  <li><a href="https://www.taskpaper.com/">TaskPaper</a></li>
+  <li><a href="https://redsweater.com/blackink/">Black Ink</a></li>
+  <li><a href="https://culturedcode.com/things/">Things for Mac</a></li>
+  <li><a href="https://www.hogbaysoftware.com/bike/">Bike</a></li>
+</ul>
+
+<p>If you want to suggest an app you’d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for early access!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111149545498415749" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F29%2Fthe-cleanshot-x-giveaway-winners%2F&amp;text=The+CleanShot+X+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F29%2Fthe-cleanshot-x-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16372125.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-29T12:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Automatically sort emails to custom folders with Sanebox [Sponsor]</title>
+            <link>https://brett.trpstra.net/link/535/16369625/automatically-sort-emails-to-custom-folders-with-sanebox-sponsor</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16369625/automatically-sort-emails-to-custom-folders-with-sanebox-sponsor</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Thanks to Sanebox for sponsoring BrettTerpstra.com again this week! I just trained 3 new senders into custom Sanebox folders today (just by moving an email from them once) and will never have to see them in my Inbox again, and will be able to easily locate them when I <em>do</em> want to see them. It’s so easy!</p>
+
+<p><a href="https://try.sanebox.com/be2h3q" rel="nofollow">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Sanebox Banner" class="aligncenter" height="265" src="https://cdn3.brettterpstra.com/uploads/2023/08/sanebox-july.jpg" title="Sanebox Banner" width="800" />
+              </noscript>
+            </a></p>
+
+<p>SaneBox is once again under the spotlight for their cutting-edge solutions to the age-old problem of email clutter. Having earned the endorsement of seasoned professionals, it’s worth diving deeper into another feature that makes SaneBox the power tool for email management. One feature that is particularly enchanting? Custom Folders.</p>
+
+<p>Imagine this: You receive countless emails daily from various sources. Newsletters from your favorite brands, updates from work, personal emails, bulk offers, and then, those pesky spam mails. Now, think of an assistant who not only sorts your emails but also does it exactly how you would. That means keeping in mind your unique preferences and priorities. That’s what SaneBox’s Custom Folder feature offers.</p>
+
+<p>At the core of SaneBox is its learning ability. For example, as you shuffle emails in and out of folders like @SaneLater or @SaneBlackHole, SaneBox observes. Over time, it finds patterns in your preferences and ensures similar emails find their rightful place automatically in the future. It’s like training your dog to fetch. Once it learns which toy is its favorite, it fetches it every single time.</p>
+
+<p>One particularly intriguing aspect of this feature is the flexibility it offers. Let’s say you’re working on a project, and you want all communications about it to be in one place. Simply create a Custom Folder named “@ProjectX.” As you get emails related to the project, drag a few to the new folder, and then SaneBox will quickly learn to play fetch.</p>
+
+<p>The beauty of SaneBox’s Custom Folder feature lies in its adaptability. It’s not just about categorizing. It’s about creating an email ecosystem that aligns with your work habits and priorities. The more seamless a process is, the more likely you’ll be to use it. So that adaptability is critical.</p>
+
+<p>In essence, SaneBox’s Custom Folder feature is more than just about organization. It’s about crafting a personalized email experience. It’s a testament to how adaptive technology can be when it’s designed with the user at its core.</p>
+
+<p>If you’re still juggling with emails and feeling the stress of a cluttered inbox, perhaps it’s time to give SaneBox’s Custom Folder feature a try. And remember, <a href="https://try.sanebox.com/be2h3q" rel="nofollow">signing up today can even get you a $25 discount on any subscription</a>. Make your email work for you, not the other way around!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111142935093653571" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F28%2Fautomatically-sort-emails-to-custom-folders-with-sanebox-sponsor%2F&amp;text=Automatically+sort+emails+to+custom+folders+with+Sanebox+%5BSponsor%5D&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F28%2Fautomatically-sort-emails-to-custom-folders-with-sanebox-sponsor%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16369625.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-28T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Web Excursions for September 26, 2023</title>
+            <link>https://brett.trpstra.net/link/535/16366906/web-excursions-for-september-26-2023</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16366906/web-excursions-for-september-26-2023</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with <a href="https://www.mindmeister.com/?r=116987">MindMeister</a>, the best collaborative mind mapping software out there.</p>
+
+<dl>
+  <dt><a href="https://snailedit.dev/2023/08/25/alex-hay-apps.html">Toolbox Pro, Logger for Shortcuts, and Nautomate</a></dt>
+  <dd>Snailed It, run by my friend Rosemary Orchard, has taken custody of several apps developed by Alex Hay after his tragic passing last March. They’re in good hands, and will see the love he would want them to.</dd>
+  <dt><a href="https://leancrew.com/all-this/2023/09/iphone-15-pro-facts-and-estimates/">iPhone 15 Pro facts and estimates</a></dt>
+  <dd>I love it when Dr. Drang nerds out about Apple stuff.</dd>
+  <dt><a href="https://www.backblaze.com/blog/ssd-edition-2023-mid-year-drive-stats-review/?_hsmi=275805033">The SSD Edition: 2023 Drive Stats Mid-Year Review</a></dt>
+  <dd>The semi-annual drive stats report from Backblaze is out (SSD edition). I love the amount of data they collect on hard drive reliability.</dd>
+  <dt><a href="https://christianheilmann.com/2023/08/31/adding-sound-wave-overlays-to-videos-and-pictures-using-ffmpeg/">Adding sound wave overlays to videos and pictures using FFMPEG</a></dt>
+  <dd>I did not know ffmpeg could do this. Thanks, Christian!</dd>
+</dl>
+
+<p><a href="https://www.mindmeister.com/?r=116987">Check out MindMeister and start brainstorming, collaborating, and boosting productivity.</a></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111132975826961538" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F26%2Fweb-excursions-for-september-26-2023%2F&amp;text=Web+Excursions+for+September+26%2C+2023&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F26%2Fweb-excursions-for-september-26-2023%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16366906.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-26T13:44:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>CleanShot X giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16364871/cleanshot-x-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16364871/cleanshot-x-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway robot with CleanShot X icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/cleanshot-giveaway-rb.jpg" title="Giveaway robot with CleanShot X icon" width="800" />
+              </noscript>
+            
+
+<p>I’m super excited about this one, as I consider <a href="https://cleanshot.com/">CleanShot X</a> to be one of the best Mac apps developed in the last few years. Hands down the best screenshot/recording app, but also just a highly elegant app all around.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="CleanShot X annotation screenshot" class="aligncenter" height="540" src="https://cdn3.brettterpstra.com/uploads/2023/09/cleanshot-annotate.jpg" title="CleanShot X annotation screenshot" width="960" />
+              </noscript>
+            
+
+<p>Note that if you’re reading this via RSS, you’ll need to visit the site to enter! Check out the <a href="https://cleanshot.com/">CleanShot X</a> website for more details on this amazing app.</p>
+
+<p>I have three licenses ($29 value) to offer to BrettTerpstra.com readers. Sign up below and I’ll draw random winners on Friday, September 29th.</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for more giveaways every week through December (and maybe beyond).</p>
+
+<p>If you have an app you’d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> so you can be the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111125951377625184" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F25%2Fcleanshot-x-giveaway%2F&amp;text=CleanShot+X+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F25%2Fcleanshot-x-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16364871.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-25T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>The Tap Forms giveaway winners!</title>
+            <link>https://brett.trpstra.net/link/535/16361586/the-tap-forms-giveaway-winners</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16361586/the-tap-forms-giveaway-winners</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Tap Forms icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/tapforms-winners-rb.jpg" title="Giveaway Robot with Tap Forms icon, confetti background" width="800" />
+              </noscript>
+            
+
+<h3 id="the-winners">The Winners</h3>
+
+<p>The Tap Forms giveaway has ended, and I have two winners to announce!</p>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Jonathan Laniado</li>
+  <li>Doug Lionetti</li>
+</ul>
+
+<p>(I swear the giveaway robot has no preference for last names starting with L. It’s purely chance.)</p>
+
+<p>Each winner should have received an email with a redeem link/code, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn’t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I Didn’t Win!</h3>
+
+<p>If you didn’t win, sorry, but <a href="https://www.tapforms.com/">Tap Forms</a> is still worth checking out. You can easily store and work with any kind of data. It’s the missing database app for Mac and iOS. If you didn’t win, you can still save 30% on the direct version with the coupon <code class="language-plaintext highlighter-rouge">BRETT-TF5-2023</code>. Go to <a href="https://www.tapforms.com/">the site</a> and click the <strong>Buy Now for Mac</strong> button to use the coupon, or download the <a href="https://vendors.paddle.com/download/product/503174">free trial version</a> and enter the coupon when using the in-app purchase.</p>
+
+<h3 id="coming-soon">Coming Soon</h3>
+
+<p>Next up is <a href="https://cleanshot.sjv.io/DKRzyd">CleanShot X</a> (the best screenshot app there is). Check back every Monday through December for more giveaways. Upcoming apps include:</p>
+
+<ul>
+  <li><a href="https://timingapp.com/">Timing</a></li>
+  <li><a href="https://hookproductivity.com/">Hookmark</a></li>
+  <li><a href="https://textexpander.com/">TextExpander</a></li>
+  <li><a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a></li>
+  <li><a href="https://www.noodlesoft.com/">Hazel</a></li>
+  <li><a href="https://apps.apple.com/us/app/task-manager-noteplan/id1505432629">Noteplan</a></li>
+  <li><a href="https://www.stclairsoft.com/DefaultFolderX/">Default Folder X</a></li>
+  <li><a href="https://www.git-tower.com/">Tower</a></li>
+  <li><a href="https://soulver.app/">Soulver</a></li>
+  <li><a href="https://c-command.com/spamsieve/">SpamSieve</a></li>
+  <li><a href="https://stclairsoft.com/AppTamer/index.html">App Tamer</a></li>
+  <li><a href="https://kaleidoscope.app/">Kaleidoscope</a></li>
+  <li><a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a></li>
+  <li><a href="https://www.zengobi.com/curio/">Curio</a></li>
+</ul>
+
+<p>If you want to suggest an app you’d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for early access!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111110147476220468" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F22%2Fthe-tap-forms-giveaway-winners%2F&amp;text=The+Tap+Forms+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F22%2Fthe-tap-forms-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16361586.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-22T13:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Journal updates with weather types and conditional questions</title>
+            <link>https://brett.trpstra.net/link/535/16357253/journal-updates-with-weather-types-and-conditional-questions</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16357253/journal-updates-with-weather-types-and-conditional-questions</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Journal Screenshot" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/journal-header-rb.jpg" title="Journal Screenshot" width="800" />
+              </noscript>
+            
+
+<p>In case you missed it, I recently released <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal CLI">Journal</a>, a CLI for keeping a journal with structured data that can be queried and analyzed. An update is live with a couple of nifty new features.</p>
+
+<p>First, instead of just a type of <code class="language-plaintext highlighter-rouge">weather</code> for a question (which inserts the current condition and daily forecast), you can now specify sub-types of <code class="language-plaintext highlighter-rouge">weather.current</code> and/or <code class="language-plaintext highlighter-rouge">weather.forecast</code>. This outputs separate data entries to the JSON, and creates individual answers in the Markdown/Day One versions. You can still just use <code class="language-plaintext highlighter-rouge">weather</code> as the type to insert all data.</p>
+
+<p>Second, you can now apply conditions to questions to determine whether they’ll be asked or not when creating an entry. Right now only time-based conditions are implemented, but I plan to add some functionality around basing a question’s appearance on the answer to a previous question, like “if health rating is less than 5, display the health notes question.” But for now you can add <code class="language-plaintext highlighter-rouge">condition: before noon</code> or <code class="language-plaintext highlighter-rouge">condition: &gt; 2pm</code> to any question or section to only display the question(s) at certain times of day.</p>
+
+<p>I needed these conditions because I like to create a mood entry in the morning with data about sleep and coffee, and in the evening I don’t want to repeat that data, but do want to ask some different questions about how the day went. I could create two separate journals for these, but this way I can compile all of my data in one file. Questions that are skipped get a null entry in the JSON, so when I’m parsing I just test for nil and skip entries that don’t contain the information I’m trying to output. Unanswered questions don’t get added to the Markdown/Day One entries at all.</p>
+
+<p>This release includes a couple of bug fixes as well. I recently removed the requirement for the <code class="language-plaintext highlighter-rouge">gum</code> CLI, if it doesn’t exist it will now just use Readline for input. When using the <code class="language-plaintext highlighter-rouge">gum</code> inputs, you can’t CTRL-c to cancel an entry, which I’m trying to figure out a way around right now.</p>
+
+<p>Update using <code class="language-plaintext highlighter-rouge">gem install journal-cli</code>. Visit the <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal CLI">project page</a> for more info and installation instructions.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111098053991885050" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F20%2Fjournal-updates-with-weather-types-and-conditional-questions%2F&amp;text=Journal+updates+with+weather+types+and+conditional+questions&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F20%2Fjournal-updates-with-weather-types-and-conditional-questions%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16357253.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-20T09:46:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Tap Forms for Mac giveaway!</title>
+            <link>https://brett.trpstra.net/link/535/16354183/tap-forms-for-mac-giveaway</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16354183/tap-forms-for-mac-giveaway</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Tap Forms icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/tapforms-giveaway-rb.jpg" title="Giveaway Robot with Tap Forms icon" width="800" />
+              </noscript>
+            
+
+<p>I’m starting up giveaways again on BrettTerpstra.com, and I’m exited to kick it off with 2 free licenses for <a href="https://www.tapforms.com/">Tap Forms</a> for Mac. It’s an amazing database product that lets you organize and access your data on any device. It’s available on Mac, iPhone, iPad and even Apple Watch. This giveaway is specifically for the Mac version.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Accounts, recipes, expenses, inventory — life is full of things that we don’t want to forget or misplace. Tap Forms helps you organize all kinds of things in one place — secure, searchable, and accessible on your Mac, iPhone, iPad, and Apple Watch.</p>
+</blockquote>
+
+<p>Check out the <a href="https://www.tapforms.com/">Tap Forms site</a> for more info.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Tap Forms screenshot" class="aligncenter" height="1055" src="https://cdn3.brettterpstra.com/uploads/2023/09/tapforms.jpg" title="Tap Forms screenshot" width="1677" />
+              </noscript>
+            
+
+<p>Sign up below to enter. Two winners will be randomly drawn on Friday, Sept 22, at 12pm Central. Tap Forms for Mac costs $49.99, so this is a great chance at saving $50!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>I reached out to my mailing list to see what products people were interested in, and Tap Forms was a top pick. I have several more developers lined up to offer free stuff, so stay tuned. If you have an app you’d love to see featured, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> so you can be the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111086306792682778" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F18%2Ftap-forms-for-mac-giveaway%2F&amp;text=Tap+Forms+for+Mac+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F18%2Ftap-forms-for-mac-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16354183.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-18T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>A silly Jekyll plugin and a big Marked sale</title>
+            <link>https://brett.trpstra.net/link/535/16349238/a-silly-jekyll-plugin-and-a-big-marked-sale</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16349238/a-silly-jekyll-plugin-and-a-big-marked-sale</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>So, a long time ago I wrote this Jekyll plugin that does countdowns and I don’t think I ever really used it. You just give it an end date and it inserts a countdown into the post. But I needed something to count down to, so I’m running a 40% off <a href="https://marked2app.com">Marked</a> sale using the coupon <code class="language-plaintext highlighter-rouge">COOLPLUGINBRO</code> until Saturday, September 16th. Here’s your countdown:</p>
+
+<p class="sorry"><em>Time&#8217;s up.</em></p>
+
+<p>Did it work? I hope so. Use <a href="http://pay.paddle.com/checkout/489454?coupon=COOLPLUGINBRO">this link to apply the coupon directly</a>, or enter <code class="language-plaintext highlighter-rouge">COOLPLUGINBRO</code> at checkout. Learn more about Marked at <a href="https://marked2app.com">marked2app.com</a>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111064926080197011" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F14%2Fa-silly-jekyll-plugin-and-a-big-marked-sale%2F&amp;text=A+silly+Jekyll+plugin+and+a+big+Marked+sale&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F14%2Fa-silly-jekyll-plugin-and-a-big-marked-sale%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16349238.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-14T13:14:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>So you think you know productivity? [Sponsor]</title>
+            <link>https://brett.trpstra.net/link/535/16348948/so-you-think-you-know-productivity</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16348948/so-you-think-you-know-productivity</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Thanks to TextExpander for sponsoring BrettTerpstra.com this week! I can’t count the number of hours I save using TextExpander. Oh wait, I can, because they email you a report every week to let you know…</p>
+
+<p><a href="https://brettterpstra.comtextexpander.com/terpstra" rel="nofollow">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="TextExpander: Minimize Effort" class="aligncenter" height="320" src="https://cdn3.brettterpstra.com/uploads/2022/03/te-bt-graphics-minimizeeffort.jpg" title="TextExpander: Minimize Effort" width="960" />
+              </noscript>
+            </a></p>
+
+<p>So you think you know productivity? Can you name 20 different productivity methods?</p>
+
+<p>Maybe you’ve heard of the Pomodoro method, the 80/20 rule, or time blocking, but have you heard of Eat the Frog? Have you set SMART goals for 2024? Ever developed an Eisenhower Matrix?</p>
+
+<p>Over at the TextExpander blog, we’ve cataloged 20 of these <a href="https://textexpander.com/blog/best-productivity-habits" rel="nofollow">productivity habits</a>. There are lots of ways to boost your productivity.</p>
+
+<p>One of the best ways to boost your productivity is through text expansion. Type something short and get something long. Do you find yourself writing the <a href="https://textexpander.com/templates" rel="nofollow">same emails</a> repeatedly? Why? Let TextExpander handle it and save yourself hours and even days every year.</p>
+
+<p>And that applies to pretty much every industry that involves typing:</p>
+
+<ul>
+  <li><a href="https://textexpander.com/blog/conquering-aliteracy-mark-phillips">Middle school teacher</a> Mark Philips saved 18 hours in 2022 with TextExpander</li>
+  <li><a href="https://textexpander.com/blog/peter-van-teeseling-dscoop">Peter van Teeseling</a>, Executive Director of Dscoop, saved over 27 hours in 2022 with TextExpander</li>
+  <li>Automattic <a href="https://textexpander.com/blog/textexpander-story-how-the-stewards-of-wordpress-adopted-textexpander-part-3">saved 693 hours in three months</a></li>
+</ul>
+
+<p>TextExpander can handle short messages, emails, code, or pretty much any text you can throw at it, including formatted text and hyperlinks.</p>
+
+<p>Try it out free for 30 days. Check out <a href="https://brettterpstra.comtextexpander.com/terpstra" rel="nofollow">TextExpander</a> today and get 20% off using the code <code class="language-plaintext highlighter-rouge">TERPSTRA</code>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111063658319038641" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F14%2Fso-you-think-you-know-productivity%2F&amp;text=So+you+think+you+know+productivity%3F+%5BSponsor%5D&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F14%2Fso-you-think-you-know-productivity%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16348948.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-14T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Journal and integrations</title>
+            <link>https://brett.trpstra.net/link/535/16342944/journal-and-integrations</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16342944/journal-and-integrations</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>I’ve made some changes to <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">Journal</a> (I didn’t mess with the data format this time) that add some functionality and will maybe help with integrating with some apps like Obisidian.</p>
+
+<p>First, you can now define a <code class="language-plaintext highlighter-rouge">date</code> type. Date entries will be parsed from natural language into date objects, so on the command line you can enter something like “yesterday 5pm” or “july 20 12pm” and get a proper date object added to your JSON and Markdown entries. Great for things like logging book review dates, workout days, etc.</p>
+
+<p>You can also now define a <code class="language-plaintext highlighter-rouge">dictionary</code> type for a question, which along with a <code class="language-plaintext highlighter-rouge">key</code> definition creates a nested data set with any dot notation keys that match. So you can define the following:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code><span class="na">mood</span><span class="pi">:</span>
+  <span class="na">sections</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Status"</span>
+    <span class="na">key</span><span class="pi">:</span> <span class="s">status</span>
+    <span class="na">questions</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">key</span><span class="pi">:</span> <span class="s">health</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">dictionary</span>
+      <span class="pi">-</span> <span class="na">key</span><span class="pi">:</span> <span class="s">health.rating</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">numeric</span>
+        <span class="na">prompt</span><span class="pi">:</span> <span class="s">Health Rating</span>
+        <span class="na">min</span><span class="pi">:</span> <span class="m">1</span>
+        <span class="na">max</span><span class="pi">:</span> <span class="m">10</span>
+      <span class="pi">-</span> <span class="na">key</span><span class="pi">:</span> <span class="s">health.notes</span>
+  <span class="na">    type</span><span class="pi">:</span> <span class="s">multiline</span>
+        <span class="s">prompt</span><span class="err">:</span> <span class="s">Health Notes</span></code></pre></div></div>
+
+<p>The data that gets output will include this format in the JSON:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"mood"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"health"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"rating"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Just some notes on my health"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This allows for more control over the structured data. It won’t be a big deal for most people as answers were already nested within section keys and could be grouped using dot syntax, this just allows the structure to go one level deeper which may help with building analytics tools.</p>
+
+<p>The big change that will allow more integrations with apps like Obsidian is that all numeric and date answers are now included as YAML front matter in any individual Markdown files created. This will allow integration with existing tools like <a href="https://github.com/blacksmithgu/obsidian-dataview">Obsidian Dataview</a>, which allows you to create data views based on YAML data in your Obsidian notes. By pointing Journal to your Vault folder, you can have journal entries added to your vault and queryable with Dataview. I haven’t tested this, I just noted that it should be possible with the addition of the YAML data. For the time being I’m not including any string responses in the YAML, as that seems redundant since they’re also included in the body text and available to search.</p>
+
+<p>This update won’t affect data saved to single Markdown files or added to Day One. If you have any ideas about how this could be made more useful, please let me know! Either via the <a href="https://github.com/ttscoff/journal-cli/discussions">Discussions</a> or by <a href="https://brettterpstra.com/contact/">contacting me directly</a>.</p>
+
+<p>Version 1.0.19 is out now, just install or upgrade with <code class="language-plaintext highlighter-rouge">gem install journal-cli</code>. See the <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">project page</a> for more details.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111047431140034725" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F11%2Fjournal-and-integrations%2F&amp;text=Journal+and+integrations&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F11%2Fjournal-and-integrations%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16342944.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-11T11:10:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>More na updates</title>
+            <link>https://brett.trpstra.net/link/535/16340947/more-na-updates</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16340947/more-na-updates</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>I’ve put some more time into both <a href="https://brettterpstra.com/projects/journal-cli/" title="Journal">Journal</a> and <code class="language-plaintext highlighter-rouge">na</code>. The latest version of <code class="language-plaintext highlighter-rouge">na</code> represents quite a few hours of tinkering. See the <a href="https://brettterpstra.com/projects/na/" title="na - BrettTerpstra.com">na project page</a> for full details. In case you’ve missed in previously, <code class="language-plaintext highlighter-rouge">na</code> is my command line tool for reading and modifying TaskPaper files in your projects.</p>
+
+<p>I think the biggest thing I’ve added is theming. You can now control the colorized output of your actions using a file at <code class="language-plaintext highlighter-rouge">~/.local/share/na/theme.yaml</code>. That file is automatically written by na if it runs and it doesn’t exist, and once it’s there, it should be pretty self explanatory. You can use <code class="language-plaintext highlighter-rouge">{y}</code> type placeholders (that would make the following text yellow, a full list of color abbreviations is at the top of the file), and you can also use <code class="language-plaintext highlighter-rouge">{#RGB}</code> and <code class="language-plaintext highlighter-rouge">{#RRGGBB}</code> codes to get specific colors outside of the usual ANSI coloring.</p>
+
+<p>I’ve added new commands like <code class="language-plaintext highlighter-rouge">tag</code> (see <code class="language-plaintext highlighter-rouge">na help tag</code>), and a new <code class="language-plaintext highlighter-rouge">--restore</code> option to several commands for removing the @done tag from actions. There’s also a <code class="language-plaintext highlighter-rouge">--replace</code> flag you can tie into <code class="language-plaintext highlighter-rouge">na update --search SEARCH_STRING --replace REPLACE_STRING</code> to perform (wildcard-compatible) search and replace. Add <code class="language-plaintext highlighter-rouge">--regex</code> to do a regex search and replace.</p>
+
+<p>There’s a bunch of other new stuff, so I’ll just post the collected changelog.</p>
+
+<h4 id="new">NEW</h4>
+
+<ul>
+  <li>Global option <code class="language-plaintext highlighter-rouge">--include_ext</code> can be configured to use full extension when displaying filenames, allowing for command-clicking to open in compatible terminals</li>
+  <li>Tag command</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">--save NAME</code> to <code class="language-plaintext highlighter-rouge">na next</code> to save more complex queries and run with <code class="language-plaintext highlighter-rouge">na saved NAME</code> (or just <code class="language-plaintext highlighter-rouge">na NAME</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">na saved --select</code> flag to allow interactive selection of search(es)</li>
+  <li>Open the todos database in an editor with <code class="language-plaintext highlighter-rouge">na todos --edit</code></li>
+  <li>A theme file is written to ~/.local/share/na/theme.yaml where you can modify the colors used for all displays</li>
+  <li>Allow TAG=~PATTERN comparison for regex matching in <code class="language-plaintext highlighter-rouge">na tagged</code></li>
+  <li><code class="language-plaintext highlighter-rouge">na undo</code> command to undo last change or last change to file specified in arguments</li>
+  <li><code class="language-plaintext highlighter-rouge">na update --search OLD_TEXT --replace NEW_TEXT</code> (added –replace)</li>
+</ul>
+
+<h4 id="improved">IMPROVED</h4>
+
+<ul>
+  <li>When displaying actions wider than the screen, wrap at words and indent 2 spaces from start of action (after prefix)</li>
+  <li>When not showing notes, add an asterisk at the end of an action</li>
+  <li>When showing notes, indent to the beginning of the action</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">--project</code> to archive, complete, and update to move a modified action to a new project when saving</li>
+  <li>Allow <code class="language-plaintext highlighter-rouge">na saved --delete</code> to handle multiple arguments</li>
+  <li>Allow wildcards when deleting saved searches</li>
+  <li>Refactor request for input, no change to user experience</li>
+  <li>Refined wildcard (?*) handling</li>
+  <li>Better error message for <code class="language-plaintext highlighter-rouge">na next</code> when no todo is matched</li>
+  <li>If STDOUT isn’t a TTY, don’t enable pagination, regardless of global setting</li>
+  <li>Disable pagination when using –omnifocus</li>
+  <li>Allow –find or –grep as synonyms for –search</li>
+  <li><code class="language-plaintext highlighter-rouge">--in TODO</code> option for <code class="language-plaintext highlighter-rouge">na complete</code></li>
+  <li>If a search string contains @tags and –exact or –regex isn’t specified, the @tags will be extracted and passed as a –tagged search.</li>
+  <li>Tag handling (including values and comparisons) in tags extracted from search strings</li>
+  <li><code class="language-plaintext highlighter-rouge">na complete --project PROJ</code> flag to move to a specific project</li>
+  <li><code class="language-plaintext highlighter-rouge">na restore --project PROJ</code> flag to move restored action to</li>
+  <li>Exit gracefully if tagged command is run with invalid arguments</li>
+  <li>Display action affected when using update command</li>
+</ul>
+
+<h4 id="fixed">FIXED</h4>
+
+<ul>
+  <li>Change default :dirname coloring to fix an occasional highlighting issue</li>
+  <li>Error when creating new project in todo file</li>
+  <li>Error when last_modified.txt hasn’t been written yet</li>
+  <li>Nil error in action.pretty</li>
+  <li>Date tags containing hyphens triggered OR searches because they were initially interpreted as negative tag searches</li>
+  <li>Templating irregularities</li>
+  <li>Error thrown when running without $EDITOR variable defined in environment</li>
+  <li>New project not being added when requested</li>
+  <li>Error when <code class="language-plaintext highlighter-rouge">na add --to PROJECT</code> was a project that didn’t exist</li>
+  <li><code class="language-plaintext highlighter-rouge">--no-color</code> wasn’t stripping templated hex codes</li>
+  <li>Escape search for tokens to allow parenthesis and other reserved characters</li>
+</ul>
+
+<p>More details <a href="https://brettterpstra.com/projects/na/" title="na - BrettTerpstra.com">on the project page</a>!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/111035586264363252" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F09%2Fmore-na-updates%2F&amp;text=More+na+updates&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F09%2Fmore-na-updates%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16340947.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-09T09:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Timing -- automatic time tracking for Mac AND iOS [Sponsor]</title>
+            <link>https://brett.trpstra.net/link/535/16338321/timing-automatic-time-tracking-for-mac-and-ios-sponsor</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16338321/timing-automatic-time-tracking-for-mac-and-ios-sponsor</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Thanks to Timing for sponsoring BrettTerpstra.com this week! I’ve loved Timing for years, and the new vertical timeline view is an awesome upgrade to one of my most-used apps.</p>
+
+<p><a href="https://timingapp.com/brett2023" rel="nofollow">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Timing Vertical Timeline" class="aligncenter" height="477" src="https://cdn3.brettterpstra.com/uploads/2023/09/timeline_beta-800.jpg" title="Timing Vertical Timeline" width="800" />
+              </noscript>
+            </a></p>
+
+<p><strong>Time is your most precious resource.</strong> You <em>need</em> to know how you are spending it.</p>
+
+<p><strong>But time tracking is no fun.</strong></p>
+
+<p><strong><a href="https://timingapp.com/brett2023" rel="nofollow">Timing</a> fixes that.</strong><br />
+It <em>automatically</em> tracks <em>all</em> your time, without you lifting a finger:</p>
+
+<ul>
+  <li>Timing records how long you use each app, document, and website — without start/stop timers. <strong>These timmes can also be automatically categorized using rules, so you don’t have to do it manually.</strong></li>
+  <li>It <strong>imports your iPhone and iPad usage</strong> from Screen Time, giving you a complete picture of all your device usage. No other time tracking app for Mac does this!</li>
+  <li>In addition, Timing will also import <strong>phone calls from your iPhone</strong>, so those don’t get lost.</li>
+  <li>The same goes for meetings you attend: Timing will automatically <strong>show events from your calendar</strong>, so you never forget to record time spent in meetings again.</li>
+  <li>But even when a meeting isn’t on your calendar, Timing automatically <strong>recognizes when a call ends</strong> and lets you record time for it, so that no meeting goes untracked.</li>
+  <li>Similarly, when you return to your Mac after a break, Timing will <strong>ask you what you did</strong> during your time away.</li>
+</ul>
+
+<p>All of these features are <em>optional</em> and configurable, of course. And its <strong>brand-new vertical timeline</strong> makes it even easier to see what you did at a glance.</p>
+
+<p>Timing is the one time-tracking app that will <em>really</em> give you <strong>a complete picture of where your time goes,</strong> all while <em>taking</em> you <strong>much less time to maintain</strong> than other time trackers.</p>
+
+<p>Not convinced yet? <a href="https://www.macstories.net/reviews/timing-2-makes-time-tracking-on-your-mac-a-pleasure/" rel="nofollow">Read what Brett himself has to say about Timing.</a><br />
+(Spoiler alert: He likes it, and it helps him be more productive.)<br />
+Or <a href="https://timingapp.com/brett2023" rel="nofollow"><strong>download the free 30-day trial today</strong></a> and get 10% off for the first year! And if you had tried Timing before and would like to give it another shot, <a href="https://timingapp.com/contact">feel free to reach out</a> and we’ll send you a new trial.</p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F07%2Ftiming-automatic-time-tracking-for-mac-and-ios-sponsor%2F&amp;text=Timing+--+automatic+time+tracking+for+Mac+AND+iOS+%5BSponsor%5D&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F07%2Ftiming-automatic-time-tracking-for-mac-and-ios-sponsor%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16338321.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-07T08:00:00-05:00</pubDate>
+        </item>
+        
+        <item>
+            <title>Important Journal CLI updates</title>
+            <link>https://brett.trpstra.net/link/535/16338322/important-journal-cli-updates</link>
+            <guid isPermaLink="true">https://brett.trpstra.net/link/535/16338322/important-journal-cli-updates</guid>
+            <description><![CDATA[None]]></description>
+            <content:encoded><![CDATA[
+            <div style="font-family: Arial, sans-serif;">
+                
+                
+                <p><p>Just a couple quick updates to the <a href="https://brettterpstra.com/projects/journal-cli/">Journal CLI</a> I <a href="https://brettterpstra.com/2023/09/06/journal-a-cli-for-journaling/">published yesterday</a> that I wanted everyone who was trying it out to know about before they have too much data in it.</p>
+
+<p>First, if keys were nested using dot syntax, e.g. <code class="language-plaintext highlighter-rouge">health.rating</code> and <code class="language-plaintext highlighter-rouge">health.sleep</code>, it would create a hash like:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code><span class="p">{</span><span class="w"> 
+  </span><span class="nl">"health"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"health"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"rating"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> 
+      </span><span class="nl">"sleep"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w"> 
+   </span><span class="p">}</span><span class="w">  
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>As you can see, the “health” key got doubled and nested inside of the section key. This isn’t the way it was supposed to work with the dot syntax. Version 1.0.15 fixes this, if a key is repeated it’s merged with the parent key instead of nesting.</p>
+
+<p>I also added options for defining custom folders to save entries in. At the top level you can include <code class="language-plaintext highlighter-rouge">entries_folder</code> with a path to any folder on your system. Journals will all save to that folder with subdirectories for each of their keys. You can instead define <code class="language-plaintext highlighter-rouge">entries_folder</code> within a journal definition, allowing each journal to have a custom location. JSON and Markdown will be written to these folders based on settings.</p>
+
+<p>That should help make this tool a bit more useful, sorry for changing the data format, but better sooner than later. Check out the <a href="https://brettterpstra.com/projects/journal-cli/">project page</a> for more details.</p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F07%2Fimportant-journal-cli-updates%2F&amp;text=Important+Journal+CLI+updates&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2023%2F09%2F07%2Fimportant-journal-cli-updates%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2023 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16338322.gif" width="1" /></p>
+            </div>
+        ]]></content:encoded>
+            <pubDate>2023-09-07T08:00:00-05:00</pubDate>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,42 @@
+------------------------------------------------------
+Started: 2023-11-10 06:19:24.412178
+Existing_entries: 0
+Fetching from https://blog.jetbrains.com/feed/?_gl=1*1djr7qf*_ga*NzI5MDg0MDQwLjE2NTEwNTIyNTM.*_ga_9J976DJZ68*MTY1MzYyMzAzMy44LjAuMTY1MzYyMzA0MS4w&amp;_ga=2.194368301.1854496100.1653547382-729084040.1651052253
+Summarization failed, append the original article
+error: Error code: 307
+Append: [IntelliJ IDEA 2023.3 Goes Beta!](https://blog.jetbrains.com/idea/2023/11/intellij-idea-2023-3-beta/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [CLion Nova Explodes onto the C and C++ Development Scene](https://blog.jetbrains.com/clion/2023/11/clion-nova/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [Toolbox App 2.1 Is Now Available](https://blog.jetbrains.com/toolbox-app/2023/11/toolbox-app-2-1-is-now-available/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [IntelliJ IDEA 2023.2.5 Is Out!](https://blog.jetbrains.com/idea/2023/11/intellij-idea-2023-2-5/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [.NET Annotated Monthly | November 2023](https://blog.jetbrains.com/dotnet/2023/11/09/net-annotated-monthly-november-2023/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [Amper – Improving the Build Tooling User Experience](https://blog.jetbrains.com/blog/2023/11/09/amper-improving-the-build-tooling-user-experience/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [ReSharper 2023.3 EAP 6: Code Analysis Performance Improvements, Support for C# 12 Interceptors, and Much More.](https://blog.jetbrains.com/dotnet/2023/11/08/resharper-2023-3-eap-6/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [ReSharper C++ 2023.3 EAP: HLSL Updates and Completion in Inactive Code](https://blog.jetbrains.com/rscpp/2023/11/08/resharper-cpp-2023-3-eap-hlsl-updates/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [OSS Power-Ups: MassTransit – Webinar Recording](https://blog.jetbrains.com/dotnet/2023/11/08/oss-power-ups-masstransit-webinar-recording/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [Welcome Fleet with Kotlin Multiplatform Tooling](https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-tooling-in-fleet/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [How JetBrains Rider Implemented .NET WebAssembly Debugging](https://blog.jetbrains.com/dotnet/2023/11/07/how-jetbrains-rider-implemented-net-webassembly-debugging/) Summary: None
+Summarization failed, append the original article
+error: Error code: 307
+Append: [WebStorm 2023.3 EAP Digest #3: Angular, React, and Vue Improvements and More](https://blog.jetbrains.com/webstorm/2023/11/webstorm-2023-3-eap-3/) Summary: None
+append_entries: 12
+Finish: 2023-11-10 06:19:30.554553
