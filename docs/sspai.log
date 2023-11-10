@@ -7281,3 +7281,12 @@ error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-E
 Append: [派早报：Valve 发布 OLED 款 Steam Deck 游戏主机](https://sspai.com/post/84312)
 append_entries: 1
 Finish: 2023-11-10 04:05:44.046416
+------------------------------------------------------
+Started: 2023-11-10 06:06:27.603083
+Existing_entries: 215
+Fetching from https://rsshub.app/sspai/index
+Summarization failed, append the original article
+error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-EoBHr***************************************yyfY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Append: [一日一技 | 将 Obsidian 页面按自定义模板导出为 Word 文档](https://sspai.com/post/84232)
+append_entries: 1
+Finish: 2023-11-10 06:06:28.201571
