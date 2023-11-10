@@ -57,4 +57,5 @@
 - https://brett.trpstra.net/brettterpstra -> https://github.com/ArnoFrost/RSS-GPTbrett-terpstra.xml
 - https://meta.appinn.net/tag/chrome.rss, https://meta.appinn.net/tag/ios.rss, https://meta.appinn.net/tag/macos.rss -> https://github.com/ArnoFrost/RSS-GPTappinn.xml
 - https://rsshub.app/sspai/index -> https://github.com/ArnoFrost/RSS-GPTsspai.xml
+- https://rsshub.app/36kr/motif/327685554177, https://rsshub.app/36kr/motif/327687077889, https://rsshub.app/36kr/motif/1366661828936836, https://rsshub.app/36kr/motif/1366662419875203, https://rsshub.app/36kr/motif/1756302767423108, https://rsshub.app/36kr/motif/327686815745, https://rsshub.app/36kr/motif/327685734401 -> https://github.com/ArnoFrost/RSS-GPT36kr.xml
 - https://rsshub.app/36kr/motif/327686782977 -> https://github.com/ArnoFrost/RSS-GPT36kr-ai.xml

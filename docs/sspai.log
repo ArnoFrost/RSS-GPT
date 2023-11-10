@@ -24,3 +24,12 @@ Append: [用 iPhone 15 Pro 玩 3A 大作：《生化危机 村庄》详尽游玩
 Append: [31 岁在一线城市被裁，我用一个小程序总结走过的路](https://sspai.com/post/83956) 摘要: None
 append_entries: 10
 Finish: 2023-11-10 02:40:56.971237
+------------------------------------------------------
+Started: 2023-11-10 02:46:19.996995
+Existing_entries: 10
+Fetching from https://rsshub.app/sspai/index
+Summarization failed, append the original article
+error: 'str' object has no attribute 'choices'
+Append: [派早报：iQOO 12 系列发布、国行任天堂 Switch 延保计划将停售等](https://sspai.com/post/84243) 摘要: None
+append_entries: 1
+Finish: 2023-11-10 02:46:21.326437
